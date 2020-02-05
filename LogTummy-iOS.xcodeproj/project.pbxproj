@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B223EA8F390011DDD3 /* AppDelegate.swift */; };
+		C96687B523EA8F390011DDD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B423EA8F390011DDD3 /* SceneDelegate.swift */; };
+		C96687B723EA8F390011DDD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B623EA8F390011DDD3 /* ViewController.swift */; };
+		C96687BA23EA8F390011DDD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96687B823EA8F390011DDD3 /* Main.storyboard */; };
+		C96687BC23EA8F3B0011DDD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96687BB23EA8F3B0011DDD3 /* Assets.xcassets */; };
+		C96687BF23EA8F3B0011DDD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96687BD23EA8F3B0011DDD3 /* LaunchScreen.storyboard */; };
+		C96687CA23EA8F3B0011DDD3 /* LogTummy_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687C923EA8F3B0011DDD3 /* LogTummy_iOSTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C96687C623EA8F3B0011DDD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C96687A723EA8F390011DDD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C96687AE23EA8F390011DDD3;
+			remoteInfo = "LogTummy-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C96687AF23EA8F390011DDD3 /* LogTummy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LogTummy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96687B223EA8F390011DDD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C96687B423EA8F390011DDD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C96687B623EA8F390011DDD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C96687B923EA8F390011DDD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C96687BB23EA8F3B0011DDD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C96687BE23EA8F3B0011DDD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C96687C023EA8F3B0011DDD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96687C523EA8F3B0011DDD3 /* LogTummy-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LogTummy-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96687C923EA8F3B0011DDD3 /* LogTummy_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTummy_iOSTests.swift; sourceTree = "<group>"; };
+		C96687CB23EA8F3B0011DDD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C96687AC23EA8F390011DDD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96687C223EA8F3B0011DDD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C96687A623EA8F390011DDD3 = {
+			isa = PBXGroup;
+			children = (
+				C96687B123EA8F390011DDD3 /* LogTummy-iOS */,
+				C96687C823EA8F3B0011DDD3 /* LogTummy-iOSTests */,
+				C96687B023EA8F390011DDD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C96687B023EA8F390011DDD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C96687AF23EA8F390011DDD3 /* LogTummy-iOS.app */,
+				C96687C523EA8F3B0011DDD3 /* LogTummy-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C96687B123EA8F390011DDD3 /* LogTummy-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C96687B223EA8F390011DDD3 /* AppDelegate.swift */,
+				C96687B423EA8F390011DDD3 /* SceneDelegate.swift */,
+				C96687B623EA8F390011DDD3 /* ViewController.swift */,
+				C96687B823EA8F390011DDD3 /* Main.storyboard */,
+				C96687BB23EA8F3B0011DDD3 /* Assets.xcassets */,
+				C96687BD23EA8F3B0011DDD3 /* LaunchScreen.storyboard */,
+				C96687C023EA8F3B0011DDD3 /* Info.plist */,
+			);
+			path = "LogTummy-iOS";
+			sourceTree = "<group>";
+		};
+		C96687C823EA8F3B0011DDD3 /* LogTummy-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				C96687C923EA8F3B0011DDD3 /* LogTummy_iOSTests.swift */,
+				C96687CB23EA8F3B0011DDD3 /* Info.plist */,
+			);
+			path = "LogTummy-iOSTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C96687AE23EA8F390011DDD3 /* LogTummy-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96687CE23EA8F3B0011DDD3 /* Build configuration list for PBXNativeTarget "LogTummy-iOS" */;
+			buildPhases = (
+				C96687AB23EA8F390011DDD3 /* Sources */,
+				C96687AC23EA8F390011DDD3 /* Frameworks */,
+				C96687AD23EA8F390011DDD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LogTummy-iOS";
+			productName = "LogTummy-iOS";
+			productReference = C96687AF23EA8F390011DDD3 /* LogTummy-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C96687C423EA8F3B0011DDD3 /* LogTummy-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96687D123EA8F3B0011DDD3 /* Build configuration list for PBXNativeTarget "LogTummy-iOSTests" */;
+			buildPhases = (
+				C96687C123EA8F3B0011DDD3 /* Sources */,
+				C96687C223EA8F3B0011DDD3 /* Frameworks */,
+				C96687C323EA8F3B0011DDD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C96687C723EA8F3B0011DDD3 /* PBXTargetDependency */,
+			);
+			name = "LogTummy-iOSTests";
+			productName = "LogTummy-iOSTests";
+			productReference = C96687C523EA8F3B0011DDD3 /* LogTummy-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C96687A723EA8F390011DDD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "オムラユウキ";
+				TargetAttributes = {
+					C96687AE23EA8F390011DDD3 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					C96687C423EA8F3B0011DDD3 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = C96687AE23EA8F390011DDD3;
+					};
+				};
+			};
+			buildConfigurationList = C96687AA23EA8F390011DDD3 /* Build configuration list for PBXProject "LogTummy-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C96687A623EA8F390011DDD3;
+			productRefGroup = C96687B023EA8F390011DDD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C96687AE23EA8F390011DDD3 /* LogTummy-iOS */,
+				C96687C423EA8F3B0011DDD3 /* LogTummy-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C96687AD23EA8F390011DDD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96687BF23EA8F3B0011DDD3 /* LaunchScreen.storyboard in Resources */,
+				C96687BC23EA8F3B0011DDD3 /* Assets.xcassets in Resources */,
+				C96687BA23EA8F390011DDD3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96687C323EA8F3B0011DDD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C96687AB23EA8F390011DDD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96687B723EA8F390011DDD3 /* ViewController.swift in Sources */,
+				C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */,
+				C96687B523EA8F390011DDD3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96687C123EA8F3B0011DDD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96687CA23EA8F3B0011DDD3 /* LogTummy_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C96687C723EA8F3B0011DDD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C96687AE23EA8F390011DDD3 /* LogTummy-iOS */;
+			targetProxy = C96687C623EA8F3B0011DDD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C96687B823EA8F390011DDD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C96687B923EA8F390011DDD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C96687BD23EA8F3B0011DDD3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C96687BE23EA8F3B0011DDD3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C96687CC23EA8F3B0011DDD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C96687CD23EA8F3B0011DDD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C96687CF23EA8F3B0011DDD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WF5Y5M59G;
+				INFOPLIST_FILE = "LogTummy-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.yuki.LogTummy-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C96687D023EA8F3B0011DDD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WF5Y5M59G;
+				INFOPLIST_FILE = "LogTummy-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.yuki.LogTummy-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C96687D223EA8F3B0011DDD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WF5Y5M59G;
+				INFOPLIST_FILE = "LogTummy-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.yuki.LogTummy-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogTummy-iOS.app/LogTummy-iOS";
+			};
+			name = Debug;
+		};
+		C96687D323EA8F3B0011DDD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WF5Y5M59G;
+				INFOPLIST_FILE = "LogTummy-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.yuki.LogTummy-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogTummy-iOS.app/LogTummy-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C96687AA23EA8F390011DDD3 /* Build configuration list for PBXProject "LogTummy-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96687CC23EA8F3B0011DDD3 /* Debug */,
+				C96687CD23EA8F3B0011DDD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96687CE23EA8F3B0011DDD3 /* Build configuration list for PBXNativeTarget "LogTummy-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96687CF23EA8F3B0011DDD3 /* Debug */,
+				C96687D023EA8F3B0011DDD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96687D123EA8F3B0011DDD3 /* Build configuration list for PBXNativeTarget "LogTummy-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96687D223EA8F3B0011DDD3 /* Debug */,
+				C96687D323EA8F3B0011DDD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C96687A723EA8F390011DDD3 /* Project object */;
+}
