@@ -15,7 +15,6 @@
 		C925794C23ED2A7700308154 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925794B23ED2A7700308154 /* GoogleAppMeasurement.framework */; };
 		C925794E23ED2A8000308154 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925794D23ED2A7F00308154 /* GoogleUtilities.framework */; };
 		C925795023ED2A8D00308154 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925794F23ED2A8D00308154 /* nanopb.framework */; };
-		C925795223ED2ADD00308154 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C925795123ED2ADD00308154 /* GoogleService-Info.plist */; };
 		C925795623ED2B6200308154 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925795523ED2B6200308154 /* CoreTelephony.framework */; };
 		C925795823ED2B6A00308154 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925795723ED2B6A00308154 /* StoreKit.framework */; };
 		C925795B23ED2C5E00308154 /* gRPC-C++.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925795A23ED2C5E00308154 /* gRPC-C++.framework */; };
@@ -60,6 +59,7 @@
 		C9B281A323ED47DB00554CA6 /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B281A223ED47DB00554CA6 /* FirebaseStorage.framework */; };
 		C9B281A523ED47F000554CA6 /* GTMAppAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B281A423ED47F000554CA6 /* GTMAppAuth.framework */; };
 		C9B281A723ED482F00554CA6 /* gRPCCertificates-Cpp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C9B281A623ED482F00554CA6 /* gRPCCertificates-Cpp.bundle */; };
+		C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9B281B523ED549600554CA6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,7 +139,6 @@
 		C925794B23ED2A7700308154 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Carthage/Build/iOS/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
 		C925794D23ED2A7F00308154 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Carthage/Build/iOS/GoogleUtilities.framework; sourceTree = "<group>"; };
 		C925794F23ED2A8D00308154 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Carthage/Build/iOS/nanopb.framework; sourceTree = "<group>"; };
-		C925795123ED2ADD00308154 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C925795323ED2B4F00308154 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		C925795423ED2B5800308154 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		C925795523ED2B6200308154 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -181,6 +180,7 @@
 		C9B281A223ED47DB00554CA6 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Carthage/Build/iOS/FirebaseStorage.framework; sourceTree = "<group>"; };
 		C9B281A423ED47F000554CA6 /* GTMAppAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMAppAuth.framework; path = Carthage/Build/iOS/GTMAppAuth.framework; sourceTree = "<group>"; };
 		C9B281A623ED482F00554CA6 /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "gRPCCertificates-Cpp.bundle"; path = "Carthage/Build/iOS/gRPC-C++.framework/Resources/gRPCCertificates-Cpp.bundle"; sourceTree = "<group>"; };
+		C9B281B523ED549600554CA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,16 +258,14 @@
 		C96687B123EA8F390011DDD3 /* LogTummy-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C96687F823EAB50A0011DDD3 /* R.generated.swift */,
+				C9B281AF23ED52D800554CA6 /* AppResources */,
+				C9B281AB23ED518400554CA6 /* LogTummyAPI */,
+				C9B281B723ED564B00554CA6 /* Presentation */,
 				C96687B223EA8F390011DDD3 /* AppDelegate.swift */,
 				C96687B423EA8F390011DDD3 /* SceneDelegate.swift */,
 				C96687B623EA8F390011DDD3 /* ViewController.swift */,
 				C96687B823EA8F390011DDD3 /* Main.storyboard */,
-				C96687BB23EA8F3B0011DDD3 /* Assets.xcassets */,
 				C96687BD23EA8F3B0011DDD3 /* LaunchScreen.storyboard */,
-				C925795123ED2ADD00308154 /* GoogleService-Info.plist */,
-				C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */,
-				C96687C023EA8F3B0011DDD3 /* Info.plist */,
 			);
 			path = "LogTummy-iOS";
 			sourceTree = "<group>";
@@ -333,6 +331,160 @@
 				C96687EA23EAB1690011DDD3 /* MBProgressHUD.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9B281AB23ED518400554CA6 /* LogTummyAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C9B281AC23ED521A00554CA6 /* API */,
+				C9B281AD23ED521E00554CA6 /* Data */,
+				C9B281AE23ED522400554CA6 /* Protocol */,
+			);
+			path = LogTummyAPI;
+			sourceTree = "<group>";
+		};
+		C9B281AC23ED521A00554CA6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C9B281AD23ED521E00554CA6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C9B281AE23ED522400554CA6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C9B281AF23ED52D800554CA6 /* AppResources */ = {
+			isa = PBXGroup;
+			children = (
+				C96687BB23EA8F3B0011DDD3 /* Assets.xcassets */,
+				C9B281C023ED57B600554CA6 /* R */,
+				C9B281B023ED52FC00554CA6 /* Support */,
+			);
+			path = AppResources;
+			sourceTree = "<group>";
+		};
+		C9B281B023ED52FC00554CA6 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C9B281B123ED530200554CA6 /* InfoPlist */,
+				C9B281B223ED534D00554CA6 /* LocalizedStrings */,
+				C9B281B323ED535C00554CA6 /* Fonts */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		C9B281B123ED530200554CA6 /* InfoPlist */ = {
+			isa = PBXGroup;
+			children = (
+				C96687C023EA8F3B0011DDD3 /* Info.plist */,
+				C9B281B523ED549600554CA6 /* GoogleService-Info.plist */,
+				C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */,
+			);
+			path = InfoPlist;
+			sourceTree = "<group>";
+		};
+		C9B281B223ED534D00554CA6 /* LocalizedStrings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocalizedStrings;
+			sourceTree = "<group>";
+		};
+		C9B281B323ED535C00554CA6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C9B281B723ED564B00554CA6 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C9B281BF23ED574700554CA6 /* Entitlements */,
+				C9B281BE23ED571D00554CA6 /* Services */,
+				C9B281B823ED565100554CA6 /* DI */,
+				C9B281B923ED565600554CA6 /* Class */,
+				C9B281BD23ED568600554CA6 /* Files */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C9B281B823ED565100554CA6 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		C9B281B923ED565600554CA6 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				C9B281BA23ED565D00554CA6 /* Presentation-Domain */,
+				C9B281BB23ED567000554CA6 /* Utility */,
+				C9B281BC23ED567800554CA6 /* Data */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		C9B281BA23ED565D00554CA6 /* Presentation-Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Presentation-Domain";
+			sourceTree = "<group>";
+		};
+		C9B281BB23ED567000554CA6 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C9B281BC23ED567800554CA6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C9B281BD23ED568600554CA6 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		C9B281BE23ED571D00554CA6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C9B281BF23ED574700554CA6 /* Entitlements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entitlements;
+			sourceTree = "<group>";
+		};
+		C9B281C023ED57B600554CA6 /* R */ = {
+			isa = PBXGroup;
+			children = (
+				C96687F823EAB50A0011DDD3 /* R.generated.swift */,
+			);
+			path = R;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,8 +617,8 @@
 			files = (
 				C9B281A723ED482F00554CA6 /* gRPCCertificates-Cpp.bundle in Resources */,
 				C96687BF23EA8F3B0011DDD3 /* LaunchScreen.storyboard in Resources */,
-				C925795223ED2ADD00308154 /* GoogleService-Info.plist in Resources */,
 				C96687BC23EA8F3B0011DDD3 /* Assets.xcassets in Resources */,
+				C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */,
 				C925796423ED32FD00308154 /* GoogleService-debug-Info.plist in Resources */,
 				C96687BA23EA8F390011DDD3 /* Main.storyboard in Resources */,
 			);
@@ -705,7 +857,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "LogTummy-iOS/Info.plist";
+				INFOPLIST_FILE = "LogTummy-iOS/AppResources/Support/InfoPlist/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -728,7 +880,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "LogTummy-iOS/Info.plist";
+				INFOPLIST_FILE = "LogTummy-iOS/AppResources/Support/InfoPlist/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
