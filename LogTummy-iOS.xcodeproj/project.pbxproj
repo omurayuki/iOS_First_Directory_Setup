@@ -39,6 +39,7 @@
 		C92B6DCD23F13F490090E1D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C92B6DCC23F13F490090E1D9 /* Localizable.strings */; };
 		C92B6DCF23F140710090E1D9 /* StringsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DCE23F140710090E1D9 /* StringsUtil.swift */; };
 		C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DD123F141380090E1D9 /* VoidBlock.swift */; };
+		C92B6DD423F151040090E1D9 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DD323F151030090E1D9 /* APIError.swift */; };
 		C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B223EA8F390011DDD3 /* AppDelegate.swift */; };
 		C96687B523EA8F390011DDD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B423EA8F390011DDD3 /* SceneDelegate.swift */; };
 		C96687B723EA8F390011DDD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B623EA8F390011DDD3 /* ViewController.swift */; };
@@ -180,6 +181,7 @@
 		C92B6DCC23F13F490090E1D9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C92B6DCE23F140710090E1D9 /* StringsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsUtil.swift; sourceTree = "<group>"; };
 		C92B6DD123F141380090E1D9 /* VoidBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidBlock.swift; sourceTree = "<group>"; };
+		C92B6DD323F151030090E1D9 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		C96687AF23EA8F390011DDD3 /* LogTummy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LogTummy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96687B223EA8F390011DDD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C96687B423EA8F390011DDD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -479,6 +481,7 @@
 		C9B281AC23ED521A00554CA6 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				C92B6DD323F151030090E1D9 /* APIError.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -838,6 +841,7 @@
 				C92B6DC323F13BAB0090E1D9 /* DisplayableErrorProtocol.swift in Sources */,
 				C92B6DB723F117B30090E1D9 /* AnalyticsInfo.swift in Sources */,
 				C92B6DC923F13E440090E1D9 /* AppStrings.swift in Sources */,
+				C92B6DD423F151040090E1D9 /* APIError.swift in Sources */,
 				C92B6DB123F115230090E1D9 /* FirebaseAnalytics.swift in Sources */,
 				C92B6DB523F116710090E1D9 /* AnalyticsCategoriesAndEvents.swift in Sources */,
 				C92B6DAF23F115180090E1D9 /* AnalyticsServiceManager.swift in Sources */,
