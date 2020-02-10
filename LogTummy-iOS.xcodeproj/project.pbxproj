@@ -23,6 +23,7 @@
 		C925796123ED2C7B00308154 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925796023ED2C7B00308154 /* Protobuf.framework */; };
 		C925796223ED2CD000308154 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925794123ED2A3F00308154 /* Firebase.framework */; };
 		C925796423ED32FD00308154 /* GoogleService-debug-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */; };
+		C92B6DAA23F10F1E0090E1D9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DA923F10F1E0090E1D9 /* Logger.swift */; };
 		C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B223EA8F390011DDD3 /* AppDelegate.swift */; };
 		C96687B523EA8F390011DDD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B423EA8F390011DDD3 /* SceneDelegate.swift */; };
 		C96687B723EA8F390011DDD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B623EA8F390011DDD3 /* ViewController.swift */; };
@@ -148,6 +149,7 @@
 		C925795E23ED2C7100308154 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "leveldb-library.framework"; path = "Carthage/Build/iOS/leveldb-library.framework"; sourceTree = "<group>"; };
 		C925796023ED2C7B00308154 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = Carthage/Build/iOS/Protobuf.framework; sourceTree = "<group>"; };
 		C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-debug-Info.plist"; sourceTree = "<group>"; };
+		C92B6DA923F10F1E0090E1D9 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		C96687AF23EA8F390011DDD3 /* LogTummy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LogTummy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96687B223EA8F390011DDD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C96687B423EA8F390011DDD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -479,6 +481,7 @@
 		C9B281BB23ED567000554CA6 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				C92B6DA923F10F1E0090E1D9 /* Logger.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -712,6 +715,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92B6DAA23F10F1E0090E1D9 /* Logger.swift in Sources */,
 				C96687B723EA8F390011DDD3 /* ViewController.swift in Sources */,
 				C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */,
 				C96687B523EA8F390011DDD3 /* SceneDelegate.swift in Sources */,
