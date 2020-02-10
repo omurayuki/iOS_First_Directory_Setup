@@ -1,8 +1,6 @@
 import RxSwift
 import RxRelay
 
-public typealias VoidBlock = () -> Void
-
 protocol ErroMappingUsecaseProtocolExtension { }
 
 extension ErroMappingUsecaseProtocolExtension {

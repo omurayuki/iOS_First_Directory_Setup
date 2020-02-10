@@ -34,6 +34,11 @@
 		C92B6DBD23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DBC23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift */; };
 		C92B6DC023F13B7A0090E1D9 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DBF23F13B7A0090E1D9 /* AppError.swift */; };
 		C92B6DC323F13BAB0090E1D9 /* DisplayableErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DC223F13BAB0090E1D9 /* DisplayableErrorProtocol.swift */; };
+		C92B6DC723F13DDA0090E1D9 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DC623F13DDA0090E1D9 /* Strings.swift */; };
+		C92B6DC923F13E440090E1D9 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DC823F13E440090E1D9 /* AppStrings.swift */; };
+		C92B6DCD23F13F490090E1D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C92B6DCC23F13F490090E1D9 /* Localizable.strings */; };
+		C92B6DCF23F140710090E1D9 /* StringsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DCE23F140710090E1D9 /* StringsUtil.swift */; };
+		C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DD123F141380090E1D9 /* VoidBlock.swift */; };
 		C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B223EA8F390011DDD3 /* AppDelegate.swift */; };
 		C96687B523EA8F390011DDD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B423EA8F390011DDD3 /* SceneDelegate.swift */; };
 		C96687B723EA8F390011DDD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B623EA8F390011DDD3 /* ViewController.swift */; };
@@ -170,6 +175,11 @@
 		C92B6DBC23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErroMappingUsecaseProtocolExtension.swift; sourceTree = "<group>"; };
 		C92B6DBF23F13B7A0090E1D9 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		C92B6DC223F13BAB0090E1D9 /* DisplayableErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayableErrorProtocol.swift; sourceTree = "<group>"; };
+		C92B6DC623F13DDA0090E1D9 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		C92B6DC823F13E440090E1D9 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		C92B6DCC23F13F490090E1D9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C92B6DCE23F140710090E1D9 /* StringsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsUtil.swift; sourceTree = "<group>"; };
+		C92B6DD123F141380090E1D9 /* VoidBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidBlock.swift; sourceTree = "<group>"; };
 		C96687AF23EA8F390011DDD3 /* LogTummy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LogTummy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96687B223EA8F390011DDD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C96687B423EA8F390011DDD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -328,6 +338,30 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		C92B6DC423F13DB50090E1D9 /* LegacyUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C92B6DC523F13DCC0090E1D9 /* Resources */,
+			);
+			path = LegacyUIKit;
+			sourceTree = "<group>";
+		};
+		C92B6DC523F13DCC0090E1D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C92B6DC623F13DDA0090E1D9 /* Strings.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C92B6DD023F1412B0090E1D9 /* Typealias */ = {
+			isa = PBXGroup;
+			children = (
+				C92B6DD123F141380090E1D9 /* VoidBlock.swift */,
+			);
+			path = Typealias;
+			sourceTree = "<group>";
+		};
 		C96687A623EA8F390011DDD3 = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +386,7 @@
 		C96687B123EA8F390011DDD3 /* LogTummy-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C92B6DC423F13DB50090E1D9 /* LegacyUIKit */,
 				C9B281AF23ED52D800554CA6 /* AppResources */,
 				C9B281AB23ED518400554CA6 /* LogTummyAPI */,
 				C9B281B723ED564B00554CA6 /* Presentation */,
@@ -468,6 +503,7 @@
 				C96687BB23EA8F3B0011DDD3 /* Assets.xcassets */,
 				C9B281C023ED57B600554CA6 /* R */,
 				C9B281B023ED52FC00554CA6 /* Support */,
+				C92B6DC823F13E440090E1D9 /* AppStrings.swift */,
 			);
 			path = AppResources;
 			sourceTree = "<group>";
@@ -495,6 +531,7 @@
 		C9B281B223ED534D00554CA6 /* LocalizedStrings */ = {
 			isa = PBXGroup;
 			children = (
+				C92B6DCC23F13F490090E1D9 /* Localizable.strings */,
 			);
 			path = LocalizedStrings;
 			sourceTree = "<group>";
@@ -538,6 +575,7 @@
 		C9B281BA23ED565D00554CA6 /* Presentation-Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C92B6DD023F1412B0090E1D9 /* Typealias */,
 				C92B6DC123F13B930090E1D9 /* Protocol */,
 				C92B6DBE23F13B6A0090E1D9 /* Value */,
 			);
@@ -552,6 +590,7 @@
 				C92B6DAD23F114DF0090E1D9 /* Analytics */,
 				C92B6DB823F127FD0090E1D9 /* ProtocolExtension */,
 				C92B6DB923F128080090E1D9 /* Extension */,
+				C92B6DCE23F140710090E1D9 /* StringsUtil.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -723,6 +762,7 @@
 				C9B281A723ED482F00554CA6 /* gRPCCertificates-Cpp.bundle in Resources */,
 				C96687BF23EA8F3B0011DDD3 /* LaunchScreen.storyboard in Resources */,
 				C96687BC23EA8F3B0011DDD3 /* Assets.xcassets in Resources */,
+				C92B6DCD23F13F490090E1D9 /* Localizable.strings in Resources */,
 				C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */,
 				C925796423ED32FD00308154 /* GoogleService-debug-Info.plist in Resources */,
 				C96687BA23EA8F390011DDD3 /* Main.storyboard in Resources */,
@@ -787,13 +827,17 @@
 			files = (
 				C92B6DAA23F10F1E0090E1D9 /* Logger.swift in Sources */,
 				C96687B723EA8F390011DDD3 /* ViewController.swift in Sources */,
+				C92B6DC723F13DDA0090E1D9 /* Strings.swift in Sources */,
+				C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */,
 				C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */,
+				C92B6DCF23F140710090E1D9 /* StringsUtil.swift in Sources */,
 				C92B6DBB23F1282A0090E1D9 /* ErrrorNotifying.swift in Sources */,
 				C92B6DBD23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift in Sources */,
 				C92B6DB323F115AB0090E1D9 /* AnalyticsDataStructures.swift in Sources */,
 				C92B6DC023F13B7A0090E1D9 /* AppError.swift in Sources */,
 				C92B6DC323F13BAB0090E1D9 /* DisplayableErrorProtocol.swift in Sources */,
 				C92B6DB723F117B30090E1D9 /* AnalyticsInfo.swift in Sources */,
+				C92B6DC923F13E440090E1D9 /* AppStrings.swift in Sources */,
 				C92B6DB123F115230090E1D9 /* FirebaseAnalytics.swift in Sources */,
 				C92B6DB523F116710090E1D9 /* AnalyticsCategoriesAndEvents.swift in Sources */,
 				C92B6DAF23F115180090E1D9 /* AnalyticsServiceManager.swift in Sources */,
