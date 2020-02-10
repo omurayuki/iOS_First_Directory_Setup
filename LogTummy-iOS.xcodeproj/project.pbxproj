@@ -234,6 +234,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C92B6DA023F10E3C0090E1D9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C92B6DA623F10E440090E1D9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C92B6DA723F10E4A0090E1D9 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		C92B6DA823F10E5F0090E1D9 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
 		C96687A623EA8F390011DDD3 = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +301,10 @@
 		C96687C823EA8F3B0011DDD3 /* LogTummy-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				C92B6DA023F10E3C0090E1D9 /* Utility */,
+				C92B6DA723F10E4A0090E1D9 /* Cache */,
+				C92B6DA623F10E440090E1D9 /* API */,
+				C92B6DA823F10E5F0090E1D9 /* UseCase */,
 				C96687C923EA8F3B0011DDD3 /* LogTummy_iOSTests.swift */,
 				C96687CB23EA8F3B0011DDD3 /* Info.plist */,
 			);
