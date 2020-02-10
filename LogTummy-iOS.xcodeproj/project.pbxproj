@@ -24,6 +24,16 @@
 		C925796223ED2CD000308154 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C925794123ED2A3F00308154 /* Firebase.framework */; };
 		C925796423ED32FD00308154 /* GoogleService-debug-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */; };
 		C92B6DAA23F10F1E0090E1D9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DA923F10F1E0090E1D9 /* Logger.swift */; };
+		C92B6DAC23F113880090E1D9 /* RxUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DAB23F113880090E1D9 /* RxUtil.swift */; };
+		C92B6DAF23F115180090E1D9 /* AnalyticsServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DAE23F115170090E1D9 /* AnalyticsServiceManager.swift */; };
+		C92B6DB123F115230090E1D9 /* FirebaseAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DB023F115230090E1D9 /* FirebaseAnalytics.swift */; };
+		C92B6DB323F115AB0090E1D9 /* AnalyticsDataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DB223F115AB0090E1D9 /* AnalyticsDataStructures.swift */; };
+		C92B6DB523F116710090E1D9 /* AnalyticsCategoriesAndEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DB423F116710090E1D9 /* AnalyticsCategoriesAndEvents.swift */; };
+		C92B6DB723F117B30090E1D9 /* AnalyticsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DB623F117B30090E1D9 /* AnalyticsInfo.swift */; };
+		C92B6DBB23F1282A0090E1D9 /* ErrrorNotifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DBA23F1282A0090E1D9 /* ErrrorNotifying.swift */; };
+		C92B6DBD23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DBC23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift */; };
+		C92B6DC023F13B7A0090E1D9 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DBF23F13B7A0090E1D9 /* AppError.swift */; };
+		C92B6DC323F13BAB0090E1D9 /* DisplayableErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DC223F13BAB0090E1D9 /* DisplayableErrorProtocol.swift */; };
 		C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B223EA8F390011DDD3 /* AppDelegate.swift */; };
 		C96687B523EA8F390011DDD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B423EA8F390011DDD3 /* SceneDelegate.swift */; };
 		C96687B723EA8F390011DDD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B623EA8F390011DDD3 /* ViewController.swift */; };
@@ -150,6 +160,16 @@
 		C925796023ED2C7B00308154 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = Carthage/Build/iOS/Protobuf.framework; sourceTree = "<group>"; };
 		C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-debug-Info.plist"; sourceTree = "<group>"; };
 		C92B6DA923F10F1E0090E1D9 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		C92B6DAB23F113880090E1D9 /* RxUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxUtil.swift; sourceTree = "<group>"; };
+		C92B6DAE23F115170090E1D9 /* AnalyticsServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsServiceManager.swift; sourceTree = "<group>"; };
+		C92B6DB023F115230090E1D9 /* FirebaseAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalytics.swift; sourceTree = "<group>"; };
+		C92B6DB223F115AB0090E1D9 /* AnalyticsDataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDataStructures.swift; sourceTree = "<group>"; };
+		C92B6DB423F116710090E1D9 /* AnalyticsCategoriesAndEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsCategoriesAndEvents.swift; sourceTree = "<group>"; };
+		C92B6DB623F117B30090E1D9 /* AnalyticsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsInfo.swift; sourceTree = "<group>"; };
+		C92B6DBA23F1282A0090E1D9 /* ErrrorNotifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrrorNotifying.swift; sourceTree = "<group>"; };
+		C92B6DBC23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErroMappingUsecaseProtocolExtension.swift; sourceTree = "<group>"; };
+		C92B6DBF23F13B7A0090E1D9 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		C92B6DC223F13BAB0090E1D9 /* DisplayableErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayableErrorProtocol.swift; sourceTree = "<group>"; };
 		C96687AF23EA8F390011DDD3 /* LogTummy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LogTummy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96687B223EA8F390011DDD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C96687B423EA8F390011DDD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -262,6 +282,50 @@
 			children = (
 			);
 			path = UseCase;
+			sourceTree = "<group>";
+		};
+		C92B6DAD23F114DF0090E1D9 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				C92B6DAE23F115170090E1D9 /* AnalyticsServiceManager.swift */,
+				C92B6DB023F115230090E1D9 /* FirebaseAnalytics.swift */,
+				C92B6DB223F115AB0090E1D9 /* AnalyticsDataStructures.swift */,
+				C92B6DB423F116710090E1D9 /* AnalyticsCategoriesAndEvents.swift */,
+				C92B6DB623F117B30090E1D9 /* AnalyticsInfo.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		C92B6DB823F127FD0090E1D9 /* ProtocolExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C92B6DBA23F1282A0090E1D9 /* ErrrorNotifying.swift */,
+				C92B6DBC23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift */,
+			);
+			path = ProtocolExtension;
+			sourceTree = "<group>";
+		};
+		C92B6DB923F128080090E1D9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C92B6DBE23F13B6A0090E1D9 /* Value */ = {
+			isa = PBXGroup;
+			children = (
+				C92B6DBF23F13B7A0090E1D9 /* AppError.swift */,
+			);
+			path = Value;
+			sourceTree = "<group>";
+		};
+		C92B6DC123F13B930090E1D9 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C92B6DC223F13BAB0090E1D9 /* DisplayableErrorProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		C96687A623EA8F390011DDD3 = {
@@ -474,6 +538,8 @@
 		C9B281BA23ED565D00554CA6 /* Presentation-Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C92B6DC123F13B930090E1D9 /* Protocol */,
+				C92B6DBE23F13B6A0090E1D9 /* Value */,
 			);
 			path = "Presentation-Domain";
 			sourceTree = "<group>";
@@ -482,6 +548,10 @@
 			isa = PBXGroup;
 			children = (
 				C92B6DA923F10F1E0090E1D9 /* Logger.swift */,
+				C92B6DAB23F113880090E1D9 /* RxUtil.swift */,
+				C92B6DAD23F114DF0090E1D9 /* Analytics */,
+				C92B6DB823F127FD0090E1D9 /* ProtocolExtension */,
+				C92B6DB923F128080090E1D9 /* Extension */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -718,8 +788,18 @@
 				C92B6DAA23F10F1E0090E1D9 /* Logger.swift in Sources */,
 				C96687B723EA8F390011DDD3 /* ViewController.swift in Sources */,
 				C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */,
+				C92B6DBB23F1282A0090E1D9 /* ErrrorNotifying.swift in Sources */,
+				C92B6DBD23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift in Sources */,
+				C92B6DB323F115AB0090E1D9 /* AnalyticsDataStructures.swift in Sources */,
+				C92B6DC023F13B7A0090E1D9 /* AppError.swift in Sources */,
+				C92B6DC323F13BAB0090E1D9 /* DisplayableErrorProtocol.swift in Sources */,
+				C92B6DB723F117B30090E1D9 /* AnalyticsInfo.swift in Sources */,
+				C92B6DB123F115230090E1D9 /* FirebaseAnalytics.swift in Sources */,
+				C92B6DB523F116710090E1D9 /* AnalyticsCategoriesAndEvents.swift in Sources */,
+				C92B6DAF23F115180090E1D9 /* AnalyticsServiceManager.swift in Sources */,
 				C96687B523EA8F390011DDD3 /* SceneDelegate.swift in Sources */,
 				C96687F923EAB50A0011DDD3 /* R.generated.swift in Sources */,
+				C92B6DAC23F113880090E1D9 /* RxUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
