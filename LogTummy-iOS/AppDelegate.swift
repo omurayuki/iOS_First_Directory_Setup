@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+//import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,14 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        #if DEBUG
-            let filePath = Bundle.main.path(forResource: "GoogleService-debug-Info", ofType: "plist")
-        #else
-            let filePath = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist")
-        #endif
-        let options = FirebaseOptions(contentsOfFile: filePath!)
-        FirebaseApp.configure(options: options!)
+//        #if DEBUG
+//            let filePath = Bundle.main.path(forResource: "GoogleService-debug-Info", ofType: "plist")
+//        #else
+//            let filePath = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist")
+//        #endif
+//        let options = FirebaseOptions(contentsOfFile: filePath!)
+//        FirebaseApp.configure(options: options!)
         
         return true
     }
