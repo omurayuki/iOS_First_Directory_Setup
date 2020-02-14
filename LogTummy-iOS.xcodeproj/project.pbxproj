@@ -26,11 +26,10 @@
 		C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DD123F141380090E1D9 /* VoidBlock.swift */; };
 		C92B6DD423F151040090E1D9 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DD323F151030090E1D9 /* APIError.swift */; };
 		C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B223EA8F390011DDD3 /* AppDelegate.swift */; };
-		C96687B523EA8F390011DDD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B423EA8F390011DDD3 /* SceneDelegate.swift */; };
-		C96687B723EA8F390011DDD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B623EA8F390011DDD3 /* ViewController.swift */; };
-		C96687BA23EA8F390011DDD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96687B823EA8F390011DDD3 /* Main.storyboard */; };
+		C96687B723EA8F390011DDD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B623EA8F390011DDD3 /* LoginViewController.swift */; };
+		C96687BA23EA8F390011DDD3 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96687B823EA8F390011DDD3 /* LoginViewController.storyboard */; };
 		C96687BC23EA8F3B0011DDD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96687BB23EA8F3B0011DDD3 /* Assets.xcassets */; };
-		C96687BF23EA8F3B0011DDD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96687BD23EA8F3B0011DDD3 /* LaunchScreen.storyboard */; };
+		C96687BF23EA8F3B0011DDD3 /* LaunchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96687BD23EA8F3B0011DDD3 /* LaunchViewController.storyboard */; };
 		C96687CA23EA8F3B0011DDD3 /* LogTummy_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687C923EA8F3B0011DDD3 /* LogTummy_iOSTests.swift */; };
 		C96687EB23EAB1690011DDD3 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96687EA23EAB1690011DDD3 /* MBProgressHUD.framework */; };
 		C96687EC23EAB1690011DDD3 /* MBProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C96687EA23EAB1690011DDD3 /* MBProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -65,6 +64,8 @@
 		C9C8CBC623F4157A00EA07EE /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA923F4156A00EA07EE /* FIRAnalyticsConnector.framework */; };
 		C9C8CBCA23F415AB00EA07EE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBC823F415A600EA07EE /* StoreKit.framework */; };
 		C9C8CBD123F4214F00EA07EE /* CalendarUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8CBD023F4214F00EA07EE /* CalendarUtil.swift */; };
+		C9CAA50C23F661B3004B9BDD /* AppDelagateUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAA50B23F661B3004B9BDD /* AppDelagateUsecase.swift */; };
+		C9CAA50E23F661D3004B9BDD /* AppConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAA50D23F661D3004B9BDD /* AppConfigurator.swift */; };
 		C9D72EF323F5932D003EFC38 /* KeyboardNotifler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72EF223F5932D003EFC38 /* KeyboardNotifler.swift */; };
 		C9D72EFB23F593CD003EFC38 /* CountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72EFA23F593CD003EFC38 /* CountService.swift */; };
 		C9D72EFD23F59495003EFC38 /* OptionalUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72EFC23F59495003EFC38 /* OptionalUtil.swift */; };
@@ -178,11 +179,10 @@
 		C92B6DD323F151030090E1D9 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		C96687AF23EA8F390011DDD3 /* LogTummy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LogTummy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96687B223EA8F390011DDD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C96687B423EA8F390011DDD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C96687B623EA8F390011DDD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C96687B923EA8F390011DDD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C96687B623EA8F390011DDD3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C96687B923EA8F390011DDD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginViewController.storyboard; sourceTree = "<group>"; };
 		C96687BB23EA8F3B0011DDD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C96687BE23EA8F3B0011DDD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C96687BE23EA8F3B0011DDD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchViewController.storyboard; sourceTree = "<group>"; };
 		C96687C023EA8F3B0011DDD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C96687C523EA8F3B0011DDD3 /* LogTummy-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LogTummy-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96687C923EA8F3B0011DDD3 /* LogTummy_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTummy_iOSTests.swift; sourceTree = "<group>"; };
@@ -214,6 +214,8 @@
 		C9C8CBAC23F4156A00EA07EE /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Carthage/Build/iOS/GoogleUtilities.framework; sourceTree = "<group>"; };
 		C9C8CBC823F415A600EA07EE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C9C8CBD023F4214F00EA07EE /* CalendarUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUtil.swift; sourceTree = "<group>"; };
+		C9CAA50B23F661B3004B9BDD /* AppDelagateUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelagateUsecase.swift; sourceTree = "<group>"; };
+		C9CAA50D23F661D3004B9BDD /* AppConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurator.swift; sourceTree = "<group>"; };
 		C9D72EF223F5932D003EFC38 /* KeyboardNotifler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotifler.swift; sourceTree = "<group>"; };
 		C9D72EFA23F593CD003EFC38 /* CountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountService.swift; sourceTree = "<group>"; };
 		C9D72EFC23F59495003EFC38 /* OptionalUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalUtil.swift; sourceTree = "<group>"; };
@@ -276,6 +278,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9155C0123F65D8D00D7074A /* Segue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Segue;
+			sourceTree = "<group>";
+		};
 		C92B6DA023F10E3C0090E1D9 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,11 +409,6 @@
 				C9B281AF23ED52D800554CA6 /* AppResources */,
 				C9B281AB23ED518400554CA6 /* LogTummyAPI */,
 				C9B281B723ED564B00554CA6 /* Presentation */,
-				C96687B223EA8F390011DDD3 /* AppDelegate.swift */,
-				C96687B423EA8F390011DDD3 /* SceneDelegate.swift */,
-				C96687B623EA8F390011DDD3 /* ViewController.swift */,
-				C96687B823EA8F390011DDD3 /* Main.storyboard */,
-				C96687BD23EA8F3B0011DDD3 /* LaunchScreen.storyboard */,
 			);
 			path = "LogTummy-iOS";
 			sourceTree = "<group>";
@@ -565,6 +569,9 @@
 		C9B281B923ED565600554CA6 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				C9CAA50D23F661D3004B9BDD /* AppConfigurator.swift */,
+				C96687B223EA8F390011DDD3 /* AppDelegate.swift */,
+				C9CAA50B23F661B3004B9BDD /* AppDelagateUsecase.swift */,
 				C9B281BA23ED565D00554CA6 /* Presentation-Domain */,
 				C9B281BB23ED567000554CA6 /* Utility */,
 				C9B281BC23ED567800554CA6 /* Data */,
@@ -575,9 +582,15 @@
 		C9B281BA23ED565D00554CA6 /* Presentation-Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C9CAA50523F65ECA004B9BDD /* CommonViewModel */,
+				C9CAA50423F65EAD004B9BDD /* CommonUsecase */,
+				C9155C0123F65D8D00D7074A /* Segue */,
 				C92B6DD023F1412B0090E1D9 /* Typealias */,
 				C92B6DC123F13B930090E1D9 /* Protocol */,
 				C92B6DBE23F13B6A0090E1D9 /* Value */,
+				C9CAA50623F65ED7004B9BDD /* Router */,
+				C9CAA50823F65EE2004B9BDD /* View */,
+				C9CAA50723F65EDB004B9BDD /* Screen */,
 			);
 			path = "Presentation-Domain";
 			sourceTree = "<group>";
@@ -586,12 +599,12 @@
 			isa = PBXGroup;
 			children = (
 				C92B6DA923F10F1E0090E1D9 /* Logger.swift */,
-				C92B6DAB23F113880090E1D9 /* RxUtil.swift */,
 				C9D72F1E23F59B11003EFC38 /* Custom */,
 				C9D72EF923F593C0003EFC38 /* Service */,
 				C92B6DAD23F114DF0090E1D9 /* Analytics */,
 				C92B6DB823F127FD0090E1D9 /* ProtocolExtension */,
 				C92B6DB923F128080090E1D9 /* Extension */,
+				C92B6DAB23F113880090E1D9 /* RxUtil.swift */,
 				C92B6DCE23F140710090E1D9 /* StringsUtil.swift */,
 				C9D72F0423F595E3003EFC38 /* DateUtil.swift */,
 				C9D72F0823F59662003EFC38 /* NSLayoutAnchorUtil.swift */,
@@ -648,6 +661,60 @@
 				C96687F823EAB50A0011DDD3 /* R.generated.swift */,
 			);
 			path = R;
+			sourceTree = "<group>";
+		};
+		C9CAA50423F65EAD004B9BDD /* CommonUsecase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonUsecase;
+			sourceTree = "<group>";
+		};
+		C9CAA50523F65ECA004B9BDD /* CommonViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonViewModel;
+			sourceTree = "<group>";
+		};
+		C9CAA50623F65ED7004B9BDD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C9CAA50723F65EDB004B9BDD /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C9CAA50A23F660B9004B9BDD /* Launch */,
+				C9CAA50923F660A2004B9BDD /* Login */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		C9CAA50823F65EE2004B9BDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9CAA50923F660A2004B9BDD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C96687B823EA8F390011DDD3 /* LoginViewController.storyboard */,
+				C96687B623EA8F390011DDD3 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C9CAA50A23F660B9004B9BDD /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				C96687BD23EA8F3B0011DDD3 /* LaunchViewController.storyboard */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 		C9D72EF923F593C0003EFC38 /* Service */ = {
@@ -797,12 +864,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C96687BF23EA8F3B0011DDD3 /* LaunchScreen.storyboard in Resources */,
+				C96687BF23EA8F3B0011DDD3 /* LaunchViewController.storyboard in Resources */,
 				C96687BC23EA8F3B0011DDD3 /* Assets.xcassets in Resources */,
 				C92B6DCD23F13F490090E1D9 /* Localizable.strings in Resources */,
 				C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */,
 				C925796423ED32FD00308154 /* GoogleService-debug-Info.plist in Resources */,
-				C96687BA23EA8F390011DDD3 /* Main.storyboard in Resources */,
+				C96687BA23EA8F390011DDD3 /* LoginViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,11 +930,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C92B6DAA23F10F1E0090E1D9 /* Logger.swift in Sources */,
-				C96687B723EA8F390011DDD3 /* ViewController.swift in Sources */,
+				C96687B723EA8F390011DDD3 /* LoginViewController.swift in Sources */,
 				C9D72F0B23F59691003EFC38 /* ObservableUtil.swift in Sources */,
 				C9D72EFB23F593CD003EFC38 /* CountService.swift in Sources */,
 				C9D72F1D23F59ACA003EFC38 /* UNMutableNotificationUtil.swift in Sources */,
 				C92B6DC723F13DDA0090E1D9 /* Strings.swift in Sources */,
+				C9CAA50C23F661B3004B9BDD /* AppDelagateUsecase.swift in Sources */,
 				C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */,
 				C9D72F0723F59629003EFC38 /* DateFormatterUtil.swift in Sources */,
 				C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */,
@@ -885,6 +953,7 @@
 				C9D72F0923F59662003EFC38 /* NSLayoutAnchorUtil.swift in Sources */,
 				C9D72F0323F59587003EFC38 /* ArrayUtil.swift in Sources */,
 				C92B6DB723F117B30090E1D9 /* AnalyticsInfo.swift in Sources */,
+				C9CAA50E23F661D3004B9BDD /* AppConfigurator.swift in Sources */,
 				C9D72F1123F59879003EFC38 /* UIImageUtil.swift in Sources */,
 				C9D72F0123F59559003EFC38 /* AnimationUtil.swift in Sources */,
 				C9D72EFF23F594EA003EFC38 /* ReactiveUtil.swift in Sources */,
@@ -901,7 +970,6 @@
 				C92B6DAF23F115180090E1D9 /* AnalyticsServiceManager.swift in Sources */,
 				C9C8CBD123F4214F00EA07EE /* CalendarUtil.swift in Sources */,
 				C9D72F1923F59A07003EFC38 /* UIViewUtil.swift in Sources */,
-				C96687B523EA8F390011DDD3 /* SceneDelegate.swift in Sources */,
 				C96687F923EAB50A0011DDD3 /* R.generated.swift in Sources */,
 				C92B6DAC23F113880090E1D9 /* RxUtil.swift in Sources */,
 			);
@@ -926,20 +994,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C96687B823EA8F390011DDD3 /* Main.storyboard */ = {
+		C96687B823EA8F390011DDD3 /* LoginViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C96687B923EA8F390011DDD3 /* Base */,
 			);
-			name = Main.storyboard;
+			name = LoginViewController.storyboard;
 			sourceTree = "<group>";
 		};
-		C96687BD23EA8F3B0011DDD3 /* LaunchScreen.storyboard */ = {
+		C96687BD23EA8F3B0011DDD3 /* LaunchViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C96687BE23EA8F3B0011DDD3 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = LaunchViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
