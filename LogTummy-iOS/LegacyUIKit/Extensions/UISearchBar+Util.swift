@@ -1,4 +1,4 @@
-import UIKit
+import UIKit.UISearchBar
 
 extension UISearchBar {
     

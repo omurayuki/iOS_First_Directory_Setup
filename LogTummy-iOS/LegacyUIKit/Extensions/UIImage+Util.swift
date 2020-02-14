@@ -1,5 +1,5 @@
 import Kingfisher
-import UIKit
+import UIKit.UIImage
 
 extension UIImage {
     
@@ -124,5 +124,39 @@ extension UIImageView {
             imageView.isUserInteractionEnabled = isUserInteractionEnabled
             return imageView
         }
+    }
+}
+
+public extension UIImage {
+    static func imageFromColor(_ color: UIColor = UIColor.white, size: CGSize) -> UIImage? {
+        var image: UIImage?
+        UIGraphicsBeginImageContext(size)
+        if let context = UIGraphicsGetCurrentContext() {
+            context.setFillColor(color.cgColor)
+            context.addRect(CGRect(origin: CGPoint.zero, size: size))
+            context.drawPath(using: .fill)
+            image = UIGraphicsGetImageFromCurrentImageContext()
+        }
+        UIGraphicsEndImageContext()
+        return image
+    }
+}
+
+public extension UIImage {
+    static var Blank: UIImage {
+        return UIImage()
+    }
+    
+    var heightWidthAspectRatio: CGFloat {
+        guard size.width > 0 && size.height > 0 else {
+            return 0
+        }
+        return size.height / size.width
+    }
+}
+
+public extension UIColor {
+    var asImage: UIImage? {
+        return UIImage.imageFromColor(self, size: .onePt)
     }
 }

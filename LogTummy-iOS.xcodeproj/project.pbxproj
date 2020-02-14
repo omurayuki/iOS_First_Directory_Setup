@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C90A45E923F668AB000E3B1B /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A45E823F668AB000E3B1B /* LaunchViewController.swift */; };
+		C90A45EB23F66BA5000E3B1B /* UITableView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A45EA23F66BA5000E3B1B /* UITableView+Util.swift */; };
+		C90A45ED23F66CE0000E3B1B /* UINib+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A45EC23F66CE0000E3B1B /* UINib+Util.swift */; };
+		C90A45EF23F66ED2000E3B1B /* Comparable+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A45EE23F66ED2000E3B1B /* Comparable+Util.swift */; };
+		C90A45F123F66F24000E3B1B /* Int+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A45F023F66F24000E3B1B /* Int+Util.swift */; };
+		C90A45F323F66F3E000E3B1B /* Numbers+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A45F223F66F3E000E3B1B /* Numbers+Util.swift */; };
+		C90A45F523F66F7E000E3B1B /* NumberFormatter+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A45F423F66F7E000E3B1B /* NumberFormatter+Util.swift */; };
 		C925796423ED32FD00308154 /* GoogleService-debug-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */; };
 		C92B6DAA23F10F1E0090E1D9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DA923F10F1E0090E1D9 /* Logger.swift */; };
 		C92B6DAC23F113880090E1D9 /* Rx+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DAB23F113880090E1D9 /* Rx+Util.swift */; };
@@ -159,6 +165,12 @@
 
 /* Begin PBXFileReference section */
 		C90A45E823F668AB000E3B1B /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		C90A45EA23F66BA5000E3B1B /* UITableView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Util.swift"; sourceTree = "<group>"; };
+		C90A45EC23F66CE0000E3B1B /* UINib+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Util.swift"; sourceTree = "<group>"; };
+		C90A45EE23F66ED2000E3B1B /* Comparable+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Util.swift"; sourceTree = "<group>"; };
+		C90A45F023F66F24000E3B1B /* Int+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Util.swift"; sourceTree = "<group>"; };
+		C90A45F223F66F3E000E3B1B /* Numbers+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numbers+Util.swift"; sourceTree = "<group>"; };
+		C90A45F423F66F7E000E3B1B /* NumberFormatter+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Util.swift"; sourceTree = "<group>"; };
 		C925795323ED2B4F00308154 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		C925795423ED2B5800308154 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-debug-Info.plist"; sourceTree = "<group>"; };
@@ -285,9 +297,13 @@
 			children = (
 				C92B6DCE23F140710090E1D9 /* Strings+Util.swift */,
 				C9D72F0423F595E3003EFC38 /* Date+Util.swift */,
+				C90A45F023F66F24000E3B1B /* Int+Util.swift */,
+				C90A45F223F66F3E000E3B1B /* Numbers+Util.swift */,
 				C9D72F0623F59629003EFC38 /* DateFormatter+Util.swift */,
+				C90A45F423F66F7E000E3B1B /* NumberFormatter+Util.swift */,
 				C9D72F0223F59587003EFC38 /* Array+Util.swift */,
 				C9D72EFC23F59495003EFC38 /* Optional+Util.swift */,
+				C90A45EE23F66ED2000E3B1B /* Comparable+Util.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -739,6 +755,8 @@
 				C9D72F1823F59A07003EFC38 /* UIView+Util.swift */,
 				C9D72F1A23F59A8A003EFC38 /* UIViewController+Util.swift */,
 				C9D72F0023F59559003EFC38 /* Animation+Util.swift */,
+				C90A45EA23F66BA5000E3B1B /* UITableView+Util.swift */,
+				C90A45EC23F66CE0000E3B1B /* UINib+Util.swift */,
 				C90A45E723F66845000E3B1B /* ThirdParty */,
 			);
 			path = Extensions;
@@ -965,16 +983,20 @@
 				C9CAA50C23F661B3004B9BDD /* AppDelagateUsecase.swift in Sources */,
 				C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */,
 				C9D72F0723F59629003EFC38 /* DateFormatter+Util.swift in Sources */,
+				C90A45ED23F66CE0000E3B1B /* UINib+Util.swift in Sources */,
 				C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */,
 				C9D72F2023F59B24003EFC38 /* PlaceHolderTextView.swift in Sources */,
 				C9D72F1323F59959003EFC38 /* UIPageController+Util.swift in Sources */,
 				C92B6DCF23F140710090E1D9 /* Strings+Util.swift in Sources */,
 				C92B6DBB23F1282A0090E1D9 /* ErrorNotifying.swift in Sources */,
+				C90A45F523F66F7E000E3B1B /* NumberFormatter+Util.swift in Sources */,
 				C92B6DBD23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift in Sources */,
 				C9D72EFD23F59495003EFC38 /* Optional+Util.swift in Sources */,
 				C92B6DB323F115AB0090E1D9 /* AnalyticsDataStructures.swift in Sources */,
 				C92B6DC023F13B7A0090E1D9 /* AppError.swift in Sources */,
 				C9D72F0D23F596CF003EFC38 /* UIAlertController+Util.swift in Sources */,
+				C90A45EF23F66ED2000E3B1B /* Comparable+Util.swift in Sources */,
+				C90A45F323F66F3E000E3B1B /* Numbers+Util.swift in Sources */,
 				C90A45E923F668AB000E3B1B /* LaunchViewController.swift in Sources */,
 				C92B6DC323F13BAB0090E1D9 /* DisplayableErrorProtocol.swift in Sources */,
 				C9D72F0523F595E3003EFC38 /* Date+Util.swift in Sources */,
@@ -998,6 +1020,8 @@
 				C92B6DAF23F115180090E1D9 /* AnalyticsServiceManager.swift in Sources */,
 				C9C8CBD123F4214F00EA07EE /* Calendar+Util.swift in Sources */,
 				C9D72F1923F59A07003EFC38 /* UIView+Util.swift in Sources */,
+				C90A45EB23F66BA5000E3B1B /* UITableView+Util.swift in Sources */,
+				C90A45F123F66F24000E3B1B /* Int+Util.swift in Sources */,
 				C96687F923EAB50A0011DDD3 /* R.generated.swift in Sources */,
 				C92B6DAC23F113880090E1D9 /* Rx+Util.swift in Sources */,
 			);

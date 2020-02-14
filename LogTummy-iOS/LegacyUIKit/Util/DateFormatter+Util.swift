@@ -3,6 +3,8 @@ import UIKit
 
 extension DateFormatter {
     
+    #warning("ローカライズ")
+    
     func convertToMonthAndYears(_ date: Date?) -> String {
         guard let date = date else { return "" }
         let formatter = DateFormatter()

@@ -1,4 +1,4 @@
-import UIKit
+import UIKit.UIView
 
 extension UIView {
     
@@ -128,5 +128,21 @@ extension UIView {
             self?.alpha = 1
             completed?()
         }
+    }
+    
+    func changeAppearanceWithAlphaAnimation(_ duration: Double, completion: (() -> Void)? = nil) {
+
+        let transition = CATransition()
+        transition.duration = duration
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = CATransitionType.fade
+
+        let key = "transition"
+        layer.removeAnimation(forKey: key)
+        CATransaction.begin()
+        CATransaction.setCompletionBlock(completion)
+        layer.add(transition, forKey: key)
+        CATransaction.commit()
+
     }
 }

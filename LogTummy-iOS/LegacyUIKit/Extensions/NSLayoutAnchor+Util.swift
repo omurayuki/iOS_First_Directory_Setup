@@ -1,4 +1,4 @@
-import UIKit
+import UIKit.UIView
 
 extension UIView {
     func anchor() -> Anchor { return Anchor(view: self) }

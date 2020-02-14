@@ -4,7 +4,7 @@ import Foundation
 import Social
 import MBProgressHUD
 import MessageUI
-import UIKit
+import UIKit.UIViewController
 
 extension UIViewController {
     

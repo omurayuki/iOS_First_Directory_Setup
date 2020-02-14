@@ -1,4 +1,4 @@
-import UIKit
+import UIKit.UIView
 
 extension UIView {
     
@@ -18,5 +18,23 @@ extension UIView {
         shakeGroup.animations = [translation, rotation]
         shakeGroup.duration = duration
         self.layer.add(shakeGroup, forKey: "shakeIt")
+    }
+}
+
+public extension UIView {
+    func roundCorners(corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.frame = self.bounds
+        mask.path = path.cgPath
+        self.layer.mask = mask
+        self.layer.masksToBounds = true
+        self.clipsToBounds = true
+    }
+}
+
+extension CGSize {
+    public static var onePt: Self {
+        return self.init(width: 1, height: 1)
     }
 }
