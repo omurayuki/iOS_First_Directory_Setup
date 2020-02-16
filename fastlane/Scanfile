@@ -1,0 +1,7 @@
+open_report(true)
+
+clean(true)
+
+skip_build(false)
+
+output_types("html")

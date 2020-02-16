@@ -699,6 +699,7 @@
 				C96687C123EA8F3B0011DDD3 /* Sources */,
 				C96687C223EA8F3B0011DDD3 /* Frameworks */,
 				C96687C323EA8F3B0011DDD3 /* Resources */,
+				C9B72A7F23F93FB2006D1114 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -846,6 +847,25 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		C9B72A7F23F93FB2006D1114 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
 			);
 			outputFileListPaths = (
 			);
