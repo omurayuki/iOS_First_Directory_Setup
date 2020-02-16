@@ -1,0 +1,11 @@
+default_platform(:ios)
+
+platform :ios do
+
+  schemeName = "LogTummy-iOS"
+
+  desc "running iOS UnitTests"
+  lane :run_ios_unit_tests do
+    scan(scheme: schemeName)
+  end
+end
