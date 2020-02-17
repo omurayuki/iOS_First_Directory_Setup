@@ -82,6 +82,11 @@
 		C9CB50DE23FA93090001BD1D /* IBDesignableSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50DD23FA93090001BD1D /* IBDesignableSegmentedControl.swift */; };
 		C9CB50E023FA93180001BD1D /* IBDesignableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50DF23FA93180001BD1D /* IBDesignableScrollView.swift */; };
 		C9CB50E223FA93DE0001BD1D /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50E123FA93DE0001BD1D /* Sizes.swift */; };
+		C9CB50E723FA97890001BD1D /* IBDesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50E623FA97890001BD1D /* IBDesignableImageView.swift */; };
+		C9CB50E923FA9B620001BD1D /* HignlightableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50E823FA9B620001BD1D /* HignlightableButton.swift */; };
+		C9CB50EB23FA9BA40001BD1D /* UIColor+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50EA23FA9BA40001BD1D /* UIColor+Util.swift */; };
+		C9CB50ED23FA9C870001BD1D /* CornerRoundableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50EC23FA9C870001BD1D /* CornerRoundableButton.swift */; };
+		C9CB50EF23FA9D190001BD1D /* CornerRoundableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50EE23FA9D180001BD1D /* CornerRoundableImageView.swift */; };
 		C9D72EF323F5932D003EFC38 /* KeyboardNotifler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72EF223F5932D003EFC38 /* KeyboardNotifler.swift */; };
 		C9D72EFB23F593CD003EFC38 /* CountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72EFA23F593CD003EFC38 /* CountService.swift */; };
 		C9D72EFD23F59495003EFC38 /* Optional+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72EFC23F59495003EFC38 /* Optional+Util.swift */; };
@@ -248,6 +253,11 @@
 		C9CB50DD23FA93090001BD1D /* IBDesignableSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableSegmentedControl.swift; sourceTree = "<group>"; };
 		C9CB50DF23FA93180001BD1D /* IBDesignableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableScrollView.swift; sourceTree = "<group>"; };
 		C9CB50E123FA93DE0001BD1D /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		C9CB50E623FA97890001BD1D /* IBDesignableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableImageView.swift; sourceTree = "<group>"; };
+		C9CB50E823FA9B620001BD1D /* HignlightableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HignlightableButton.swift; sourceTree = "<group>"; };
+		C9CB50EA23FA9BA40001BD1D /* UIColor+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Util.swift"; sourceTree = "<group>"; };
+		C9CB50EC23FA9C870001BD1D /* CornerRoundableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRoundableButton.swift; sourceTree = "<group>"; };
+		C9CB50EE23FA9D180001BD1D /* CornerRoundableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRoundableImageView.swift; sourceTree = "<group>"; };
 		C9D72EF223F5932D003EFC38 /* KeyboardNotifler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotifler.swift; sourceTree = "<group>"; };
 		C9D72EFA23F593CD003EFC38 /* CountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountService.swift; sourceTree = "<group>"; };
 		C9D72EFC23F59495003EFC38 /* Optional+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Util.swift"; sourceTree = "<group>"; };
@@ -778,6 +788,7 @@
 				C9D72F0023F59559003EFC38 /* Animation+Util.swift */,
 				C90A45EA23F66BA5000E3B1B /* UITableView+Util.swift */,
 				C90A45EC23F66CE0000E3B1B /* UINib+Util.swift */,
+				C9CB50EA23FA9BA40001BD1D /* UIColor+Util.swift */,
 				C90A45E723F66845000E3B1B /* ThirdParty */,
 			);
 			path = Extensions;
@@ -790,10 +801,14 @@
 				C9CB50D323FA92DB0001BD1D /* IBDesignableLabel.swift */,
 				C9CB50D523FA92E70001BD1D /* IBDesignableTextField.swift */,
 				C9CB50D723FA92EE0001BD1D /* IBDesignableButton.swift */,
+				C9CB50E623FA97890001BD1D /* IBDesignableImageView.swift */,
 				C9CB50D923FA92F60001BD1D /* IBDesignableTableViewCell.swift */,
 				C9CB50DB23FA92FE0001BD1D /* IBDesignableView.swift */,
 				C9CB50DD23FA93090001BD1D /* IBDesignableSegmentedControl.swift */,
 				C9CB50DF23FA93180001BD1D /* IBDesignableScrollView.swift */,
+				C9CB50E823FA9B620001BD1D /* HignlightableButton.swift */,
+				C9CB50EC23FA9C870001BD1D /* CornerRoundableButton.swift */,
+				C9CB50EE23FA9D180001BD1D /* CornerRoundableImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1058,6 +1073,7 @@
 				C90A45F523F66F7E000E3B1B /* NumberFormatter+Util.swift in Sources */,
 				C92B6DBD23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift in Sources */,
 				C9D72EFD23F59495003EFC38 /* Optional+Util.swift in Sources */,
+				C9CB50E723FA97890001BD1D /* IBDesignableImageView.swift in Sources */,
 				C9CB50D823FA92EE0001BD1D /* IBDesignableButton.swift in Sources */,
 				C92B6DB323F115AB0090E1D9 /* AnalyticsDataStructures.swift in Sources */,
 				C92B6DC023F13B7A0090E1D9 /* AppError.swift in Sources */,
@@ -1075,6 +1091,7 @@
 				C9D72F1123F59879003EFC38 /* UIImage+Util.swift in Sources */,
 				C9D72F0123F59559003EFC38 /* Animation+Util.swift in Sources */,
 				C9D72EFF23F594EA003EFC38 /* Reactive+Util.swift in Sources */,
+				C9CB50E923FA9B620001BD1D /* HignlightableButton.swift in Sources */,
 				C9CB50DA23FA92F60001BD1D /* IBDesignableTableViewCell.swift in Sources */,
 				C9D72F2223F59B56003EFC38 /* VerticalStackView.swift in Sources */,
 				C9D72F1723F599B2003EFC38 /* UIStackView+Util.swift in Sources */,
@@ -1084,15 +1101,18 @@
 				C9D72F1523F59982003EFC38 /* UISearchBar+Util.swift in Sources */,
 				C9D72F1B23F59A8A003EFC38 /* UIViewController+Util.swift in Sources */,
 				C92B6DD423F151040090E1D9 /* APIError.swift in Sources */,
+				C9CB50EB23FA9BA40001BD1D /* UIColor+Util.swift in Sources */,
 				C92B6DB123F115230090E1D9 /* FirebaseAnalytics.swift in Sources */,
 				C9CB50DC23FA92FE0001BD1D /* IBDesignableView.swift in Sources */,
 				C92B6DB523F116710090E1D9 /* AnalyticsCategoriesAndEvents.swift in Sources */,
 				C9CB50D423FA92DB0001BD1D /* IBDesignableLabel.swift in Sources */,
 				C9D72F2423F59B76003EFC38 /* PaddingTextField.swift in Sources */,
+				C9CB50ED23FA9C870001BD1D /* CornerRoundableButton.swift in Sources */,
 				C92B6DAF23F115180090E1D9 /* AnalyticsServiceManager.swift in Sources */,
 				C9C8CBD123F4214F00EA07EE /* Calendar+Util.swift in Sources */,
 				C9D72F1923F59A07003EFC38 /* UIView+Util.swift in Sources */,
 				C90A45EB23F66BA5000E3B1B /* UITableView+Util.swift in Sources */,
+				C9CB50EF23FA9D190001BD1D /* CornerRoundableImageView.swift in Sources */,
 				C90A45F123F66F24000E3B1B /* Int+Util.swift in Sources */,
 				C96687F923EAB50A0011DDD3 /* R.generated.swift in Sources */,
 				C92B6DAC23F113880090E1D9 /* Rx+Util.swift in Sources */,

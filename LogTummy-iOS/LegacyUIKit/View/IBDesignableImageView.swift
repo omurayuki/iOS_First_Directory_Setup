@@ -1,17 +1,12 @@
 import UIKit
 
 @IBDesignable
-extension UIButton {}
+extension UIImageView {}
 
-open class IBDesignableButton: UIButton {
+open class IBDesignableImageView: UIImageView {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
-        commonInit()
-    }
-
-    public convenience init(type buttonType: UIButton.ButtonType) {
-        self.init(frame: .zero)
         commonInit()
     }
 
