@@ -73,6 +73,15 @@
 		C9C8CBD123F4214F00EA07EE /* Calendar+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8CBD023F4214F00EA07EE /* Calendar+Util.swift */; };
 		C9CAA50C23F661B3004B9BDD /* AppDelagateUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAA50B23F661B3004B9BDD /* AppDelagateUsecase.swift */; };
 		C9CAA50E23F661D3004B9BDD /* AppConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAA50D23F661D3004B9BDD /* AppConfigurator.swift */; };
+		C9CB50D223FA92CA0001BD1D /* IBDesignableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50D123FA92CA0001BD1D /* IBDesignableCollectionViewCell.swift */; };
+		C9CB50D423FA92DB0001BD1D /* IBDesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50D323FA92DB0001BD1D /* IBDesignableLabel.swift */; };
+		C9CB50D623FA92E70001BD1D /* IBDesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50D523FA92E70001BD1D /* IBDesignableTextField.swift */; };
+		C9CB50D823FA92EE0001BD1D /* IBDesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50D723FA92EE0001BD1D /* IBDesignableButton.swift */; };
+		C9CB50DA23FA92F60001BD1D /* IBDesignableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50D923FA92F60001BD1D /* IBDesignableTableViewCell.swift */; };
+		C9CB50DC23FA92FE0001BD1D /* IBDesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50DB23FA92FE0001BD1D /* IBDesignableView.swift */; };
+		C9CB50DE23FA93090001BD1D /* IBDesignableSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50DD23FA93090001BD1D /* IBDesignableSegmentedControl.swift */; };
+		C9CB50E023FA93180001BD1D /* IBDesignableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50DF23FA93180001BD1D /* IBDesignableScrollView.swift */; };
+		C9CB50E223FA93DE0001BD1D /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50E123FA93DE0001BD1D /* Sizes.swift */; };
 		C9D72EF323F5932D003EFC38 /* KeyboardNotifler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72EF223F5932D003EFC38 /* KeyboardNotifler.swift */; };
 		C9D72EFB23F593CD003EFC38 /* CountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72EFA23F593CD003EFC38 /* CountService.swift */; };
 		C9D72EFD23F59495003EFC38 /* Optional+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72EFC23F59495003EFC38 /* Optional+Util.swift */; };
@@ -230,6 +239,15 @@
 		C9C8CBD023F4214F00EA07EE /* Calendar+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Util.swift"; sourceTree = "<group>"; };
 		C9CAA50B23F661B3004B9BDD /* AppDelagateUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelagateUsecase.swift; sourceTree = "<group>"; };
 		C9CAA50D23F661D3004B9BDD /* AppConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurator.swift; sourceTree = "<group>"; };
+		C9CB50D123FA92CA0001BD1D /* IBDesignableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableCollectionViewCell.swift; sourceTree = "<group>"; };
+		C9CB50D323FA92DB0001BD1D /* IBDesignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableLabel.swift; sourceTree = "<group>"; };
+		C9CB50D523FA92E70001BD1D /* IBDesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableTextField.swift; sourceTree = "<group>"; };
+		C9CB50D723FA92EE0001BD1D /* IBDesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableButton.swift; sourceTree = "<group>"; };
+		C9CB50D923FA92F60001BD1D /* IBDesignableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableTableViewCell.swift; sourceTree = "<group>"; };
+		C9CB50DB23FA92FE0001BD1D /* IBDesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableView.swift; sourceTree = "<group>"; };
+		C9CB50DD23FA93090001BD1D /* IBDesignableSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableSegmentedControl.swift; sourceTree = "<group>"; };
+		C9CB50DF23FA93180001BD1D /* IBDesignableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableScrollView.swift; sourceTree = "<group>"; };
+		C9CB50E123FA93DE0001BD1D /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
 		C9D72EF223F5932D003EFC38 /* KeyboardNotifler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotifler.swift; sourceTree = "<group>"; };
 		C9D72EFA23F593CD003EFC38 /* CountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountService.swift; sourceTree = "<group>"; };
 		C9D72EFC23F59495003EFC38 /* Optional+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Util.swift"; sourceTree = "<group>"; };
@@ -400,6 +418,7 @@
 		C92B6DC423F13DB50090E1D9 /* LegacyUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C9CB50CA23FA92970001BD1D /* View */,
 				C9CAA50F23F66687004B9BDD /* Extensions */,
 				C90A45E623F6674C000E3B1B /* Util */,
 				C92B6DC523F13DCC0090E1D9 /* Resources */,
@@ -410,7 +429,9 @@
 		C92B6DC523F13DCC0090E1D9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C9CB50E323FA95690001BD1D /* Support */,
 				C92B6DC623F13DDA0090E1D9 /* Strings.swift */,
+				C9CB50E123FA93DE0001BD1D /* Sizes.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -762,6 +783,28 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C9CB50CA23FA92970001BD1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB50D123FA92CA0001BD1D /* IBDesignableCollectionViewCell.swift */,
+				C9CB50D323FA92DB0001BD1D /* IBDesignableLabel.swift */,
+				C9CB50D523FA92E70001BD1D /* IBDesignableTextField.swift */,
+				C9CB50D723FA92EE0001BD1D /* IBDesignableButton.swift */,
+				C9CB50D923FA92F60001BD1D /* IBDesignableTableViewCell.swift */,
+				C9CB50DB23FA92FE0001BD1D /* IBDesignableView.swift */,
+				C9CB50DD23FA93090001BD1D /* IBDesignableSegmentedControl.swift */,
+				C9CB50DF23FA93180001BD1D /* IBDesignableScrollView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9CB50E323FA95690001BD1D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		C9D72EF923F593C0003EFC38 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -994,15 +1037,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9CB50E023FA93180001BD1D /* IBDesignableScrollView.swift in Sources */,
 				C92B6DAA23F10F1E0090E1D9 /* Logger.swift in Sources */,
 				C96687B723EA8F390011DDD3 /* LoginViewController.swift in Sources */,
 				C9D72F0B23F59691003EFC38 /* Observable+Util.swift in Sources */,
 				C9D72EFB23F593CD003EFC38 /* CountService.swift in Sources */,
 				C9D72F1D23F59ACA003EFC38 /* UNMutableNotification+Util.swift in Sources */,
 				C92B6DC723F13DDA0090E1D9 /* Strings.swift in Sources */,
+				C9CB50E223FA93DE0001BD1D /* Sizes.swift in Sources */,
 				C9CAA50C23F661B3004B9BDD /* AppDelagateUsecase.swift in Sources */,
 				C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */,
 				C9D72F0723F59629003EFC38 /* DateFormatter+Util.swift in Sources */,
+				C9CB50DE23FA93090001BD1D /* IBDesignableSegmentedControl.swift in Sources */,
 				C90A45ED23F66CE0000E3B1B /* UINib+Util.swift in Sources */,
 				C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */,
 				C9D72F2023F59B24003EFC38 /* PlaceHolderTextView.swift in Sources */,
@@ -1012,11 +1058,13 @@
 				C90A45F523F66F7E000E3B1B /* NumberFormatter+Util.swift in Sources */,
 				C92B6DBD23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift in Sources */,
 				C9D72EFD23F59495003EFC38 /* Optional+Util.swift in Sources */,
+				C9CB50D823FA92EE0001BD1D /* IBDesignableButton.swift in Sources */,
 				C92B6DB323F115AB0090E1D9 /* AnalyticsDataStructures.swift in Sources */,
 				C92B6DC023F13B7A0090E1D9 /* AppError.swift in Sources */,
 				C9D72F0D23F596CF003EFC38 /* UIAlertController+Util.swift in Sources */,
 				C90A45EF23F66ED2000E3B1B /* Comparable+Util.swift in Sources */,
 				C90A45F323F66F3E000E3B1B /* Numbers+Util.swift in Sources */,
+				C9CB50D223FA92CA0001BD1D /* IBDesignableCollectionViewCell.swift in Sources */,
 				C90A45E923F668AB000E3B1B /* LaunchViewController.swift in Sources */,
 				C92B6DC323F13BAB0090E1D9 /* DisplayableErrorProtocol.swift in Sources */,
 				C9D72F0523F595E3003EFC38 /* Date+Util.swift in Sources */,
@@ -1027,15 +1075,19 @@
 				C9D72F1123F59879003EFC38 /* UIImage+Util.swift in Sources */,
 				C9D72F0123F59559003EFC38 /* Animation+Util.swift in Sources */,
 				C9D72EFF23F594EA003EFC38 /* Reactive+Util.swift in Sources */,
+				C9CB50DA23FA92F60001BD1D /* IBDesignableTableViewCell.swift in Sources */,
 				C9D72F2223F59B56003EFC38 /* VerticalStackView.swift in Sources */,
 				C9D72F1723F599B2003EFC38 /* UIStackView+Util.swift in Sources */,
 				C92B6DC923F13E440090E1D9 /* AppStrings.swift in Sources */,
 				C9D72EF323F5932D003EFC38 /* KeyboardNotifler.swift in Sources */,
+				C9CB50D623FA92E70001BD1D /* IBDesignableTextField.swift in Sources */,
 				C9D72F1523F59982003EFC38 /* UISearchBar+Util.swift in Sources */,
 				C9D72F1B23F59A8A003EFC38 /* UIViewController+Util.swift in Sources */,
 				C92B6DD423F151040090E1D9 /* APIError.swift in Sources */,
 				C92B6DB123F115230090E1D9 /* FirebaseAnalytics.swift in Sources */,
+				C9CB50DC23FA92FE0001BD1D /* IBDesignableView.swift in Sources */,
 				C92B6DB523F116710090E1D9 /* AnalyticsCategoriesAndEvents.swift in Sources */,
+				C9CB50D423FA92DB0001BD1D /* IBDesignableLabel.swift in Sources */,
 				C9D72F2423F59B76003EFC38 /* PaddingTextField.swift in Sources */,
 				C92B6DAF23F115180090E1D9 /* AnalyticsServiceManager.swift in Sources */,
 				C9C8CBD123F4214F00EA07EE /* Calendar+Util.swift in Sources */,
