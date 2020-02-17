@@ -14,13 +14,42 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNV-Dh-eJL">
+                                <rect key="frame" x="107" y="644" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Kky-NM-eJS"/>
+                                    <constraint firstAttribute="height" constant="50" id="kn3-jf-e5y"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dZn-O0-806">
+                                <rect key="frame" x="57" y="194" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.33351601359999999" green="0.80405298219999999" blue="0.54755315739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="EcI-RK-Zqs"/>
+                                    <constraint firstAttribute="width" constant="300" id="hkN-bv-meD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JNV-Dh-eJL" firstAttribute="top" secondItem="dZn-O0-806" secondAttribute="bottom" constant="150" id="103-qy-vzX"/>
+                            <constraint firstItem="dZn-O0-806" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4sH-F2-ZGU"/>
+                            <constraint firstItem="JNV-Dh-eJL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LsP-TA-sAu"/>
+                            <constraint firstItem="dZn-O0-806" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="hQm-1f-JHD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="90"/>
+            <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
         </scene>
     </scenes>
 </document>
