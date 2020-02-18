@@ -14,6 +14,8 @@
 		C90A45F123F66F24000E3B1B /* Int+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A45F023F66F24000E3B1B /* Int+Util.swift */; };
 		C90A45F323F66F3E000E3B1B /* Numbers+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A45F223F66F3E000E3B1B /* Numbers+Util.swift */; };
 		C90A45F523F66F7E000E3B1B /* NumberFormatter+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A45F423F66F7E000E3B1B /* NumberFormatter+Util.swift */; };
+		C90F8A6223FAA2CF0015B1CE /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96687DD23EAAC1B0011DDD3 /* SwifteriOS.framework */; };
+		C90F8A6323FAA2CF0015B1CE /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C96687DD23EAAC1B0011DDD3 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C925796423ED32FD00308154 /* GoogleService-debug-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */; };
 		C92B6DAA23F10F1E0090E1D9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DA923F10F1E0090E1D9 /* Logger.swift */; };
 		C92B6DAC23F113880090E1D9 /* Rx+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DAB23F113880090E1D9 /* Rx+Util.swift */; };
@@ -165,6 +167,7 @@
 				C96687FE23EAB9080011DDD3 /* RxSwift.framework in Embed Frameworks */,
 				C96687EC23EAB1690011DDD3 /* MBProgressHUD.framework in Embed Frameworks */,
 				C96687F023EAB2520011DDD3 /* Rswift.framework in Embed Frameworks */,
+				C90F8A6323FAA2CF0015B1CE /* SwifteriOS.framework in Embed Frameworks */,
 				C966881523EABAEA0011DDD3 /* Swinject.framework in Embed Frameworks */,
 				C966881B23EABAEA0011DDD3 /* Kingfisher.framework in Embed Frameworks */,
 				C966880023EAB9080011DDD3 /* RxCocoa.framework in Embed Frameworks */,
@@ -289,6 +292,7 @@
 				C9C8CBB623F4156F00EA07EE /* nanopb.framework in Frameworks */,
 				C9C8CBBE23F4157500EA07EE /* FirebaseCoreDiagnostics.framework in Frameworks */,
 				C96687FD23EAB9080011DDD3 /* RxSwift.framework in Frameworks */,
+				C90F8A6223FAA2CF0015B1CE /* SwifteriOS.framework in Frameworks */,
 				C9C8CBCA23F415AB00EA07EE /* StoreKit.framework in Frameworks */,
 				C96687EB23EAB1690011DDD3 /* MBProgressHUD.framework in Frameworks */,
 				C9C8CBBC23F4157300EA07EE /* FirebaseInstanceID.framework in Frameworks */,
