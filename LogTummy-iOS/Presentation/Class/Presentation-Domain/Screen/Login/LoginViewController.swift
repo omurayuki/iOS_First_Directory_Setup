@@ -31,3 +31,10 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate {
         .disposed(by: disposeBag)
     }
 }
+
+// observable作成
+// エラーハンドリング // オフラインかどうか → API叩く →
+// エラーハンドリングクラス作成
+// キャッシュクラス作成
+// アーキテクチャ
+// テスト // Observableで成功/失敗時に値がそれぞれ取れるかも
