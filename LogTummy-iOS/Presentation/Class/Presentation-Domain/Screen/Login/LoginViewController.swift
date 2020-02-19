@@ -24,7 +24,9 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate {
                 self.sampleObservable().subscribe(onSuccess: { authTuple in
                     print(authTuple)
                 }) { error in
-                    print(error)
+                    let mappedError = self.mapSwifterError(error: error)
+                    let alert = mappedError.alertController()
+                    self.present(alert, animated: true, completion: nil)
                 }.disposed(by: self.disposeBag)
             })
         .disposed(by: disposeBag)
@@ -38,7 +40,7 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate {
                 observer(.success((accessToken, response)))
             }) { error in
                 if DeviceInfo().isOffline {
-                    observer(.error(SwifterError.ErrorKind.offline))
+                    observer(.error(SwifterError(errorKind: .offline)))
                 }
                 observer(.error(error))
             }
@@ -47,9 +49,14 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate {
     }
 }
 
+extension LoginViewController: ErrorMappingUsecaseProtocolExtension {
+    
+}
+
 // observable作成
 // エラーハンドリング // オフラインかどうか → API叩く →
 // エラーハンドリングクラス作成
+// 通信状況が悪い時のタイムアウト処理実装
 // キャッシュクラス作成
 // アーキテクチャ
 // テスト // Observableで成功/失敗時に値がそれぞれ取れるかも

@@ -25,7 +25,7 @@
 		C92B6DB523F116710090E1D9 /* AnalyticsCategoriesAndEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DB423F116710090E1D9 /* AnalyticsCategoriesAndEvents.swift */; };
 		C92B6DB723F117B30090E1D9 /* AnalyticsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DB623F117B30090E1D9 /* AnalyticsInfo.swift */; };
 		C92B6DBB23F1282A0090E1D9 /* ErrorNotifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DBA23F1282A0090E1D9 /* ErrorNotifying.swift */; };
-		C92B6DBD23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DBC23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift */; };
+		C92B6DBD23F129F80090E1D9 /* ErrorMappingUsecaseProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DBC23F129F80090E1D9 /* ErrorMappingUsecaseProtocolExtension.swift */; };
 		C92B6DC023F13B7A0090E1D9 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DBF23F13B7A0090E1D9 /* AppError.swift */; };
 		C92B6DC323F13BAB0090E1D9 /* DisplayableErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DC223F13BAB0090E1D9 /* DisplayableErrorProtocol.swift */; };
 		C92B6DC723F13DDA0090E1D9 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DC623F13DDA0090E1D9 /* Strings.swift */; };
@@ -200,7 +200,7 @@
 		C92B6DB423F116710090E1D9 /* AnalyticsCategoriesAndEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsCategoriesAndEvents.swift; sourceTree = "<group>"; };
 		C92B6DB623F117B30090E1D9 /* AnalyticsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsInfo.swift; sourceTree = "<group>"; };
 		C92B6DBA23F1282A0090E1D9 /* ErrorNotifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorNotifying.swift; sourceTree = "<group>"; };
-		C92B6DBC23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErroMappingUsecaseProtocolExtension.swift; sourceTree = "<group>"; };
+		C92B6DBC23F129F80090E1D9 /* ErrorMappingUsecaseProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMappingUsecaseProtocolExtension.swift; sourceTree = "<group>"; };
 		C92B6DBF23F13B7A0090E1D9 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		C92B6DC223F13BAB0090E1D9 /* DisplayableErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayableErrorProtocol.swift; sourceTree = "<group>"; };
 		C92B6DC623F13DDA0090E1D9 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
@@ -403,7 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				C92B6DBA23F1282A0090E1D9 /* ErrorNotifying.swift */,
-				C92B6DBC23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift */,
+				C92B6DBC23F129F80090E1D9 /* ErrorMappingUsecaseProtocolExtension.swift */,
 			);
 			path = ProtocolExtension;
 			sourceTree = "<group>";
@@ -1095,7 +1095,7 @@
 				C92B6DCF23F140710090E1D9 /* Strings+Util.swift in Sources */,
 				C92B6DBB23F1282A0090E1D9 /* ErrorNotifying.swift in Sources */,
 				C90A45F523F66F7E000E3B1B /* NumberFormatter+Util.swift in Sources */,
-				C92B6DBD23F129F80090E1D9 /* ErroMappingUsecaseProtocolExtension.swift in Sources */,
+				C92B6DBD23F129F80090E1D9 /* ErrorMappingUsecaseProtocolExtension.swift in Sources */,
 				C9D72EFD23F59495003EFC38 /* Optional+Util.swift in Sources */,
 				C9CB50E723FA97890001BD1D /* IBDesignableImageView.swift in Sources */,
 				C9CB50D823FA92EE0001BD1D /* IBDesignableButton.swift in Sources */,

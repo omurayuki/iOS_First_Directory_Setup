@@ -1,8 +1,8 @@
 import SwifteriOS
 
-protocol ErroMappingUsecaseProtocolExtension { }
+protocol ErrorMappingUsecaseProtocolExtension { }
 
-extension ErroMappingUsecaseProtocolExtension {
+extension ErrorMappingUsecaseProtocolExtension {
     /**
      APIError caseが増えた時のた事前対応必須
      */
