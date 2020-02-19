@@ -62,8 +62,6 @@
 		C966880F23EAB9520011DDD3 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C966880D23EAB9520011DDD3 /* RxBlocking.framework */; };
 		C966881223EABAB70011DDD3 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C966881123EABAB70011DDD3 /* RxRelay.framework */; };
 		C966881323EABAB70011DDD3 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C966881123EABAB70011DDD3 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C966881423EABAEA0011DDD3 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96687FC23EAB9080011DDD3 /* Swinject.framework */; };
-		C966881523EABAEA0011DDD3 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C96687FC23EAB9080011DDD3 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C966881623EABAEA0011DDD3 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C966880423EAB9210011DDD3 /* Reachability.framework */; };
 		C966881723EABAEA0011DDD3 /* Reachability.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C966880423EAB9210011DDD3 /* Reachability.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C966881823EABAEA0011DDD3 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C966880523EAB9210011DDD3 /* Lottie.framework */; };
@@ -177,7 +175,6 @@
 				C96687EC23EAB1690011DDD3 /* MBProgressHUD.framework in Embed Frameworks */,
 				C96687F023EAB2520011DDD3 /* Rswift.framework in Embed Frameworks */,
 				C90F8A6323FAA2CF0015B1CE /* SwifteriOS.framework in Embed Frameworks */,
-				C966881523EABAEA0011DDD3 /* Swinject.framework in Embed Frameworks */,
 				C966881B23EABAEA0011DDD3 /* Kingfisher.framework in Embed Frameworks */,
 				C966880023EAB9080011DDD3 /* RxCocoa.framework in Embed Frameworks */,
 				C966881923EABAEA0011DDD3 /* Lottie.framework in Embed Frameworks */,
@@ -242,7 +239,6 @@
 		C96687F823EAB50A0011DDD3 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		C96687FA23EAB9080011DDD3 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		C96687FB23EAB9080011DDD3 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		C96687FC23EAB9080011DDD3 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		C966880323EAB9210011DDD3 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		C966880423EAB9210011DDD3 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = Carthage/Build/iOS/Reachability.framework; sourceTree = "<group>"; };
 		C966880523EAB9210011DDD3 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
@@ -317,7 +313,6 @@
 				C9C8CBB823F4157100EA07EE /* GoogleUtilities.framework in Frameworks */,
 				C9C8CBA223F4126A00EA07EE /* CoreTelephony.framework in Frameworks */,
 				C96687EF23EAB2520011DDD3 /* Rswift.framework in Frameworks */,
-				C966881423EABAEA0011DDD3 /* Swinject.framework in Frameworks */,
 				C966881A23EABAEA0011DDD3 /* Kingfisher.framework in Frameworks */,
 				C9C8CBC223F4157700EA07EE /* FirebaseAnalytics.framework in Frameworks */,
 				C96687FF23EAB9080011DDD3 /* RxCocoa.framework in Frameworks */,
@@ -573,7 +568,6 @@
 				C966880423EAB9210011DDD3 /* Reachability.framework */,
 				C96687FB23EAB9080011DDD3 /* RxCocoa.framework */,
 				C96687FA23EAB9080011DDD3 /* RxSwift.framework */,
-				C96687FC23EAB9080011DDD3 /* Swinject.framework */,
 				C96687EE23EAB2520011DDD3 /* Rswift.framework */,
 				C96687EA23EAB1690011DDD3 /* MBProgressHUD.framework */,
 			);
