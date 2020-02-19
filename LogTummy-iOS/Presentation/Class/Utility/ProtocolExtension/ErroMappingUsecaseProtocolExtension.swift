@@ -1,3 +1,4 @@
+import SwifteriOS
 
 protocol ErroMappingUsecaseProtocolExtension { }
 
@@ -5,10 +6,10 @@ extension ErroMappingUsecaseProtocolExtension {
     /**
      APIError caseが増えた時のた事前対応必須
      */
-    func mapError(error: APIError, retryBlock: VoidBlock? = nil, errorMessage: String? = nil) -> AppError {
-        if case .swifterError = error {
-            
-            if DeviceInfo().isOffline {
+    func mapSwifterError(error: Error, retryBlock: VoidBlock? = nil, errorMessage: String? = nil) -> AppError {
+        if let error = error as? SwifterError {
+            #warning("ハードコードはやばすぎる")
+            if error.kind.description == "offline" {
                 return AppError.offlineError(resolution: retryBlock)
             }
             

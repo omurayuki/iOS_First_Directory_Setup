@@ -17,18 +17,33 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let swifter = Swifter(consumerKey: TWITTER_CONSUMER_KEY, consumerSecret: TWITTER_CONSUMER_SECRET)
         
         LoginButton.rx.tap.asDriver()
             .drive(onNext: { _ in
-                swifter.authorize(withCallback: URL(string: "swifter-sqOi4qeOAFWf9kJwNw5RkveM6://")!, presentingFrom: self, success: { accessToken, response in
-                    print(response)
+                // usecase
+                self.sampleObservable().subscribe(onSuccess: { authTuple in
+                    print(authTuple)
                 }) { error in
                     print(error)
-                }
+                }.disposed(by: self.disposeBag)
             })
         .disposed(by: disposeBag)
+    }
+    
+    // remoteManager // datamanagerはuserdefaultかremotemanagerのこれを叩く
+    func sampleObservable() -> Single<(Credential.OAuthAccessToken?, URLResponse)> {
+        return Single.create { observer -> Disposable in
+            let swifter = Swifter(consumerKey: self.TWITTER_CONSUMER_KEY, consumerSecret: self.TWITTER_CONSUMER_SECRET)
+            swifter.authorize(withCallback: URL(string: "swifter-sqOi4qeOAFWf9kJwNw5RkveM6://")!, presentingFrom: self, success: { accessToken, response in
+                observer(.success((accessToken, response)))
+            }) { error in
+                if DeviceInfo().isOffline {
+                    observer(.error(SwifterError.ErrorKind.offline))
+                }
+                observer(.error(error))
+            }
+            return Disposables.create()
+        }
     }
 }
 
