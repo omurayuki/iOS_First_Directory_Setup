@@ -1,5 +1,6 @@
 import UIKit
 import Firebase
+import SwifteriOS
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,5 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure(options: options!)
         
         return true
+    }
+    
+    func application(_ app: UIApplication,
+                     open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+            return Swifter.handleOpenURL(url, callbackURL: URL(string: "swifter-sqOi4qeOAFWf9kJwNw5RkveM6://")!)
     }
 }

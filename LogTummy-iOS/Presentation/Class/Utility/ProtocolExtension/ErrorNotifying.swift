@@ -23,16 +23,15 @@ fileprivate extension ErrorNotifying {
     
     func showErrorMessage(viewController: UIViewController, error: Error?, dialogButtonTapped: (() -> Void)? = nil) {
         guard let error = error else { return }
-        #warning("!error.isOfflineError")
-        guard true else {
-            viewController.present(AppError.offlineError(resolution: nil).alertController(okActionHandler: dialogButtonTapped ?? {}), animated: true, completion: nil)
+        guard DeviceInfo().isOffline else {
+            viewController.present(AppError.offlineError(resolution: nil).alertController(okActionHandler: dialogButtonTapped ?? {}), animated: true)
             return
         }
         guard let displayableError = error as? DisplayableErrorProtocol else {
             // Fallback
-            viewController.present(AppError.standardError().alertController(okActionHandler: dialogButtonTapped ?? {}), animated: true, completion: nil)
+            viewController.present(AppError.standardError().alertController(okActionHandler: dialogButtonTapped ?? {}), animated: true)
             return
         }
-        viewController.present(displayableError.alertController(okActionHandler: dialogButtonTapped ?? {}), animated: true, completion: nil)
+        viewController.present(displayableError.alertController(okActionHandler: dialogButtonTapped ?? {}), animated: true)
     }
 }

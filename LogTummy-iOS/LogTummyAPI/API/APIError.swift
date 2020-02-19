@@ -1,3 +1,7 @@
 import Foundation
+import SwifteriOS
 
-#warning("firebaseのAPIErrorを記載 出来るだけ抽象化して使いまわせるように")
+enum APIError: Error {
+    
+    case swifterError(SwifterError)
+}

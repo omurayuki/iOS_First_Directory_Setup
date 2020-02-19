@@ -34,6 +34,7 @@
 		C92B6DCF23F140710090E1D9 /* Strings+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DCE23F140710090E1D9 /* Strings+Util.swift */; };
 		C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DD123F141380090E1D9 /* VoidBlock.swift */; };
 		C92B6DD423F151040090E1D9 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DD323F151030090E1D9 /* APIError.swift */; };
+		C93BB66523FCFCA2007F14A2 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */; };
 		C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B223EA8F390011DDD3 /* AppDelegate.swift */; };
 		C96687B723EA8F390011DDD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B623EA8F390011DDD3 /* LoginViewController.swift */; };
 		C96687BA23EA8F390011DDD3 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96687B823EA8F390011DDD3 /* LoginViewController.storyboard */; };
@@ -208,6 +209,7 @@
 		C92B6DCE23F140710090E1D9 /* Strings+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Util.swift"; sourceTree = "<group>"; };
 		C92B6DD123F141380090E1D9 /* VoidBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidBlock.swift; sourceTree = "<group>"; };
 		C92B6DD323F151030090E1D9 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		C96687AF23EA8F390011DDD3 /* LogTummy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LogTummy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96687B223EA8F390011DDD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C96687B623EA8F390011DDD3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -409,6 +411,7 @@
 		C92B6DB923F128080090E1D9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -456,6 +459,13 @@
 				C92B6DD123F141380090E1D9 /* VoidBlock.swift */,
 			);
 			path = Typealias;
+			sourceTree = "<group>";
+		};
+		C93BB66B23FCFEAA007F14A2 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 		C96687A623EA8F390011DDD3 = {
@@ -679,6 +689,7 @@
 				C9D72F1E23F59B11003EFC38 /* Custom */,
 				C9D72EF923F593C0003EFC38 /* Service */,
 				C92B6DAD23F114DF0090E1D9 /* Analytics */,
+				C93BB66B23FCFEAA007F14A2 /* Reachability */,
 				C92B6DB823F127FD0090E1D9 /* ProtocolExtension */,
 				C92B6DB923F128080090E1D9 /* Extension */,
 				C9D72F1C23F59ACA003EFC38 /* UNMutableNotification+Util.swift */,
@@ -905,6 +916,7 @@
 				TargetAttributes = {
 					C96687AE23EA8F390011DDD3 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					C96687C423EA8F3B0011DDD3 = {
 						CreatedOnToolsVersion = 11.1;
@@ -1118,6 +1130,7 @@
 				C9CB50DC23FA92FE0001BD1D /* IBDesignableView.swift in Sources */,
 				C92B6DB523F116710090E1D9 /* AnalyticsCategoriesAndEvents.swift in Sources */,
 				C9CB50D423FA92DB0001BD1D /* IBDesignableLabel.swift in Sources */,
+				C93BB66523FCFCA2007F14A2 /* DeviceInfo.swift in Sources */,
 				C9D72F2423F59B76003EFC38 /* PaddingTextField.swift in Sources */,
 				C9CB50ED23FA9C870001BD1D /* CornerRoundableButton.swift in Sources */,
 				C92B6DAF23F115180090E1D9 /* AnalyticsServiceManager.swift in Sources */,
@@ -1295,6 +1308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5WF5Y5M59G;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1309,6 +1323,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.yuki.LogTummy-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1318,6 +1333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5WF5Y5M59G;
 				FRAMEWORK_SEARCH_PATHS = (
