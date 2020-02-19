@@ -4,7 +4,7 @@ import SafariServices
 import RxCocoa
 import RxSwift
 
-class LoginViewController: UIViewController, SFSafariViewControllerDelegate {
+class LoginViewController: UIViewController, SFSafariViewControllerDelegate, ErrorNotifying {
     
     @IBOutlet weak var LoginTopImageView: CornerRoundableImageView!
     
@@ -18,18 +18,22 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        bindUI()
+        
         LoginButton.rx.tap.asDriver()
             .drive(onNext: { _ in
                 // usecase
                 self.sampleObservable().subscribe(onSuccess: { authTuple in
                     print(authTuple)
                 }) { error in
-                    let mappedError = self.mapSwifterError(error: error)
-                    let alert = mappedError.alertController()
-                    self.present(alert, animated: true, completion: nil)
+                    self.showErrorMessage(error)
                 }.disposed(by: self.disposeBag)
             })
         .disposed(by: disposeBag)
+    }
+    
+    private func bindUI() {
+        
     }
     
     // remoteManager // datamanagerはuserdefaultかremotemanagerのこれを叩く
@@ -49,14 +53,12 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate {
     }
 }
 
-extension LoginViewController: ErrorMappingUsecaseProtocolExtension {
-    
-}
-
-// observable作成
-// エラーハンドリング // オフラインかどうか → API叩く →
-// エラーハンドリングクラス作成
-// 通信状況が悪い時のタイムアウト処理実装
+// observable作成 ok
+// エラーハンドリング // オフラインかどうか → API叩く → ok
+// アーキテクチャ entityクラスなども
+// エラーハンドリングクラス作成(swifterエラーのリファクタ)
 // キャッシュクラス作成
-// アーキテクチャ
 // テスト // Observableで成功/失敗時に値がそれぞれ取れるかも
+// UI調整
+// ボタンエフェクト処理
+// swinject削除

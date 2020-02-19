@@ -1,6 +1,7 @@
 import UIKit
 import RxSwift
 import RxRelay
+import SwifteriOS
 
 protocol ErrorNotifying { }
 
@@ -22,8 +23,9 @@ extension ErrorNotifying where Self: UIViewController {
 fileprivate extension ErrorNotifying {
     
     func showErrorMessage(viewController: UIViewController, error: Error?, dialogButtonTapped: (() -> Void)? = nil) {
-        guard let error = error else { return }
-        guard DeviceInfo().isOffline else {
+        guard let error = error as? SwifterError else { return }
+        #warning("ハードコードはやばすぎる")
+        guard error.kind.description == "offline" else {
             viewController.present(AppError.offlineError(resolution: nil).alertController(okActionHandler: dialogButtonTapped ?? {}), animated: true)
             return
         }
