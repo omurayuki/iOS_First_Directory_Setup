@@ -34,7 +34,6 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate, Err
     }
     
     private func bindUI() {
-        viewModel?.transform()
     }
     
     // remoteManager // datamanagerはuserdefaultかremotemanagerのこれを叩く

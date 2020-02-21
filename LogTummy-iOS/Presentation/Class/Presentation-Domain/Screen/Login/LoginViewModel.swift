@@ -2,30 +2,24 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-protocol LoginViewModelProtocol {
-    func transform()
+protocol LoginViewModelProtocol: ViewModelProtocol {
 }
 
-final class LoginViewModel: LoginViewModelProtocol, ViewModelProtocol {
+final class LoginViewModel: LoginViewModelProtocol {
     
 }
 
 extension LoginViewModel {
     
-    struct Input {
+    final class InputInherits: Input {
         
     }
     
-    struct Output {
+    final class OutputInherits: Output {
         
     }
     
     func transform(input: Input) -> Output {
-        print("inject成功")
         return Output()
-    }
-    
-    func transform() {
-        print("injectinject!!")
     }
 }
