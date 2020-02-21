@@ -1,9 +1,14 @@
-//
-//  ViewControllerAssembly.swift
-//  LogTummy-iOS
-//
-//  Created by オムラユウキ on 2020/02/21.
-//  Copyright © 2020 オムラユウキ. All rights reserved.
-//
+import SwinjectStoryboard
 
-import Foundation
+extension SwinjectStoryboard {
+    
+    final class ViewControllerAssembly {
+        
+        @objc
+        class func setup() {
+            defaultContainer.storyboardInitCompleted(LoginViewController.self) {
+                $1.viewModel = $0.resolve(LoginViewModelProtocol.self)
+            }
+        }
+    }
+}

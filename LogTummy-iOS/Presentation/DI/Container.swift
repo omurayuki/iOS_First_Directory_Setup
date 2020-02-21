@@ -1,9 +1,6 @@
-//
-//  Container.swift
-//  LogTummy-iOS
-//
-//  Created by オムラユウキ on 2020/02/21.
-//  Copyright © 2020 オムラユウキ. All rights reserved.
-//
+import Swinject
+import SwinjectStoryboard
 
-import Foundation
+var container: Container {
+    return SwinjectStoryboard.defaultContainer
+}
