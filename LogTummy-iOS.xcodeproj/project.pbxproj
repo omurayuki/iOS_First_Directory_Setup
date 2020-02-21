@@ -64,6 +64,8 @@
 		C966881B23EABAEA0011DDD3 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C966880323EAB9210011DDD3 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C97ADF2E23FF781E00BC08B4 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97ADF2823FF781E00BC08B4 /* Swinject.framework */; };
 		C97ADF2F23FF781F00BC08B4 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C97ADF2823FF781E00BC08B4 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C97ADF4523FF8E7200BC08B4 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97ADF3A23FF8E2B00BC08B4 /* SwinjectStoryboard.framework */; };
+		C97ADF4623FF8E7200BC08B4 /* SwinjectStoryboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C97ADF3A23FF8E2B00BC08B4 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9B281B523ED549600554CA6 /* GoogleService-Info.plist */; };
 		C9C8CBA223F4126A00EA07EE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */; };
 		C9C8CBB623F4156F00EA07EE /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA423F4156900EA07EE /* nanopb.framework */; };
@@ -158,6 +160,48 @@
 			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
 			remoteInfo = SwifterTests;
 		};
+		C97ADF3923FF8E2B00BC08B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C97ADF3023FF8E2B00BC08B4 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 985904061CDB0AA700275E4A;
+			remoteInfo = "SwinjectStoryboard-iOS";
+		};
+		C97ADF3B23FF8E2B00BC08B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C97ADF3023FF8E2B00BC08B4 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 985904101CDB0AA700275E4A;
+			remoteInfo = "SwinjectStoryboard-iOSTests";
+		};
+		C97ADF3D23FF8E2B00BC08B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C97ADF3023FF8E2B00BC08B4 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D562781CDB173500DECDC0;
+			remoteInfo = "SwinjectStoryboard-OSX";
+		};
+		C97ADF3F23FF8E2B00BC08B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C97ADF3023FF8E2B00BC08B4 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D562811CDB173500DECDC0;
+			remoteInfo = "SwinjectStoryboard-OSXTests";
+		};
+		C97ADF4123FF8E2B00BC08B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C97ADF3023FF8E2B00BC08B4 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D562941CDB19AB00DECDC0;
+			remoteInfo = "SwinjectStoryboard-tvOS";
+		};
+		C97ADF4323FF8E2B00BC08B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C97ADF3023FF8E2B00BC08B4 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D5629D1CDB19AB00DECDC0;
+			remoteInfo = "SwinjectStoryboard-tvOSTests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -175,6 +219,7 @@
 				C966881B23EABAEA0011DDD3 /* Kingfisher.framework in Embed Frameworks */,
 				C966880023EAB9080011DDD3 /* RxCocoa.framework in Embed Frameworks */,
 				C966881923EABAEA0011DDD3 /* Lottie.framework in Embed Frameworks */,
+				C97ADF4623FF8E7200BC08B4 /* SwinjectStoryboard.framework in Embed Frameworks */,
 				C966881323EABAB70011DDD3 /* RxRelay.framework in Embed Frameworks */,
 				C966881723EABAEA0011DDD3 /* Reachability.framework in Embed Frameworks */,
 			);
@@ -237,6 +282,7 @@
 		C966880D23EAB9520011DDD3 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		C966881123EABAB70011DDD3 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		C97ADF2823FF781E00BC08B4 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		C97ADF3023FF8E2B00BC08B4 /* SwinjectStoryboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwinjectStoryboard.xcodeproj; path = ../../SwinjectStoryboard/SwinjectStoryboard.xcodeproj; sourceTree = "<group>"; };
 		C9B281A623ED482F00554CA6 /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "gRPCCertificates-Cpp.bundle"; path = "Carthage/Build/iOS/gRPC-C++.framework/Resources/gRPCCertificates-Cpp.bundle"; sourceTree = "<group>"; };
 		C9B281B523ED549600554CA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -312,6 +358,7 @@
 				C966881823EABAEA0011DDD3 /* Lottie.framework in Frameworks */,
 				C9C8CBBA23F4157200EA07EE /* GoogleAppMeasurement.framework in Frameworks */,
 				C966881223EABAB70011DDD3 /* RxRelay.framework in Frameworks */,
+				C97ADF4523FF8E7200BC08B4 /* SwinjectStoryboard.framework in Frameworks */,
 				C966881623EABAEA0011DDD3 /* Reachability.framework in Frameworks */,
 				C9C8CBC023F4157600EA07EE /* FirebaseCore.framework in Frameworks */,
 				C9C8CBC623F4157A00EA07EE /* FIRAnalyticsConnector.framework in Frameworks */,
@@ -404,6 +451,7 @@
 				C92B6DAE23F115170090E1D9 /* AnalyticsServiceManager.swift */,
 				C92B6DB023F115230090E1D9 /* FirebaseAnalytics.swift */,
 				C92B6DB223F115AB0090E1D9 /* AnalyticsDataStructures.swift */,
+				C9D72F1F23F59B24003EFC38 /* PlaceHolderTextView.swift */,
 				C92B6DB423F116710090E1D9 /* AnalyticsCategoriesAndEvents.swift */,
 				C92B6DB623F117B30090E1D9 /* AnalyticsInfo.swift */,
 			);
@@ -487,6 +535,7 @@
 				C96687C823EA8F3B0011DDD3 /* LogTummy-iOSTests */,
 				C96687B023EA8F390011DDD3 /* Products */,
 				C96687D423EAAC1A0011DDD3 /* Swifter.xcodeproj */,
+				C97ADF3023FF8E2B00BC08B4 /* SwinjectStoryboard.xcodeproj */,
 				C96687E623EAAC940011DDD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -565,6 +614,19 @@
 				C96687EA23EAB1690011DDD3 /* MBProgressHUD.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C97ADF3123FF8E2B00BC08B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C97ADF3A23FF8E2B00BC08B4 /* SwinjectStoryboard.framework */,
+				C97ADF3C23FF8E2B00BC08B4 /* SwinjectStoryboardTests.xctest */,
+				C97ADF3E23FF8E2B00BC08B4 /* SwinjectStoryboard.framework */,
+				C97ADF4023FF8E2B00BC08B4 /* SwinjectStoryboardTests.xctest */,
+				C97ADF4223FF8E2B00BC08B4 /* SwinjectStoryboard.framework */,
+				C97ADF4423FF8E2B00BC08B4 /* SwinjectStoryboardTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		C9B281AB23ED518400554CA6 /* LogTummyAPI */ = {
@@ -869,7 +931,6 @@
 		C9D72F1E23F59B11003EFC38 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				C9D72F1F23F59B24003EFC38 /* PlaceHolderTextView.swift */,
 				C9D72F2123F59B55003EFC38 /* VerticalStackView.swift */,
 				C9D72F2323F59B76003EFC38 /* PaddingTextField.swift */,
 			);
@@ -954,6 +1015,10 @@
 					ProductGroup = C96687D523EAAC1A0011DDD3 /* Products */;
 					ProjectRef = C96687D423EAAC1A0011DDD3 /* Swifter.xcodeproj */;
 				},
+				{
+					ProductGroup = C97ADF3123FF8E2B00BC08B4 /* Products */;
+					ProjectRef = C97ADF3023FF8E2B00BC08B4 /* SwinjectStoryboard.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -997,6 +1062,48 @@
 			fileType = wrapper.cfbundle;
 			path = SwifterTests.xctest;
 			remoteRef = C96687E423EAAC1B0011DDD3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C97ADF3A23FF8E2B00BC08B4 /* SwinjectStoryboard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwinjectStoryboard.framework;
+			remoteRef = C97ADF3923FF8E2B00BC08B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C97ADF3C23FF8E2B00BC08B4 /* SwinjectStoryboardTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectStoryboardTests.xctest;
+			remoteRef = C97ADF3B23FF8E2B00BC08B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C97ADF3E23FF8E2B00BC08B4 /* SwinjectStoryboard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwinjectStoryboard.framework;
+			remoteRef = C97ADF3D23FF8E2B00BC08B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C97ADF4023FF8E2B00BC08B4 /* SwinjectStoryboardTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectStoryboardTests.xctest;
+			remoteRef = C97ADF3F23FF8E2B00BC08B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C97ADF4223FF8E2B00BC08B4 /* SwinjectStoryboard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwinjectStoryboard.framework;
+			remoteRef = C97ADF4123FF8E2B00BC08B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C97ADF4423FF8E2B00BC08B4 /* SwinjectStoryboardTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectStoryboardTests.xctest;
+			remoteRef = C97ADF4323FF8E2B00BC08B4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

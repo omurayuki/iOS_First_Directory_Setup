@@ -3,12 +3,12 @@ import SwifteriOS
 import SafariServices
 import RxCocoa
 import RxSwift
+import SwinjectStoryboard
 
 class LoginViewController: UIViewController, SFSafariViewControllerDelegate, ErrorNotifying {
     
-    var routing: LoginRoutingProtocol? { didSet { routing?.viewController = self } }
     var viewModel: LoginViewModel?
-    var disposeBag: DisposeBag! = DisposeBag()
+    var disposeBag: DisposeBag = DisposeBag()
     
     @IBOutlet weak var LoginTopImageView: CornerRoundableImageView!
     
@@ -19,6 +19,8 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate, Err
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SwinjectStoryboard.initialize()
         
         bindUI()
         
