@@ -67,6 +67,12 @@
 		C97ADF4523FF8E7200BC08B4 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97ADF3A23FF8E2B00BC08B4 /* SwinjectStoryboard.framework */; };
 		C97ADF4623FF8E7200BC08B4 /* SwinjectStoryboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C97ADF3A23FF8E2B00BC08B4 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C97ADF4823FF96D800BC08B4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ADF4723FF96D800BC08B4 /* ViewModel.swift */; };
+		C9831CE323FFC4470062A9A0 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CE223FFC4470062A9A0 /* Container.swift */; };
+		C9831CF123FFC45D0062A9A0 /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CF023FFC45D0062A9A0 /* ViewControllerAssembly.swift */; };
+		C9831CF323FFC4680062A9A0 /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CF223FFC4670062A9A0 /* ViewModelAssembly.swift */; };
+		C9831CF523FFC4710062A9A0 /* UsecaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CF423FFC4710062A9A0 /* UsecaseAssembly.swift */; };
+		C9831CF723FFC47D0062A9A0 /* RouterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CF623FFC47D0062A9A0 /* RouterAssembly.swift */; };
+		C9831CF923FFC4AB0062A9A0 /* DataManagerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CF823FFC4AB0062A9A0 /* DataManagerAssembly.swift */; };
 		C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9B281B523ED549600554CA6 /* GoogleService-Info.plist */; };
 		C9C8CBA223F4126A00EA07EE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */; };
 		C9C8CBB623F4156F00EA07EE /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA423F4156900EA07EE /* nanopb.framework */; };
@@ -285,6 +291,12 @@
 		C97ADF2823FF781E00BC08B4 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		C97ADF3023FF8E2B00BC08B4 /* SwinjectStoryboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwinjectStoryboard.xcodeproj; path = ../../SwinjectStoryboard/SwinjectStoryboard.xcodeproj; sourceTree = "<group>"; };
 		C97ADF4723FF96D800BC08B4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C9831CE223FFC4470062A9A0 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		C9831CF023FFC45D0062A9A0 /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
+		C9831CF223FFC4670062A9A0 /* ViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
+		C9831CF423FFC4710062A9A0 /* UsecaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsecaseAssembly.swift; sourceTree = "<group>"; };
+		C9831CF623FFC47D0062A9A0 /* RouterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAssembly.swift; sourceTree = "<group>"; };
+		C9831CF823FFC4AB0062A9A0 /* DataManagerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerAssembly.swift; sourceTree = "<group>"; };
 		C9B281A623ED482F00554CA6 /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "gRPCCertificates-Cpp.bundle"; path = "Carthage/Build/iOS/gRPC-C++.framework/Resources/gRPCCertificates-Cpp.bundle"; sourceTree = "<group>"; };
 		C9B281B523ED549600554CA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -632,6 +644,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C9831CEF23FFC44D0062A9A0 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				C9831CF023FFC45D0062A9A0 /* ViewControllerAssembly.swift */,
+				C9831CF223FFC4670062A9A0 /* ViewModelAssembly.swift */,
+				C9831CF423FFC4710062A9A0 /* UsecaseAssembly.swift */,
+				C9831CF823FFC4AB0062A9A0 /* DataManagerAssembly.swift */,
+				C9831CF623FFC47D0062A9A0 /* RouterAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		C9B281AB23ED518400554CA6 /* LogTummyAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -725,6 +749,8 @@
 		C9B281B823ED565100554CA6 /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				C9831CE223FFC4470062A9A0 /* Container.swift */,
+				C9831CEF23FFC44D0062A9A0 /* Assembly */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -1213,16 +1239,21 @@
 				C9CAA50C23F661B3004B9BDD /* AppDelagateUsecase.swift in Sources */,
 				C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */,
 				C9D72F0723F59629003EFC38 /* DateFormatter+Util.swift in Sources */,
+				C9831CF923FFC4AB0062A9A0 /* DataManagerAssembly.swift in Sources */,
+				C9831CF323FFC4680062A9A0 /* ViewModelAssembly.swift in Sources */,
 				C9CB50DE23FA93090001BD1D /* IBDesignableSegmentedControl.swift in Sources */,
 				C90A45ED23F66CE0000E3B1B /* UINib+Util.swift in Sources */,
 				C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */,
 				C9D72F2023F59B24003EFC38 /* PlaceHolderTextView.swift in Sources */,
 				C9D72F1323F59959003EFC38 /* UIPageController+Util.swift in Sources */,
 				C92B6DCF23F140710090E1D9 /* Strings+Util.swift in Sources */,
+				C9831CE323FFC4470062A9A0 /* Container.swift in Sources */,
 				C92B6DBB23F1282A0090E1D9 /* ErrorNotifying.swift in Sources */,
 				C90A45F523F66F7E000E3B1B /* NumberFormatter+Util.swift in Sources */,
+				C9831CF723FFC47D0062A9A0 /* RouterAssembly.swift in Sources */,
 				C92B6DBD23F129F80090E1D9 /* ErrorMappingUsecaseProtocolExtension.swift in Sources */,
 				C9D72EFD23F59495003EFC38 /* Optional+Util.swift in Sources */,
+				C9831CF523FFC4710062A9A0 /* UsecaseAssembly.swift in Sources */,
 				C9CB50E723FA97890001BD1D /* IBDesignableImageView.swift in Sources */,
 				C9CB50D823FA92EE0001BD1D /* IBDesignableButton.swift in Sources */,
 				C92B6DB323F115AB0090E1D9 /* AnalyticsDataStructures.swift in Sources */,
@@ -1233,6 +1264,7 @@
 				C9CB50D223FA92CA0001BD1D /* IBDesignableCollectionViewCell.swift in Sources */,
 				C90A45E923F668AB000E3B1B /* LaunchViewController.swift in Sources */,
 				C92B6DC323F13BAB0090E1D9 /* DisplayableErrorProtocol.swift in Sources */,
+				C9831CF123FFC45D0062A9A0 /* ViewControllerAssembly.swift in Sources */,
 				C9D72F0523F595E3003EFC38 /* Date+Util.swift in Sources */,
 				C9D72F0923F59662003EFC38 /* NSLayoutAnchor+Util.swift in Sources */,
 				C9D72F0323F59587003EFC38 /* Array+Util.swift in Sources */,

@@ -6,7 +6,7 @@ import RxSwift
 
 class LoginViewController: UIViewController, SFSafariViewControllerDelegate, ErrorNotifying {
     
-    var viewModel: LoginViewModel?
+    var viewModel: LoginViewModelProtocol?
     var disposeBag: DisposeBag = DisposeBag()
     
     @IBOutlet weak var LoginTopImageView: CornerRoundableImageView!

@@ -2,7 +2,9 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-final class LoginViewModel: ViewModel {
+protocol LoginViewModelProtocol { }
+
+final class LoginViewModel: LoginViewModelProtocol, ViewModel {
     
 }
 

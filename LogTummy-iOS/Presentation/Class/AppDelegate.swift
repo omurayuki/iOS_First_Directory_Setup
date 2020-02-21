@@ -11,9 +11,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var container: Container = {
         let container = Container()
         container.storyboardInitCompleted(LoginViewController.self) {
-            $1.viewModel = $0.resolve(LoginViewModel.self)
+            $1.viewModel = $0.resolve(LoginViewModelProtocol.self)
         }
-        container.register(LoginViewModel.self) { _ in LoginViewModel() }
+        container.register(LoginViewModelProtocol.self) { _ in LoginViewModel() }
         return container
     }()
 
