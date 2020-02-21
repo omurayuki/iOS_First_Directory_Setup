@@ -7,8 +7,5 @@ protocol LoginViewModelProtocol {
 
 final class LoginViewModel: LoginViewModelProtocol {
     
-}
-
-extension LoginViewModel {
-    
+    private var usecase: LoginUsecaseProtocol?
 }

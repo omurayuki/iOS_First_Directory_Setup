@@ -73,6 +73,8 @@
 		C9831CF723FFC47D0062A9A0 /* RouterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CF623FFC47D0062A9A0 /* RouterAssembly.swift */; };
 		C9831CF923FFC4AB0062A9A0 /* DataManagerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CF823FFC4AB0062A9A0 /* DataManagerAssembly.swift */; };
 		C9831CFB23FFE4860062A9A0 /* ResourcesSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CFA23FFE4860062A9A0 /* ResourcesSupport.swift */; };
+		C9831D0B240000510062A9A0 /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D0A240000510062A9A0 /* LoginDataManager.swift */; };
+		C9831D0E240001D20062A9A0 /* LoginRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D0D240001D20062A9A0 /* LoginRemote.swift */; };
 		C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9B281B523ED549600554CA6 /* GoogleService-Info.plist */; };
 		C9C8CBA223F4126A00EA07EE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */; };
 		C9C8CBB623F4156F00EA07EE /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA423F4156900EA07EE /* nanopb.framework */; };
@@ -297,6 +299,8 @@
 		C9831CF623FFC47D0062A9A0 /* RouterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAssembly.swift; sourceTree = "<group>"; };
 		C9831CF823FFC4AB0062A9A0 /* DataManagerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerAssembly.swift; sourceTree = "<group>"; };
 		C9831CFA23FFE4860062A9A0 /* ResourcesSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesSupport.swift; sourceTree = "<group>"; };
+		C9831D0A240000510062A9A0 /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
+		C9831D0D240001D20062A9A0 /* LoginRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRemote.swift; sourceTree = "<group>"; };
 		C9B281A623ED482F00554CA6 /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "gRPCCertificates-Cpp.bundle"; path = "Carthage/Build/iOS/gRPC-C++.framework/Resources/gRPCCertificates-Cpp.bundle"; sourceTree = "<group>"; };
 		C9B281B523ED549600554CA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -654,6 +658,23 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
+		C9831D09240000340062A9A0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C9831D0C240001AE0062A9A0 /* Entity */,
+				C9831D0A240000510062A9A0 /* LoginDataManager.swift */,
+				C9831D0D240001D20062A9A0 /* LoginRemote.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C9831D0C240001AE0062A9A0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		C9B281AB23ED518400554CA6 /* LogTummyAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -675,6 +696,7 @@
 		C9B281AD23ED521E00554CA6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C9831D09240000340062A9A0 /* Login */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -1254,6 +1276,7 @@
 				C9D72EFD23F59495003EFC38 /* Optional+Util.swift in Sources */,
 				C9831CF523FFC4710062A9A0 /* UsecaseAssembly.swift in Sources */,
 				C9CB50E723FA97890001BD1D /* IBDesignableImageView.swift in Sources */,
+				C9831D0B240000510062A9A0 /* LoginDataManager.swift in Sources */,
 				C9CB50D823FA92EE0001BD1D /* IBDesignableButton.swift in Sources */,
 				C92B6DB323F115AB0090E1D9 /* AnalyticsDataStructures.swift in Sources */,
 				C92B6DC023F13B7A0090E1D9 /* AppError.swift in Sources */,
@@ -1298,6 +1321,7 @@
 				C90A45EB23F66BA5000E3B1B /* UITableView+Util.swift in Sources */,
 				C9CB50EF23FA9D190001BD1D /* CornerRoundableImageView.swift in Sources */,
 				C90A45F123F66F24000E3B1B /* Int+Util.swift in Sources */,
+				C9831D0E240001D20062A9A0 /* LoginRemote.swift in Sources */,
 				C96687F923EAB50A0011DDD3 /* R.generated.swift in Sources */,
 				C92B6DAC23F113880090E1D9 /* Rx+Util.swift in Sources */,
 			);
