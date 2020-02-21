@@ -11,6 +11,7 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate, Err
     
     @IBOutlet weak var LoginTopImageView: CornerRoundableImageView!
     @IBOutlet weak var LoginButton: CornerRoundableButton!
+    var routing: LoginRoutingProtocol? { didSet { routing?.viewController = self } }
     var viewModel: LoginViewModelProtocol?
     private let disposeBag: DisposeBag = DisposeBag()
     
@@ -33,6 +34,7 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate, Err
     
     private func bindUI() {
         viewModel?.hoge()
+        routing?.fuga()
     }
     
     // remoteManager // datamanagerはuserdefaultかremotemanagerのこれを叩く

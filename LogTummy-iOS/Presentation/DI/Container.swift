@@ -10,6 +10,7 @@ extension SwinjectStoryboard {
             DataManagerAssembly(),
             UsecaseAssembly(),
             ViewModelAssembly(),
+            RoutingAssembly(),
             ViewControllerAssembly()
         ])
     }

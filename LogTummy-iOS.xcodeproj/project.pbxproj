@@ -70,11 +70,13 @@
 		C9831CF123FFC45D0062A9A0 /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CF023FFC45D0062A9A0 /* ViewControllerAssembly.swift */; };
 		C9831CF323FFC4680062A9A0 /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CF223FFC4670062A9A0 /* ViewModelAssembly.swift */; };
 		C9831CF523FFC4710062A9A0 /* UsecaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CF423FFC4710062A9A0 /* UsecaseAssembly.swift */; };
-		C9831CF723FFC47D0062A9A0 /* RouterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CF623FFC47D0062A9A0 /* RouterAssembly.swift */; };
 		C9831CF923FFC4AB0062A9A0 /* DataManagerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CF823FFC4AB0062A9A0 /* DataManagerAssembly.swift */; };
 		C9831CFB23FFE4860062A9A0 /* ResourcesSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CFA23FFE4860062A9A0 /* ResourcesSupport.swift */; };
 		C9831D0B240000510062A9A0 /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D0A240000510062A9A0 /* LoginDataManager.swift */; };
 		C9831D0E240001D20062A9A0 /* LoginRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D0D240001D20062A9A0 /* LoginRemote.swift */; };
+		C9831D10240026670062A9A0 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D0F240026670062A9A0 /* Routing.swift */; };
+		C9831D12240026890062A9A0 /* LoginRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D11240026890062A9A0 /* LoginRouting.swift */; };
+		C9831D14240027A30062A9A0 /* RoutingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D13240027A30062A9A0 /* RoutingAssembly.swift */; };
 		C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9B281B523ED549600554CA6 /* GoogleService-Info.plist */; };
 		C9C8CBA223F4126A00EA07EE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */; };
 		C9C8CBB623F4156F00EA07EE /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA423F4156900EA07EE /* nanopb.framework */; };
@@ -296,11 +298,13 @@
 		C9831CF023FFC45D0062A9A0 /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
 		C9831CF223FFC4670062A9A0 /* ViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
 		C9831CF423FFC4710062A9A0 /* UsecaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsecaseAssembly.swift; sourceTree = "<group>"; };
-		C9831CF623FFC47D0062A9A0 /* RouterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAssembly.swift; sourceTree = "<group>"; };
 		C9831CF823FFC4AB0062A9A0 /* DataManagerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerAssembly.swift; sourceTree = "<group>"; };
 		C9831CFA23FFE4860062A9A0 /* ResourcesSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesSupport.swift; sourceTree = "<group>"; };
 		C9831D0A240000510062A9A0 /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
 		C9831D0D240001D20062A9A0 /* LoginRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRemote.swift; sourceTree = "<group>"; };
+		C9831D0F240026670062A9A0 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		C9831D11240026890062A9A0 /* LoginRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouting.swift; sourceTree = "<group>"; };
+		C9831D13240027A30062A9A0 /* RoutingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAssembly.swift; sourceTree = "<group>"; };
 		C9B281A623ED482F00554CA6 /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "gRPCCertificates-Cpp.bundle"; path = "Carthage/Build/iOS/gRPC-C++.framework/Resources/gRPCCertificates-Cpp.bundle"; sourceTree = "<group>"; };
 		C9B281B523ED549600554CA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -419,13 +423,6 @@
 				C9D72EFE23F594EA003EFC38 /* Reactive+Util.swift */,
 			);
 			path = ThirdParty;
-			sourceTree = "<group>";
-		};
-		C910128023FDA3180008D35C /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C9155C0123F65D8D00D7074A /* Segue */ = {
@@ -650,10 +647,10 @@
 			isa = PBXGroup;
 			children = (
 				C9831CF023FFC45D0062A9A0 /* ViewControllerAssembly.swift */,
+				C9831D13240027A30062A9A0 /* RoutingAssembly.swift */,
 				C9831CF223FFC4670062A9A0 /* ViewModelAssembly.swift */,
 				C9831CF423FFC4710062A9A0 /* UsecaseAssembly.swift */,
 				C9831CF823FFC4AB0062A9A0 /* DataManagerAssembly.swift */,
-				C9831CF623FFC47D0062A9A0 /* RouterAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -798,7 +795,6 @@
 				C92B6DC123F13B930090E1D9 /* Protocol */,
 				C92B6DBE23F13B6A0090E1D9 /* Value */,
 				C9CAA50623F65ED7004B9BDD /* Routing */,
-				C910128023FDA3180008D35C /* ViewModel */,
 				C9CAA50823F65EE2004B9BDD /* View */,
 				C9CAA50723F65EDB004B9BDD /* Screen */,
 			);
@@ -874,6 +870,7 @@
 		C9CAA50623F65ED7004B9BDD /* Routing */ = {
 			isa = PBXGroup;
 			children = (
+				C9831D0F240026670062A9A0 /* Routing.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -899,6 +896,7 @@
 			children = (
 				C96687B823EA8F390011DDD3 /* LoginViewController.storyboard */,
 				C96687B623EA8F390011DDD3 /* LoginViewController.swift */,
+				C9831D11240026890062A9A0 /* LoginRouting.swift */,
 				C910126623FD9B6D0008D35C /* LoginViewModel.swift */,
 				C910126D23FD9B7D0008D35C /* LoginUsecase.swift */,
 			);
@@ -1264,6 +1262,7 @@
 				C9831CF323FFC4680062A9A0 /* ViewModelAssembly.swift in Sources */,
 				C9CB50DE23FA93090001BD1D /* IBDesignableSegmentedControl.swift in Sources */,
 				C90A45ED23F66CE0000E3B1B /* UINib+Util.swift in Sources */,
+				C9831D10240026670062A9A0 /* Routing.swift in Sources */,
 				C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */,
 				C9D72F2023F59B24003EFC38 /* PlaceHolderTextView.swift in Sources */,
 				C9D72F1323F59959003EFC38 /* UIPageController+Util.swift in Sources */,
@@ -1271,7 +1270,7 @@
 				C9831CE323FFC4470062A9A0 /* Container.swift in Sources */,
 				C92B6DBB23F1282A0090E1D9 /* ErrorNotifying.swift in Sources */,
 				C90A45F523F66F7E000E3B1B /* NumberFormatter+Util.swift in Sources */,
-				C9831CF723FFC47D0062A9A0 /* RouterAssembly.swift in Sources */,
+				C9831D14240027A30062A9A0 /* RoutingAssembly.swift in Sources */,
 				C92B6DBD23F129F80090E1D9 /* ErrorMappingUsecaseProtocolExtension.swift in Sources */,
 				C9D72EFD23F59495003EFC38 /* Optional+Util.swift in Sources */,
 				C9831CF523FFC4710062A9A0 /* UsecaseAssembly.swift in Sources */,
@@ -1293,6 +1292,7 @@
 				C92B6DB723F117B30090E1D9 /* AnalyticsInfo.swift in Sources */,
 				C9CAA50E23F661D3004B9BDD /* AppConfigurator.swift in Sources */,
 				C9D72F1123F59879003EFC38 /* UIImage+Util.swift in Sources */,
+				C9831D12240026890062A9A0 /* LoginRouting.swift in Sources */,
 				C9D72F0123F59559003EFC38 /* Animation+Util.swift in Sources */,
 				C9D72EFF23F594EA003EFC38 /* Reactive+Util.swift in Sources */,
 				C9CB50E923FA9B620001BD1D /* HignlightableButton.swift in Sources */,
