@@ -6,11 +6,13 @@ import RxSwift
 
 class LoginViewController: UIViewController, SFSafariViewControllerDelegate, ErrorNotifying {
     
+    var routing: LoginRoutingProtocol? { didSet { routing?.viewController = self } }
+    var viewModel: LoginViewModel?
+    var disposeBag: DisposeBag! = DisposeBag()
+    
     @IBOutlet weak var LoginTopImageView: CornerRoundableImageView!
     
     @IBOutlet weak var LoginButton: CornerRoundableButton!
-    
-    let disposeBag = DisposeBag()
     
     let TWITTER_CONSUMER_KEY = "sqOi4qeOAFWf9kJwNw5RkveM6"
     let TWITTER_CONSUMER_SECRET = "UtYIzFwCtb2fpJvUw4FYI6CJ8dgDqRGZ7NjCp1CdXz0pfjxIBP"

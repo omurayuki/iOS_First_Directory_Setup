@@ -1,6 +1,7 @@
 import UIKit
 import Firebase
 import SwifteriOS
+import RxSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

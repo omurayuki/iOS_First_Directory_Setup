@@ -1,9 +1,22 @@
-//
-//  LoginViewModel.swift
-//  LogTummy-iOS
-//
-//  Created by オムラユウキ on 2020/02/20.
-//  Copyright © 2020 オムラユウキ. All rights reserved.
-//
-
 import Foundation
+import RxSwift
+import RxCocoa
+
+final class LoginViewModel: ViewModel {
+    
+}
+
+extension LoginViewModel {
+    
+    struct Input {
+        
+    }
+    
+    struct Output {
+        
+    }
+    
+    func transform(input: Input) -> Output {
+        return Output()
+    }
+}
