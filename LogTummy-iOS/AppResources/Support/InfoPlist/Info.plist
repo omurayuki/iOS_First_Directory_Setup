@@ -33,8 +33,6 @@
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchViewController</string>
-	<key>UIMainStoryboardFile</key>
-	<string>LoginViewController</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

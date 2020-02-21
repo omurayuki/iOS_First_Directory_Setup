@@ -3,7 +3,6 @@ import SwifteriOS
 import SafariServices
 import RxCocoa
 import RxSwift
-import SwinjectStoryboard
 
 class LoginViewController: UIViewController, SFSafariViewControllerDelegate, ErrorNotifying {
     
@@ -19,8 +18,6 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate, Err
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        SwinjectStoryboard.initialize()
         
         bindUI()
         

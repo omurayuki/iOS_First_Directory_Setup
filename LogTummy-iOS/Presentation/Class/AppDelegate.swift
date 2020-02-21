@@ -2,9 +2,20 @@ import UIKit
 import Firebase
 import SwifteriOS
 import RxSwift
+import Swinject
+import SwinjectStoryboard
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var container: Container = {
+        let container = Container()
+        container.storyboardInitCompleted(LoginViewController.self) {
+            $1.viewModel = $0.resolve(LoginViewModel.self)
+        }
+        container.register(LoginViewModel.self) { _ in LoginViewModel() }
+        return container
+    }()
 
     var window: UIWindow?
 
@@ -16,6 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #endif
         let options = FirebaseOptions(contentsOfFile: filePath!)
         FirebaseApp.configure(options: options!)
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.makeKeyAndVisible()
+        self.window = window
+        let storyboard = SwinjectStoryboard.create(name: "LoginViewController", bundle: nil, container: container)
+        window.rootViewController = storyboard.instantiateInitialViewController()
         
         return true
     }

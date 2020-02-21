@@ -66,6 +66,7 @@
 		C97ADF2F23FF781F00BC08B4 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C97ADF2823FF781E00BC08B4 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C97ADF4523FF8E7200BC08B4 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97ADF3A23FF8E2B00BC08B4 /* SwinjectStoryboard.framework */; };
 		C97ADF4623FF8E7200BC08B4 /* SwinjectStoryboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C97ADF3A23FF8E2B00BC08B4 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C97ADF4823FF96D800BC08B4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ADF4723FF96D800BC08B4 /* ViewModel.swift */; };
 		C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9B281B523ED549600554CA6 /* GoogleService-Info.plist */; };
 		C9C8CBA223F4126A00EA07EE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */; };
 		C9C8CBB623F4156F00EA07EE /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA423F4156900EA07EE /* nanopb.framework */; };
@@ -283,6 +284,7 @@
 		C966881123EABAB70011DDD3 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		C97ADF2823FF781E00BC08B4 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		C97ADF3023FF8E2B00BC08B4 /* SwinjectStoryboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwinjectStoryboard.xcodeproj; path = ../../SwinjectStoryboard/SwinjectStoryboard.xcodeproj; sourceTree = "<group>"; };
+		C97ADF4723FF96D800BC08B4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C9B281A623ED482F00554CA6 /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "gRPCCertificates-Cpp.bundle"; path = "Carthage/Build/iOS/gRPC-C++.framework/Resources/gRPCCertificates-Cpp.bundle"; sourceTree = "<group>"; };
 		C9B281B523ED549600554CA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -406,6 +408,7 @@
 		C910128023FDA3180008D35C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C97ADF4723FF96D800BC08B4 /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1203,6 +1206,7 @@
 				C96687B723EA8F390011DDD3 /* LoginViewController.swift in Sources */,
 				C9D72F0B23F59691003EFC38 /* Observable+Util.swift in Sources */,
 				C9D72EFB23F593CD003EFC38 /* CountService.swift in Sources */,
+				C97ADF4823FF96D800BC08B4 /* ViewModel.swift in Sources */,
 				C9D72F1D23F59ACA003EFC38 /* UNMutableNotification+Util.swift in Sources */,
 				C92B6DC723F13DDA0090E1D9 /* Strings.swift in Sources */,
 				C9CB50E223FA93DE0001BD1D /* Sizes.swift in Sources */,
