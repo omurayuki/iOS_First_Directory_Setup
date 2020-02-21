@@ -73,6 +73,7 @@
 		C9831CF523FFC4710062A9A0 /* UsecaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CF423FFC4710062A9A0 /* UsecaseAssembly.swift */; };
 		C9831CF723FFC47D0062A9A0 /* RouterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CF623FFC47D0062A9A0 /* RouterAssembly.swift */; };
 		C9831CF923FFC4AB0062A9A0 /* DataManagerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CF823FFC4AB0062A9A0 /* DataManagerAssembly.swift */; };
+		C9831CFB23FFE4860062A9A0 /* ResourcesSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CFA23FFE4860062A9A0 /* ResourcesSupport.swift */; };
 		C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9B281B523ED549600554CA6 /* GoogleService-Info.plist */; };
 		C9C8CBA223F4126A00EA07EE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */; };
 		C9C8CBB623F4156F00EA07EE /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA423F4156900EA07EE /* nanopb.framework */; };
@@ -297,6 +298,7 @@
 		C9831CF423FFC4710062A9A0 /* UsecaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsecaseAssembly.swift; sourceTree = "<group>"; };
 		C9831CF623FFC47D0062A9A0 /* RouterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAssembly.swift; sourceTree = "<group>"; };
 		C9831CF823FFC4AB0062A9A0 /* DataManagerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerAssembly.swift; sourceTree = "<group>"; };
+		C9831CFA23FFE4860062A9A0 /* ResourcesSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesSupport.swift; sourceTree = "<group>"; };
 		C9B281A623ED482F00554CA6 /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "gRPCCertificates-Cpp.bundle"; path = "Carthage/Build/iOS/gRPC-C++.framework/Resources/gRPCCertificates-Cpp.bundle"; sourceTree = "<group>"; };
 		C9B281B523ED549600554CA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -928,6 +930,7 @@
 		C9CB50E323FA95690001BD1D /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				C9831CFA23FFE4860062A9A0 /* ResourcesSupport.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -1292,6 +1295,7 @@
 				C910126E23FD9B7D0008D35C /* LoginUsecase.swift in Sources */,
 				C9D72F2423F59B76003EFC38 /* PaddingTextField.swift in Sources */,
 				C9CB50ED23FA9C870001BD1D /* CornerRoundableButton.swift in Sources */,
+				C9831CFB23FFE4860062A9A0 /* ResourcesSupport.swift in Sources */,
 				C92B6DAF23F115180090E1D9 /* AnalyticsServiceManager.swift in Sources */,
 				C9C8CBD123F4214F00EA07EE /* Calendar+Util.swift in Sources */,
 				C9D72F1923F59A07003EFC38 /* UIView+Util.swift in Sources */,

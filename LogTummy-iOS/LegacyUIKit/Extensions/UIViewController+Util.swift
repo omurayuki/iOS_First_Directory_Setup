@@ -122,3 +122,5 @@ extension UIViewController {
         })
     }
 }
+
+extension UIViewController: Initializable { }

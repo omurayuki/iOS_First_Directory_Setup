@@ -20,8 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.makeKeyAndVisible()
         self.window = window
-        let storyboard = Inject.createInjectedStoryboard(name: "LoginViewController")
-        window.rootViewController = storyboard.instantiateInitialViewController()
+        window.rootViewController = Inject.createInjectedStoryboardWithViewController(name: LoginViewController.className)
         
         return true
     }
