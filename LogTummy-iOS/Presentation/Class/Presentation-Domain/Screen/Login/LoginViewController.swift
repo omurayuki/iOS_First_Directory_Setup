@@ -6,15 +6,13 @@ import RxSwift
 
 class LoginViewController: UIViewController, SFSafariViewControllerDelegate, ErrorNotifying {
     
-    private var viewModel: LoginViewModelProtocol?
-    private var disposeBag: DisposeBag = DisposeBag()
-    
-    @IBOutlet weak var LoginTopImageView: CornerRoundableImageView!
-    
-    @IBOutlet weak var LoginButton: CornerRoundableButton!
-    
     let TWITTER_CONSUMER_KEY = "sqOi4qeOAFWf9kJwNw5RkveM6"
     let TWITTER_CONSUMER_SECRET = "UtYIzFwCtb2fpJvUw4FYI6CJ8dgDqRGZ7NjCp1CdXz0pfjxIBP"
+    
+    @IBOutlet weak var LoginTopImageView: CornerRoundableImageView!
+    @IBOutlet weak var LoginButton: CornerRoundableButton!
+    var viewModel: LoginViewModelProtocol?
+    private let disposeBag: DisposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +32,7 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate, Err
     }
     
     private func bindUI() {
+        viewModel?.hoge()
     }
     
     // remoteManager // datamanagerはuserdefaultかremotemanagerのこれを叩く

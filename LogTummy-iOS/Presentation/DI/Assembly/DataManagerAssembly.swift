@@ -1,11 +1,14 @@
+import Swinject
 import SwinjectStoryboard
 
 extension SwinjectStoryboard {
     
-    final class DataManagerAssembly {
+    final class DataManagerAssembly: Assembly {
         
-        @objc
-        class func setup() {
+        func assemble(container: Container) {
+            container.register(LoginDataManagerProtocol.self) { _ in
+                LoginDataManager()
+            }
         }
     }
 }

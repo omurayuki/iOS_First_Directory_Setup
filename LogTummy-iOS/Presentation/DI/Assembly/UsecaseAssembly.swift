@@ -1,11 +1,15 @@
+import Swinject
 import SwinjectStoryboard
 
 extension SwinjectStoryboard {
     
-    final class UsecaseAssembly {
+    final class UsecaseAssembly: Assembly {
         
-        @objc
-        class func setup() {
+        func assemble(container: Container) {
+            container.register(LoginUsecaseProtocol.self) {
+                let loginDataManager = $0.resolve(LoginDataManagerProtocol.self)!
+                return LoginUsecase(loginDataManager: loginDataManager)
+            }
         }
     }
 }

@@ -1,6 +1,20 @@
 import Swinject
 import SwinjectStoryboard
 
+extension SwinjectStoryboard {
+    
+    @objc
+    class func setup() {
+        let assembler = Assembler(container: defaultContainer)
+        assembler.apply(assemblies: [
+            DataManagerAssembly(),
+            UsecaseAssembly(),
+            ViewModelAssembly(),
+            ViewControllerAssembly()
+        ])
+    }
+}
+
 var container: Container {
     return SwinjectStoryboard.defaultContainer
 }

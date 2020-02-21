@@ -3,9 +3,18 @@ import RxCocoa
 
 protocol LoginUsecaseProtocol {
     
+    func hoge()
 }
 
 final class LoginUsecase: LoginUsecaseProtocol {
     
-    private var loginDataManager: LoginDataManagerProtocol?
+    private let loginDataManager: LoginDataManagerProtocol
+    
+    init(loginDataManager: LoginDataManagerProtocol) {
+        self.loginDataManager = loginDataManager
+    }
+    
+    func hoge() {
+        loginDataManager.hoge()
+    }
 }
