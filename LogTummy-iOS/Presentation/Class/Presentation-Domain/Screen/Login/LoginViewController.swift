@@ -6,11 +6,9 @@ import RxSwift
 
 class LoginViewController: UIViewController, SFSafariViewControllerDelegate, ErrorNotifying {
     
-    let TWITTER_CONSUMER_KEY = "sqOi4qeOAFWf9kJwNw5RkveM6"
-    let TWITTER_CONSUMER_SECRET = "UtYIzFwCtb2fpJvUw4FYI6CJ8dgDqRGZ7NjCp1CdXz0pfjxIBP"
-    
     @IBOutlet weak var LoginTopImageView: CornerRoundableImageView!
     @IBOutlet weak var LoginButton: CornerRoundableButton!
+    
     var routing: LoginRoutingProtocol? { didSet { routing?.viewController = self } }
     var viewModel: LoginViewModelProtocol?
     private let disposeBag: DisposeBag = DisposeBag()
@@ -19,38 +17,29 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate, Err
         super.viewDidLoad()
         
         bindUI()
+        bindVM()
+    }
+    
+    private func bindUI() {
         
         LoginButton.rx.tap.asDriver()
-            .drive(onNext: { _ in
-                // usecase
-                self.sampleObservable().subscribe(onSuccess: { authTuple in
-                    print(authTuple)
-                }) { error in
-                    self.showErrorMessage(error)
-                }.disposed(by: self.disposeBag)
+            .drive(onNext: { [weak self] _ in
+                guard let this = self else { return }
+                this.viewModel?.oAuthLogin(presentingForm: this)
             })
         .disposed(by: disposeBag)
     }
     
-    private func bindUI() {
-        viewModel?.hoge()
-        routing?.fuga()
-    }
-    
-    // remoteManager // datamanagerはuserdefaultかremotemanagerのこれを叩く
-    func sampleObservable() -> Single<(Credential.OAuthAccessToken?, URLResponse)> {
-        return Single.create { observer -> Disposable in
-            let swifter = Swifter(consumerKey: self.TWITTER_CONSUMER_KEY, consumerSecret: self.TWITTER_CONSUMER_SECRET)
-            swifter.authorize(withCallback: URL(string: "swifter-sqOi4qeOAFWf9kJwNw5RkveM6://")!, presentingFrom: self, success: { accessToken, response in
-                observer(.success((accessToken, response)))
-            }) { error in
-                if DeviceInfo().isOffline {
-                    observer(.error(SwifterError(errorKind: .offline)))
-                }
-                observer(.error(error))
-            }
-            return Disposables.create()
-        }
+    private func bindVM() {
+        
+        viewModel?.error
+            .asDriver(onErrorJustReturn: nil)
+            .drive(onNext: { [weak self] error in
+                guard let error = error as? AppError else { return }
+                error.alertController()
+                // errorデータは来ていること確認
+                // ErrorNotifying中心にerror処理を修正する必要あり
+            }).disposed(by: disposeBag)
     }
 }
 
@@ -62,4 +51,3 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate, Err
 // テスト // Observableで成功/失敗時に値がそれぞれ取れるかも
 // UI調整
 // ボタンエフェクト処理
-// swinject削除
