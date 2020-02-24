@@ -78,6 +78,8 @@
 		C9831D12240026890062A9A0 /* LoginRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D11240026890062A9A0 /* LoginRouting.swift */; };
 		C9831D14240027A30062A9A0 /* RoutingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D13240027A30062A9A0 /* RoutingAssembly.swift */; };
 		C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9B281B523ED549600554CA6 /* GoogleService-Info.plist */; };
+		C9BC4D0A240404AC0054790A /* TWUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC4D09240404AC0054790A /* TWUserEntity.swift */; };
+		C9BC4D18240409480054790A /* SwifterGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC4D17240409480054790A /* SwifterGeneral.swift */; };
 		C9C8CBA223F4126A00EA07EE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */; };
 		C9C8CBB623F4156F00EA07EE /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA423F4156900EA07EE /* nanopb.framework */; };
 		C9C8CBB823F4157100EA07EE /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBAC23F4156A00EA07EE /* GoogleUtilities.framework */; };
@@ -307,6 +309,8 @@
 		C9831D13240027A30062A9A0 /* RoutingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAssembly.swift; sourceTree = "<group>"; };
 		C9B281A623ED482F00554CA6 /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "gRPCCertificates-Cpp.bundle"; path = "Carthage/Build/iOS/gRPC-C++.framework/Resources/gRPCCertificates-Cpp.bundle"; sourceTree = "<group>"; };
 		C9B281B523ED549600554CA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C9BC4D09240404AC0054790A /* TWUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWUserEntity.swift; sourceTree = "<group>"; };
+		C9BC4D17240409480054790A /* SwifterGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterGeneral.swift; sourceTree = "<group>"; };
 		C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		C9C8CBA423F4156900EA07EE /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Carthage/Build/iOS/nanopb.framework; sourceTree = "<group>"; };
 		C9C8CBA523F4156A00EA07EE /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Carthage/Build/iOS/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
@@ -668,6 +672,7 @@
 		C9831D0C240001AE0062A9A0 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				C9BC4D09240404AC0054790A /* TWUserEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -804,7 +809,7 @@
 		C9B281BB23ED567000554CA6 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				C92B6DA923F10F1E0090E1D9 /* Logger.swift */,
+				C9BC4D16240409390054790A /* Log */,
 				C9D72F1E23F59B11003EFC38 /* Custom */,
 				C9D72EF923F593C0003EFC38 /* Service */,
 				C92B6DAD23F114DF0090E1D9 /* Analytics */,
@@ -813,6 +818,7 @@
 				C92B6DB923F128080090E1D9 /* Extension */,
 				C9D72F1C23F59ACA003EFC38 /* UNMutableNotification+Util.swift */,
 				C9C8CBD023F4214F00EA07EE /* Calendar+Util.swift */,
+				C9BC4D17240409480054790A /* SwifterGeneral.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -851,6 +857,14 @@
 				C96687F823EAB50A0011DDD3 /* R.generated.swift */,
 			);
 			path = R;
+			sourceTree = "<group>";
+		};
+		C9BC4D16240409390054790A /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C92B6DA923F10F1E0090E1D9 /* Logger.swift */,
+			);
+			path = Log;
 			sourceTree = "<group>";
 		};
 		C9CAA50423F65EAD004B9BDD /* CommonUsecase */ = {
@@ -1247,6 +1261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9CB50E023FA93180001BD1D /* IBDesignableScrollView.swift in Sources */,
+				C9BC4D18240409480054790A /* SwifterGeneral.swift in Sources */,
 				C92B6DAA23F10F1E0090E1D9 /* Logger.swift in Sources */,
 				C910126723FD9B6D0008D35C /* LoginViewModel.swift in Sources */,
 				C96687B723EA8F390011DDD3 /* LoginViewController.swift in Sources */,
@@ -1323,6 +1338,7 @@
 				C90A45F123F66F24000E3B1B /* Int+Util.swift in Sources */,
 				C9831D0E240001D20062A9A0 /* LoginRemote.swift in Sources */,
 				C96687F923EAB50A0011DDD3 /* R.generated.swift in Sources */,
+				C9BC4D0A240404AC0054790A /* TWUserEntity.swift in Sources */,
 				C92B6DAC23F113880090E1D9 /* Rx+Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
