@@ -37,6 +37,8 @@
 		C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DD123F141380090E1D9 /* VoidBlock.swift */; };
 		C92B6DD423F151040090E1D9 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DD323F151030090E1D9 /* APIError.swift */; };
 		C92BA3A42404F4A600F28BA3 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3A32404F4A600F28BA3 /* Resources.swift */; };
+		C92BA3A72405121900F28BA3 /* MemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3A62405121900F28BA3 /* MemoryCache.swift */; };
+		C92BA3A92405123F00F28BA3 /* CacheHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3A82405123F00F28BA3 /* CacheHolder.swift */; };
 		C93BB66523FCFCA2007F14A2 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */; };
 		C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B223EA8F390011DDD3 /* AppDelegate.swift */; };
 		C96687B723EA8F390011DDD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B623EA8F390011DDD3 /* LoginViewController.swift */; };
@@ -276,6 +278,8 @@
 		C92B6DD123F141380090E1D9 /* VoidBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidBlock.swift; sourceTree = "<group>"; };
 		C92B6DD323F151030090E1D9 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		C92BA3A32404F4A600F28BA3 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		C92BA3A62405121900F28BA3 /* MemoryCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCache.swift; sourceTree = "<group>"; };
+		C92BA3A82405123F00F28BA3 /* CacheHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheHolder.swift; sourceTree = "<group>"; };
 		C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		C96687AF23EA8F390011DDD3 /* LogTummy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LogTummy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96687B223EA8F390011DDD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -540,6 +544,15 @@
 			path = Typealias;
 			sourceTree = "<group>";
 		};
+		C92BA3A52405120400F28BA3 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				C92BA3A62405121900F28BA3 /* MemoryCache.swift */,
+				C92BA3A82405123F00F28BA3 /* CacheHolder.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		C96687A623EA8F390011DDD3 = {
 			isa = PBXGroup;
 			children = (
@@ -693,6 +706,7 @@
 		C9B281AD23ED521E00554CA6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C92BA3A52405120400F28BA3 /* Cache */,
 				C9831D09240000340062A9A0 /* Login */,
 			);
 			path = Data;
@@ -1285,6 +1299,7 @@
 				C9831D10240026670062A9A0 /* Routing.swift in Sources */,
 				C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */,
 				C9D72F2023F59B24003EFC38 /* PlaceHolderTextView.swift in Sources */,
+				C92BA3A72405121900F28BA3 /* MemoryCache.swift in Sources */,
 				C9D72F1323F59959003EFC38 /* UIPageController+Util.swift in Sources */,
 				C92B6DCF23F140710090E1D9 /* Strings+Util.swift in Sources */,
 				C9831CE323FFC4470062A9A0 /* Container.swift in Sources */,
@@ -1341,6 +1356,7 @@
 				C92B6DAF23F115180090E1D9 /* AnalyticsServiceManager.swift in Sources */,
 				C9C8CBD123F4214F00EA07EE /* Calendar+Util.swift in Sources */,
 				C9D72F1923F59A07003EFC38 /* UIView+Util.swift in Sources */,
+				C92BA3A92405123F00F28BA3 /* CacheHolder.swift in Sources */,
 				C90A45EB23F66BA5000E3B1B /* UITableView+Util.swift in Sources */,
 				C9CB50EF23FA9D190001BD1D /* CornerRoundableImageView.swift in Sources */,
 				C90A45F123F66F24000E3B1B /* Int+Util.swift in Sources */,

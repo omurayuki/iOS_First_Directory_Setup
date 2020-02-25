@@ -42,7 +42,7 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate, Err
     }
 }
 
-// キャッシュクラス作成
+// キャッシュクラス作成 暗号化してuserdefaultに保存 → userdefaultにあるか見に行く → あればexpireをみる
 // 遷移
 // テスト // Observableで成功/失敗時に値がそれぞれ取れるかも
 // UI調整
