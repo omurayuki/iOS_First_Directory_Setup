@@ -39,6 +39,9 @@
 		C92BA3A42404F4A600F28BA3 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3A32404F4A600F28BA3 /* Resources.swift */; };
 		C92BA3A72405121900F28BA3 /* MemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3A62405121900F28BA3 /* MemoryCache.swift */; };
 		C92BA3A92405123F00F28BA3 /* CacheHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3A82405123F00F28BA3 /* CacheHolder.swift */; };
+		C92BA3AB240516CA00F28BA3 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92BA3AA240516CA00F28BA3 /* KeychainAccess.framework */; };
+		C92BA3AC240516CA00F28BA3 /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C92BA3AA240516CA00F28BA3 /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C92BA3AF240518BC00F28BA3 /* MobileAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3AE240518BC00F28BA3 /* MobileAuth.swift */; };
 		C93BB66523FCFCA2007F14A2 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */; };
 		C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B223EA8F390011DDD3 /* AppDelegate.swift */; };
 		C96687B723EA8F390011DDD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B623EA8F390011DDD3 /* LoginViewController.swift */; };
@@ -236,6 +239,7 @@
 				C97ADF2F23FF781F00BC08B4 /* Swinject.framework in Embed Frameworks */,
 				C90F8A6323FAA2CF0015B1CE /* SwifteriOS.framework in Embed Frameworks */,
 				C966881B23EABAEA0011DDD3 /* Kingfisher.framework in Embed Frameworks */,
+				C92BA3AC240516CA00F28BA3 /* KeychainAccess.framework in Embed Frameworks */,
 				C966880023EAB9080011DDD3 /* RxCocoa.framework in Embed Frameworks */,
 				C966881923EABAEA0011DDD3 /* Lottie.framework in Embed Frameworks */,
 				C97ADF4623FF8E7200BC08B4 /* SwinjectStoryboard.framework in Embed Frameworks */,
@@ -280,6 +284,8 @@
 		C92BA3A32404F4A600F28BA3 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		C92BA3A62405121900F28BA3 /* MemoryCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCache.swift; sourceTree = "<group>"; };
 		C92BA3A82405123F00F28BA3 /* CacheHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheHolder.swift; sourceTree = "<group>"; };
+		C92BA3AA240516CA00F28BA3 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
+		C92BA3AE240518BC00F28BA3 /* MobileAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAuth.swift; sourceTree = "<group>"; };
 		C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		C96687AF23EA8F390011DDD3 /* LogTummy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LogTummy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96687B223EA8F390011DDD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -393,6 +399,7 @@
 				C9C8CBC223F4157700EA07EE /* FirebaseAnalytics.framework in Frameworks */,
 				C96687FF23EAB9080011DDD3 /* RxCocoa.framework in Frameworks */,
 				C97ADF2E23FF781E00BC08B4 /* Swinject.framework in Frameworks */,
+				C92BA3AB240516CA00F28BA3 /* KeychainAccess.framework in Frameworks */,
 				C966881823EABAEA0011DDD3 /* Lottie.framework in Frameworks */,
 				C9C8CBBA23F4157200EA07EE /* GoogleAppMeasurement.framework in Frameworks */,
 				C966881223EABAB70011DDD3 /* RxRelay.framework in Frameworks */,
@@ -553,6 +560,14 @@
 			path = Cache;
 			sourceTree = "<group>";
 		};
+		C92BA3AD240518AD00F28BA3 /* MobileAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C92BA3AE240518BC00F28BA3 /* MobileAuth.swift */,
+			);
+			path = MobileAuth;
+			sourceTree = "<group>";
+		};
 		C96687A623EA8F390011DDD3 = {
 			isa = PBXGroup;
 			children = (
@@ -614,6 +629,7 @@
 		C96687E623EAAC940011DDD3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C92BA3AA240516CA00F28BA3 /* KeychainAccess.framework */,
 				C97ADF2823FF781E00BC08B4 /* Swinject.framework */,
 				C9C8CBC823F415A600EA07EE /* StoreKit.framework */,
 				C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */,
@@ -706,6 +722,7 @@
 		C9B281AD23ED521E00554CA6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C92BA3AD240518AD00F28BA3 /* MobileAuth */,
 				C92BA3A52405120400F28BA3 /* Cache */,
 				C9831D09240000340062A9A0 /* Login */,
 			);
@@ -1343,6 +1360,7 @@
 				C9D72F1B23F59A8A003EFC38 /* UIViewController+Util.swift in Sources */,
 				C92B6DD423F151040090E1D9 /* APIError.swift in Sources */,
 				C9CB50EB23FA9BA40001BD1D /* UIColor+Util.swift in Sources */,
+				C92BA3AF240518BC00F28BA3 /* MobileAuth.swift in Sources */,
 				C92B6DB123F115230090E1D9 /* FirebaseAnalytics.swift in Sources */,
 				C9CB50DC23FA92FE0001BD1D /* IBDesignableView.swift in Sources */,
 				C92B6DB523F116710090E1D9 /* AnalyticsCategoriesAndEvents.swift in Sources */,

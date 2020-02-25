@@ -5,4 +5,5 @@ github "onevcat/Kingfisher" ~> 4.0
 github "airbnb/lottie-ios" "master"
 github "ashleymills/Reachability.swift"
 github "Swinject/Swinject" ~> 2.7.1
+github "kishikawakatsumi/KeychainAccess"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json"
