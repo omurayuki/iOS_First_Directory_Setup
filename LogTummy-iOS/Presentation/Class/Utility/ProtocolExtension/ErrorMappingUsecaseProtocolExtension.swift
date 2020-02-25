@@ -8,8 +8,7 @@ extension ErrorMappingUsecaseProtocolExtension {
      */
     func mapSwifterError(error: Error, retryBlock: VoidBlock? = nil, errorMessage: String? = nil) -> AppError {
         if let error = error as? SwifterError {
-            #warning("ハードコードはやばすぎる")
-            if error.kind.description == "offline" {
+            if SwifterError.isOffline(error.kind) {
                 return AppError.offlineError(resolution: retryBlock)
             }
             
@@ -18,7 +17,6 @@ extension ErrorMappingUsecaseProtocolExtension {
                                 message: errorMessage)
             }
         }
-        
         return retryBlock != nil ? AppError.standardErrorWithRetry(resolution: retryBlock) : AppError.standardError()
     }
 }

@@ -36,18 +36,14 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate, Err
             .asDriver(onErrorJustReturn: nil)
             .drive(onNext: { [weak self] error in
                 guard let error = error as? AppError else { return }
-                error.alertController()
-                // errorデータは来ていること確認
-                // ErrorNotifying中心にerror処理を修正する必要あり
+                self?.showErrorMessage(error)
             }).disposed(by: disposeBag)
     }
 }
 
-// observable作成 ok
-// エラーハンドリング // オフラインかどうか → API叩く → ok
-// アーキテクチャ entityクラスなども
-// エラーハンドリングクラス作成(swifterエラーのリファクタ)
 // キャッシュクラス作成
+// 遷移
 // テスト // Observableで成功/失敗時に値がそれぞれ取れるかも
 // UI調整
 // ボタンエフェクト処理
+// credential情報のコミットを修正/API Key隠蔽処理
