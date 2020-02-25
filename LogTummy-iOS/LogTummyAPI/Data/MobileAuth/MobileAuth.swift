@@ -3,8 +3,14 @@ import KeychainAccess
 
 class MobileAuth {
     
-    // MARK: - Set
+    var keychain: Keychain {
+        guard
+            let identifier = Bundle.main.object(forInfoDictionaryKey: Config.bundleKeys.bundleIdentifier) as? String
+        else { return Keychain(service: String.blank) }
+        return Keychain(service: identifier)
+    }
     
+    // MARK: - Set
     func setUserData(key: String, secret: String, verifier: String?, screenName: String?, userId: String?) {
         setUserKey(key: key)
         setUserSecret(secret: secret)
@@ -14,48 +20,47 @@ class MobileAuth {
     }
     
     func setUserKey(key: String) {
-        try? Keychain().set(key, key: Config.keychainKeys.userKey)
+        try? keychain.set(key, key: Config.keychainKeys.userKey)
     }
     
     func setUserSecret(secret: String) {
-        try? Keychain().set(secret, key: Config.keychainKeys.userSecret)
+        try? keychain.set(secret, key: Config.keychainKeys.userSecret)
     }
     
     func setVerifier(verifier: String?) {
         guard let verifier = verifier else { return }
-        try? Keychain().set(verifier, key: Config.keychainKeys.verifier)
+        try? keychain.set(verifier, key: Config.keychainKeys.verifier)
     }
     
     func setScreenName(screenName: String?) {
         guard let screenName = screenName else { return }
-        try? Keychain().set(screenName, key: Config.keychainKeys.screenName)
+        try? keychain.set(screenName, key: Config.keychainKeys.screenName)
     }
     
     func setUserId(userId: String?) {
         guard let userId = userId else { return }
-        try? Keychain().set(userId, key: Config.keychainKeys.userId)
+        try? keychain.set(userId, key: Config.keychainKeys.userId)
     }
     
     // MARK: - Get
-    
     func getUserKey() -> String? {
-        return try? Keychain().getString(Config.keychainKeys.userKey)
+        return try? keychain.getString(Config.keychainKeys.userKey)
     }
     
     func getUserSecret() -> String? {
-        return try? Keychain().getString(Config.keychainKeys.userSecret)
+        return try? keychain.getString(Config.keychainKeys.userSecret)
     }
     
     func getVerifier() -> String? {
-        return try? Keychain().getString(Config.keychainKeys.verifier)
+        return try? keychain.getString(Config.keychainKeys.verifier)
     }
     
     func getScreenName() -> String? {
-        return try? Keychain().getString(Config.keychainKeys.screenName)
+        return try? keychain.getString(Config.keychainKeys.screenName)
     }
     
     func getUserId() -> String? {
-        return try? Keychain().getString(Config.keychainKeys.userId)
+        return try? keychain.getString(Config.keychainKeys.userId)
     }
     
     // MARK: - Remove
@@ -68,22 +73,22 @@ class MobileAuth {
     }
     
     func removeUserKey() {
-        try? Keychain().remove(Config.keychainKeys.userKey)
+        try? keychain.remove(Config.keychainKeys.userKey)
     }
     
     func removeUserSecret() {
-        try? Keychain().remove(Config.keychainKeys.userSecret)
+        try? keychain.remove(Config.keychainKeys.userSecret)
     }
     
     func removeVerifier() {
-        try? Keychain().remove(Config.keychainKeys.verifier)
+        try? keychain.remove(Config.keychainKeys.verifier)
     }
     
     func removeScreenName() {
-        try? Keychain().remove(Config.keychainKeys.screenName)
+        try? keychain.remove(Config.keychainKeys.screenName)
     }
     
     func removeUserId() {
-        try? Keychain().remove(Config.keychainKeys.userId)
+        try? keychain.remove(Config.keychainKeys.userId)
     }
 }

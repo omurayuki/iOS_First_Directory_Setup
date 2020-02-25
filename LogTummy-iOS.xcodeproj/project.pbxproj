@@ -18,6 +18,7 @@
 		C90F8A6323FAA2CF0015B1CE /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C96687DD23EAAC1B0011DDD3 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C910126723FD9B6D0008D35C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910126623FD9B6D0008D35C /* LoginViewModel.swift */; };
 		C910126E23FD9B7D0008D35C /* LoginUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910126D23FD9B7D0008D35C /* LoginUsecase.swift */; };
+		C9218717240535B10099C950 /* BundleKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9218716240535B00099C950 /* BundleKeys.swift */; };
 		C925796423ED32FD00308154 /* GoogleService-debug-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */; };
 		C92B6DAA23F10F1E0090E1D9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DA923F10F1E0090E1D9 /* Logger.swift */; };
 		C92B6DAC23F113880090E1D9 /* Rx+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DAB23F113880090E1D9 /* Rx+Util.swift */; };
@@ -44,6 +45,7 @@
 		C92BA3AF240518BC00F28BA3 /* MobileAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3AE240518BC00F28BA3 /* MobileAuth.swift */; };
 		C92BA3B1240521F300F28BA3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3B0240521F300F28BA3 /* Config.swift */; };
 		C92BA3B32405225800F28BA3 /* KeychainKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3B22405225800F28BA3 /* KeychainKeys.swift */; };
+		C92BA3B5240526E900F28BA3 /* LoginLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3B4240526E900F28BA3 /* LoginLocal.swift */; };
 		C93BB66523FCFCA2007F14A2 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */; };
 		C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B223EA8F390011DDD3 /* AppDelegate.swift */; };
 		C96687B723EA8F390011DDD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B623EA8F390011DDD3 /* LoginViewController.swift */; };
@@ -263,6 +265,7 @@
 		C90A45F423F66F7E000E3B1B /* NumberFormatter+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Util.swift"; sourceTree = "<group>"; };
 		C910126623FD9B6D0008D35C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C910126D23FD9B7D0008D35C /* LoginUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUsecase.swift; sourceTree = "<group>"; };
+		C9218716240535B00099C950 /* BundleKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleKeys.swift; sourceTree = "<group>"; };
 		C925795323ED2B4F00308154 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		C925795423ED2B5800308154 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-debug-Info.plist"; sourceTree = "<group>"; };
@@ -290,6 +293,7 @@
 		C92BA3AE240518BC00F28BA3 /* MobileAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAuth.swift; sourceTree = "<group>"; };
 		C92BA3B0240521F300F28BA3 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		C92BA3B22405225800F28BA3 /* KeychainKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainKeys.swift; sourceTree = "<group>"; };
+		C92BA3B4240526E900F28BA3 /* LoginLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLocal.swift; sourceTree = "<group>"; };
 		C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		C96687AF23EA8F390011DDD3 /* LogTummy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LogTummy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96687B223EA8F390011DDD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -452,6 +456,15 @@
 			path = ThirdParty;
 			sourceTree = "<group>";
 		};
+		C921870A240535A00099C950 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				C9218716240535B00099C950 /* BundleKeys.swift */,
+				C92BA3B22405225800F28BA3 /* KeychainKeys.swift */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
 		C92B6DA023F10E3C0090E1D9 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -568,7 +581,6 @@
 			isa = PBXGroup;
 			children = (
 				C92BA3AE240518BC00F28BA3 /* MobileAuth.swift */,
-				C92BA3B22405225800F28BA3 /* KeychainKeys.swift */,
 			);
 			path = MobileAuth;
 			sourceTree = "<group>";
@@ -694,6 +706,7 @@
 				C9831D0C240001AE0062A9A0 /* Entity */,
 				C9831D0A240000510062A9A0 /* LoginDataManager.swift */,
 				C9831D0D240001D20062A9A0 /* LoginRemote.swift */,
+				C92BA3B4240526E900F28BA3 /* LoginLocal.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -710,6 +723,7 @@
 			isa = PBXGroup;
 			children = (
 				C92BA3B0240521F300F28BA3 /* Config.swift */,
+				C921870A240535A00099C950 /* Keys */,
 				C9B281AC23ED521A00554CA6 /* API */,
 				C9B281AD23ED521E00554CA6 /* Data */,
 				C9B281AE23ED522400554CA6 /* Protocol */,
@@ -1320,8 +1334,10 @@
 				C9CB50DE23FA93090001BD1D /* IBDesignableSegmentedControl.swift in Sources */,
 				C90A45ED23F66CE0000E3B1B /* UINib+Util.swift in Sources */,
 				C9831D10240026670062A9A0 /* Routing.swift in Sources */,
+				C9218717240535B10099C950 /* BundleKeys.swift in Sources */,
 				C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */,
 				C9D72F2023F59B24003EFC38 /* PlaceHolderTextView.swift in Sources */,
+				C92BA3B5240526E900F28BA3 /* LoginLocal.swift in Sources */,
 				C92BA3A72405121900F28BA3 /* MemoryCache.swift in Sources */,
 				C9D72F1323F59959003EFC38 /* UIPageController+Util.swift in Sources */,
 				C92B6DCF23F140710090E1D9 /* Strings+Util.swift in Sources */,

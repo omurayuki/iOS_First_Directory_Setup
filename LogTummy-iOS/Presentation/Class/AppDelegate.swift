@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
     
     private func driveMainInterface() {
+        #warning("keychain見に行って条件分岐")
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.makeKeyAndVisible()
         self.window = window
