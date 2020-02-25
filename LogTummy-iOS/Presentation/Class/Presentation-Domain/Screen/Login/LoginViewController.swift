@@ -23,6 +23,7 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate, Err
     private func bindUI() {
         
         LoginButton.rx.tap.asDriver()
+            .debounce(Resources.Sizes.timeInterval.normal)
             .drive(onNext: { [weak self] _ in
                 guard let this = self else { return }
                 this.viewModel?.oAuthLogin(presentingForm: this)

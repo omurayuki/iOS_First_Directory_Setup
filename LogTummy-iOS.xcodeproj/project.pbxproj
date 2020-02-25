@@ -36,6 +36,7 @@
 		C92B6DCF23F140710090E1D9 /* Strings+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DCE23F140710090E1D9 /* Strings+Util.swift */; };
 		C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DD123F141380090E1D9 /* VoidBlock.swift */; };
 		C92B6DD423F151040090E1D9 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DD323F151030090E1D9 /* APIError.swift */; };
+		C92BA3A42404F4A600F28BA3 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3A32404F4A600F28BA3 /* Resources.swift */; };
 		C93BB66523FCFCA2007F14A2 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */; };
 		C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B223EA8F390011DDD3 /* AppDelegate.swift */; };
 		C96687B723EA8F390011DDD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B623EA8F390011DDD3 /* LoginViewController.swift */; };
@@ -274,6 +275,7 @@
 		C92B6DCE23F140710090E1D9 /* Strings+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Util.swift"; sourceTree = "<group>"; };
 		C92B6DD123F141380090E1D9 /* VoidBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidBlock.swift; sourceTree = "<group>"; };
 		C92B6DD323F151030090E1D9 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		C92BA3A32404F4A600F28BA3 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		C96687AF23EA8F390011DDD3 /* LogTummy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LogTummy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96687B223EA8F390011DDD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -435,13 +437,6 @@
 			path = ThirdParty;
 			sourceTree = "<group>";
 		};
-		C9155C0123F65D8D00D7074A /* Segue */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Segue;
-			sourceTree = "<group>";
-		};
 		C92B6DA023F10E3C0090E1D9 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,6 +527,7 @@
 				C9CB50E323FA95690001BD1D /* Support */,
 				C92B6DC623F13DDA0090E1D9 /* Strings.swift */,
 				C9CB50E123FA93DE0001BD1D /* Sizes.swift */,
+				C92BA3A32404F4A600F28BA3 /* Resources.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -542,13 +538,6 @@
 				C92B6DD123F141380090E1D9 /* VoidBlock.swift */,
 			);
 			path = Typealias;
-			sourceTree = "<group>";
-		};
-		C93BB66B23FCFEAA007F14A2 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Reachability;
 			sourceTree = "<group>";
 		};
 		C96687A623EA8F390011DDD3 = {
@@ -801,7 +790,6 @@
 			children = (
 				C9CAA50523F65ECA004B9BDD /* CommonViewModel */,
 				C9CAA50423F65EAD004B9BDD /* CommonUsecase */,
-				C9155C0123F65D8D00D7074A /* Segue */,
 				C92B6DD023F1412B0090E1D9 /* Typealias */,
 				C92B6DC123F13B930090E1D9 /* Protocol */,
 				C92B6DBE23F13B6A0090E1D9 /* Value */,
@@ -819,7 +807,6 @@
 				C9D72F1E23F59B11003EFC38 /* Custom */,
 				C9D72EF923F593C0003EFC38 /* Service */,
 				C92B6DAD23F114DF0090E1D9 /* Analytics */,
-				C93BB66B23FCFEAA007F14A2 /* Reachability */,
 				C92B6DB823F127FD0090E1D9 /* ProtocolExtension */,
 				C92B6DB923F128080090E1D9 /* Extension */,
 				C9D72F1C23F59ACA003EFC38 /* UNMutableNotification+Util.swift */,
@@ -1286,6 +1273,7 @@
 				C9D72EFB23F593CD003EFC38 /* CountService.swift in Sources */,
 				C9D72F1D23F59ACA003EFC38 /* UNMutableNotification+Util.swift in Sources */,
 				C92B6DC723F13DDA0090E1D9 /* Strings.swift in Sources */,
+				C92BA3A42404F4A600F28BA3 /* Resources.swift in Sources */,
 				C9CB50E223FA93DE0001BD1D /* Sizes.swift in Sources */,
 				C9CAA50C23F661B3004B9BDD /* AppDelagateUsecase.swift in Sources */,
 				C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */,

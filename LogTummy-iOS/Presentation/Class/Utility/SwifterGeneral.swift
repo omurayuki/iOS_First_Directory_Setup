@@ -1,4 +1,5 @@
 import Foundation
+import SwifteriOS
 
 enum SwifterGeneral: CustomStringConvertible {
     
@@ -15,5 +16,9 @@ enum SwifterGeneral: CustomStringConvertible {
         case .CALLBACK_URL:
             return "swifter-sqOi4qeOAFWf9kJwNw5RkveM6://"
         }
+    }
+    
+    static func handleOpenURL(url: URL) -> Bool {
+        return Swifter.handleOpenURL(url, callbackURL: URL(string: SwifterGeneral.CALLBACK_URL.description)!)
     }
 }
