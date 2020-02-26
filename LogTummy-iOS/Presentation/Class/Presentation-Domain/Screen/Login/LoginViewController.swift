@@ -1,5 +1,4 @@
 import UIKit
-import SwifteriOS
 import SafariServices
 import RxCocoa
 import RxSwift
