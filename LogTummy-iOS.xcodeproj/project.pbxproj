@@ -47,6 +47,8 @@
 		C92BA3B32405225800F28BA3 /* KeychainKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3B22405225800F28BA3 /* KeychainKeys.swift */; };
 		C92BA3B5240526E900F28BA3 /* LoginLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3B4240526E900F28BA3 /* LoginLocal.swift */; };
 		C93BB66523FCFCA2007F14A2 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */; };
+		C9519A23240640DB0029A2BF /* AppDelegateDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9519A22240640DB0029A2BF /* AppDelegateDataManager.swift */; };
+		C9519A25240640EC0029A2BF /* AppDelegateLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9519A24240640EC0029A2BF /* AppDelegateLocal.swift */; };
 		C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B223EA8F390011DDD3 /* AppDelegate.swift */; };
 		C96687B723EA8F390011DDD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B623EA8F390011DDD3 /* LoginViewController.swift */; };
 		C96687BA23EA8F390011DDD3 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96687B823EA8F390011DDD3 /* LoginViewController.storyboard */; };
@@ -295,6 +297,8 @@
 		C92BA3B22405225800F28BA3 /* KeychainKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainKeys.swift; sourceTree = "<group>"; };
 		C92BA3B4240526E900F28BA3 /* LoginLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLocal.swift; sourceTree = "<group>"; };
 		C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		C9519A22240640DB0029A2BF /* AppDelegateDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateDataManager.swift; sourceTree = "<group>"; };
+		C9519A24240640EC0029A2BF /* AppDelegateLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateLocal.swift; sourceTree = "<group>"; };
 		C96687AF23EA8F390011DDD3 /* LogTummy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LogTummy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96687B223EA8F390011DDD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C96687B623EA8F390011DDD3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -585,6 +589,24 @@
 			path = MobileAuth;
 			sourceTree = "<group>";
 		};
+		C9519A16240640B00029A2BF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C9519A22240640DB0029A2BF /* AppDelegateDataManager.swift */,
+				C9519A24240640EC0029A2BF /* AppDelegateLocal.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C9519A26240641CD0029A2BF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C96687B223EA8F390011DDD3 /* AppDelegate.swift */,
+				C9CAA50B23F661B3004B9BDD /* AppDelagateUsecase.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		C96687A623EA8F390011DDD3 = {
 			isa = PBXGroup;
 			children = (
@@ -744,6 +766,7 @@
 			children = (
 				C92BA3AD240518AD00F28BA3 /* MobileAuth */,
 				C92BA3A52405120400F28BA3 /* Cache */,
+				C9519A16240640B00029A2BF /* AppDelegate */,
 				C9831D09240000340062A9A0 /* Login */,
 			);
 			path = Data;
@@ -827,8 +850,7 @@
 			isa = PBXGroup;
 			children = (
 				C9CAA50D23F661D3004B9BDD /* AppConfigurator.swift */,
-				C96687B223EA8F390011DDD3 /* AppDelegate.swift */,
-				C9CAA50B23F661B3004B9BDD /* AppDelagateUsecase.swift */,
+				C9519A26240641CD0029A2BF /* AppDelegate */,
 				C9B281BA23ED565D00554CA6 /* Presentation-Domain */,
 				C9B281BB23ED567000554CA6 /* Utility */,
 				C9B281BC23ED567800554CA6 /* Data */,
@@ -1355,6 +1377,8 @@
 				C92B6DC023F13B7A0090E1D9 /* AppError.swift in Sources */,
 				C9D72F0D23F596CF003EFC38 /* UIAlertController+Util.swift in Sources */,
 				C92BA3B1240521F300F28BA3 /* Config.swift in Sources */,
+				C9519A23240640DB0029A2BF /* AppDelegateDataManager.swift in Sources */,
+				C9519A25240640EC0029A2BF /* AppDelegateLocal.swift in Sources */,
 				C90A45EF23F66ED2000E3B1B /* Comparable+Util.swift in Sources */,
 				C90A45F323F66F3E000E3B1B /* Numbers+Util.swift in Sources */,
 				C9CB50D223FA92CA0001BD1D /* IBDesignableCollectionViewCell.swift in Sources */,

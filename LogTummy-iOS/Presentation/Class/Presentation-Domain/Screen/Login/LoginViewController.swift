@@ -4,7 +4,7 @@ import SafariServices
 import RxCocoa
 import RxSwift
 
-class LoginViewController: UIViewController, SFSafariViewControllerDelegate, ErrorNotifying {
+class LoginViewController: UIViewController {
     
     @IBOutlet weak var LoginTopImageView: CornerRoundableImageView!
     @IBOutlet weak var LoginButton: CornerRoundableButton!
@@ -41,6 +41,9 @@ class LoginViewController: UIViewController, SFSafariViewControllerDelegate, Err
     }
 }
 
+extension LoginViewController: SFSafariViewControllerDelegate { }
+
+extension LoginViewController: ErrorNotifying { }
 // 遷移
 // テスト // Observableで成功/失敗時に値がそれぞれ取れるかも
 // UI調整
