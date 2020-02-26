@@ -448,6 +448,7 @@
 				C92B6DCE23F140710090E1D9 /* Strings+Util.swift */,
 				C9D72F0423F595E3003EFC38 /* Date+Util.swift */,
 				C90A45F023F66F24000E3B1B /* Int+Util.swift */,
+				C92B6DC523F13DCC0090E1D9 /* Resources */,
 				C90A45F223F66F3E000E3B1B /* Numbers+Util.swift */,
 				C9D72F0623F59629003EFC38 /* DateFormatter+Util.swift */,
 				C90A45F423F66F7E000E3B1B /* NumberFormatter+Util.swift */,
@@ -556,7 +557,6 @@
 				C9CB50CA23FA92970001BD1D /* View */,
 				C9CAA50F23F66687004B9BDD /* Extensions */,
 				C90A45E623F6674C000E3B1B /* Util */,
-				C92B6DC523F13DCC0090E1D9 /* Resources */,
 			);
 			path = LegacyUIKit;
 			sourceTree = "<group>";

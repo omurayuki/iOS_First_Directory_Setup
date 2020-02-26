@@ -1,5 +1,6 @@
 import UIKit
 import RxSwift
+import Swinject
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -45,6 +46,7 @@ extension AppDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.makeKeyAndVisible()
         self.window = window
-        window.rootViewController = Inject.createInjectedStoryboardWithViewController(name: firstInterface)
+        let vc = Container.shared.resolve(LoginViewController.self)
+        window.rootViewController = vc
     }
 }

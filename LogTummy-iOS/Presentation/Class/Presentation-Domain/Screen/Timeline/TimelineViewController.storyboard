@@ -10,7 +10,7 @@
         <!--Timeline View Controller-->
         <scene sceneID="GHu-0l-ivG">
             <objects>
-                <viewController id="3tQ-S5-tXX" customClass="TimelineViewController" customModule="LogTummy_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimelineViewController" id="3tQ-S5-tXX" customClass="TimelineViewController" customModule="LogTummy_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ixY-UV-SQL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

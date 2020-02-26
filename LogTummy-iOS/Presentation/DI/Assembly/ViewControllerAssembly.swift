@@ -1,15 +1,28 @@
 import Swinject
+import UIKit
 import SwinjectStoryboard
 
-extension SwinjectStoryboard {
+final class ViewControllerAssembly: Assembly {
     
-    final class ViewControllerAssembly: Assembly {
+    func assemble(container: Container) {
+        container.register(LoginViewController.self) { r in
+            let storyboard = SwinjectStoryboard.create(name: "LoginViewController", bundle: nil)
+            guard let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else { fatalError() }
+            vc.viewModel = r.resolve(LoginViewModelProtocol.self)
+            vc.routing = r.resolve(LoginRoutingProtocol.self)
+            return vc
+        }
         
-        func assemble(container: Container) {
-            container.storyboardInitCompleted(LoginViewController.self) {
-                $1.routing = $0.resolve(LoginRoutingProtocol.self)
-                $1.viewModel = $0.resolve(LoginViewModelProtocol.self)
-            }
+        container.register(CalendarViewController.self) { _ in
+        let storyboard = SwinjectStoryboard.create(name: "CalendarViewController", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "CalendarViewController") as? CalendarViewController else { fatalError() }
+            return vc
+        }
+        
+        container.register(TimelineViewController.self) { _ in
+        let storyboard = SwinjectStoryboard.create(name: "TimelineViewController", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "TimelineViewController") as? TimelineViewController else { fatalError() }
+            return vc
         }
     }
 }
