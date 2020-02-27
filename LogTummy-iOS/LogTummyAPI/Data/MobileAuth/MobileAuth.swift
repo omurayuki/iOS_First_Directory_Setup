@@ -20,26 +20,46 @@ class MobileAuth {
     }
     
     func setUserKey(key: String) {
-        try? keychain.set(key, key: Config.keychainKeys.userKey)
+        do {
+            try keychain.set(key, key: Config.keychainKeys.userKey)
+        } catch {
+            Logger.error("can't set \(Config.keychainKeys.userKey)")
+        }
     }
     
     func setUserSecret(secret: String) {
-        try? keychain.set(secret, key: Config.keychainKeys.userSecret)
+        do {
+            try keychain.set(secret, key: Config.keychainKeys.userSecret)
+        } catch {
+            Logger.error("can't set \(Config.keychainKeys.userSecret)")
+        }
     }
     
     func setVerifier(verifier: String?) {
         guard let verifier = verifier else { return }
-        try? keychain.set(verifier, key: Config.keychainKeys.verifier)
+        do {
+            try keychain.set(verifier, key: Config.keychainKeys.verifier)
+        } catch {
+            Logger.error("can't set \(Config.keychainKeys.verifier)")
+        }
     }
     
     func setScreenName(screenName: String?) {
         guard let screenName = screenName else { return }
-        try? keychain.set(screenName, key: Config.keychainKeys.screenName)
+        do {
+            try keychain.set(screenName, key: Config.keychainKeys.screenName)
+        } catch {
+            Logger.error("can't set \(Config.keychainKeys.screenName)")
+        }
     }
     
     func setUserId(userId: String?) {
         guard let userId = userId else { return }
-        try? keychain.set(userId, key: Config.keychainKeys.userId)
+        do {
+            try keychain.set(userId, key: Config.keychainKeys.userId)
+        } catch {
+            Logger.error("can't set \(Config.keychainKeys.userId)")
+        }
     }
     
     // MARK: - Get
@@ -73,22 +93,42 @@ class MobileAuth {
     }
     
     func removeUserKey() {
-        try? keychain.remove(Config.keychainKeys.userKey)
+        do {
+            try keychain.remove(Config.keychainKeys.userKey)
+        } catch {
+            Logger.error("can't remove \(Config.keychainKeys.userKey)")
+        }
     }
     
     func removeUserSecret() {
-        try? keychain.remove(Config.keychainKeys.userSecret)
+        do {
+            try keychain.remove(Config.keychainKeys.userSecret)
+        } catch {
+            Logger.error("can't remove \(Config.keychainKeys.userSecret)")
+        }
     }
     
     func removeVerifier() {
-        try? keychain.remove(Config.keychainKeys.verifier)
+        do {
+            try keychain.remove(Config.keychainKeys.verifier)
+        } catch {
+            Logger.error("can't remove \(Config.keychainKeys.verifier)")
+        }
     }
     
     func removeScreenName() {
-        try? keychain.remove(Config.keychainKeys.screenName)
+        do {
+            try keychain.remove(Config.keychainKeys.screenName)
+        } catch {
+            Logger.error("can't remove \(Config.keychainKeys.screenName)")
+        }
     }
     
     func removeUserId() {
-        try? keychain.remove(Config.keychainKeys.userId)
+        do {
+            try keychain.remove(Config.keychainKeys.userId)
+        } catch {
+            Logger.error("can't remove \(Config.keychainKeys.userId)")
+        }
     }
 }

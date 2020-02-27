@@ -4,6 +4,7 @@ protocol RouterProtocol {
     func push(_ route: Route, from: UIViewController, animated: Bool)
     func present(_ route: Route, from: UIViewController, presentationStyle: UIModalPresentationStyle?, animated: Bool, completion: (() -> Void)?)
     func dismiss(_ vc: UIViewController, animated: Bool, completion: (() -> Void)?)
+    func initialWindow(_ route: Route, window: UIWindow)
 }
 
 final class Router: RouterProtocol {
@@ -24,5 +25,10 @@ final class Router: RouterProtocol {
         } else {
             vc.dismiss(animated: animated, completion: completion)
         }
+    }
+    
+    func initialWindow(_ route: Route, window: UIWindow) {
+        let vc = route.viewController()
+        window.rootViewController = vc
     }
 }

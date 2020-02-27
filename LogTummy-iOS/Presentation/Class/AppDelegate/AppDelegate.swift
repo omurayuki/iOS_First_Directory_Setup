@@ -7,6 +7,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     private let usecase: AppDelegateUsecaseProtocol = AppDelegateUsecase()
+    private let router: Router = Router()
     
     private let disposeBag: DisposeBag = DisposeBag()
     
@@ -35,17 +36,16 @@ extension AppDelegate {
         usecase.getIsExistTWUserToken()
             .subscribe(onNext: { [weak self] isExistTWUserKey in
                 isExistTWUserKey ?
-                    self?.drive(to: CalendarViewController.className) :
-                    self?.drive(to: TimelineViewController.className)
+                    self?.drive(to: .calendar) :
+                    self?.drive(to: .login)
             })
             .disposed(by: disposeBag)
     }
     
-    private func drive(to firstInterface: String) {
+    private func drive(to route: Route) {
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.makeKeyAndVisible()
         self.window = window
-        let vc = resolver.resolve(LoginViewController.self)
-        window.rootViewController = vc
+        router.initialWindow(route, window: window)
     }
 }

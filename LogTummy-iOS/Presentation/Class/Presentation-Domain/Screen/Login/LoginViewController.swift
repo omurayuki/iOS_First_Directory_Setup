@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
             .drive(onNext: { [weak self] _ in
                 guard let this = self else { return }
                 this.viewModel?.oAuthLogin(presentingForm: this)
-                this.routing?.fuga(vc: self!)
+//                this.routing?.fuga(vc: self!)
             })
         .disposed(by: disposeBag)
     }
