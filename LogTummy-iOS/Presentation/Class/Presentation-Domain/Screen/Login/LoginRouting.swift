@@ -2,14 +2,12 @@ import UIKit
 
 protocol LoginRoutingProtocol: Routing {
     
-    func fuga()
+    func fuga(vc: UIViewController)
 }
 
 final class LoginRouting: LoginRoutingProtocol {
     
-    var viewController: UIViewController?
-    
-    func fuga() {
-        print("routing")
+    func fuga(vc: UIViewController) {
+        router.present(.calendar, from: vc, presentationStyle: nil, animated: true, completion: nil)
     }
 }

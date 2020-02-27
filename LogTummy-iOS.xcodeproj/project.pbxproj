@@ -18,6 +18,7 @@
 		C90F8A6323FAA2CF0015B1CE /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C96687DD23EAAC1B0011DDD3 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C910126723FD9B6D0008D35C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910126623FD9B6D0008D35C /* LoginViewModel.swift */; };
 		C910126E23FD9B7D0008D35C /* LoginUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910126D23FD9B7D0008D35C /* LoginUsecase.swift */; };
+		C915FBDC24079ECE00A3BEF2 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C915FBDB24079ECE00A3BEF2 /* Routing.swift */; };
 		C9218717240535B10099C950 /* BundleKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9218716240535B00099C950 /* BundleKeys.swift */; };
 		C925796423ED32FD00308154 /* GoogleService-debug-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */; };
 		C92B6DAA23F10F1E0090E1D9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DA923F10F1E0090E1D9 /* Logger.swift */; };
@@ -47,6 +48,7 @@
 		C92BA3B32405225800F28BA3 /* KeychainKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3B22405225800F28BA3 /* KeychainKeys.swift */; };
 		C92BA3B5240526E900F28BA3 /* LoginLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3B4240526E900F28BA3 /* LoginLocal.swift */; };
 		C93BB66523FCFCA2007F14A2 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */; };
+		C94D709E240797210085F717 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D709D240797210085F717 /* Route.swift */; };
 		C9519A23240640DB0029A2BF /* AppDelegateDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9519A22240640DB0029A2BF /* AppDelegateDataManager.swift */; };
 		C9519A25240640EC0029A2BF /* AppDelegateLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9519A24240640EC0029A2BF /* AppDelegateLocal.swift */; };
 		C9519A36240651E40029A2BF /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9519A35240651E40029A2BF /* CalendarViewController.swift */; };
@@ -90,7 +92,7 @@
 		C9831CFB23FFE4860062A9A0 /* ResourcesSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831CFA23FFE4860062A9A0 /* ResourcesSupport.swift */; };
 		C9831D0B240000510062A9A0 /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D0A240000510062A9A0 /* LoginDataManager.swift */; };
 		C9831D0E240001D20062A9A0 /* LoginRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D0D240001D20062A9A0 /* LoginRemote.swift */; };
-		C9831D10240026670062A9A0 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D0F240026670062A9A0 /* Routing.swift */; };
+		C9831D10240026670062A9A0 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D0F240026670062A9A0 /* Router.swift */; };
 		C9831D12240026890062A9A0 /* LoginRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D11240026890062A9A0 /* LoginRouting.swift */; };
 		C9831D14240027A30062A9A0 /* RoutingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D13240027A30062A9A0 /* RoutingAssembly.swift */; };
 		C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9B281B523ED549600554CA6 /* GoogleService-Info.plist */; };
@@ -271,6 +273,7 @@
 		C90A45F423F66F7E000E3B1B /* NumberFormatter+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Util.swift"; sourceTree = "<group>"; };
 		C910126623FD9B6D0008D35C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C910126D23FD9B7D0008D35C /* LoginUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUsecase.swift; sourceTree = "<group>"; };
+		C915FBDB24079ECE00A3BEF2 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
 		C9218716240535B00099C950 /* BundleKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleKeys.swift; sourceTree = "<group>"; };
 		C925795323ED2B4F00308154 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		C925795423ED2B5800308154 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -301,6 +304,7 @@
 		C92BA3B22405225800F28BA3 /* KeychainKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainKeys.swift; sourceTree = "<group>"; };
 		C92BA3B4240526E900F28BA3 /* LoginLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLocal.swift; sourceTree = "<group>"; };
 		C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		C94D709D240797210085F717 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		C9519A22240640DB0029A2BF /* AppDelegateDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateDataManager.swift; sourceTree = "<group>"; };
 		C9519A24240640EC0029A2BF /* AppDelegateLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateLocal.swift; sourceTree = "<group>"; };
 		C9519A35240651E40029A2BF /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -339,7 +343,7 @@
 		C9831CFA23FFE4860062A9A0 /* ResourcesSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesSupport.swift; sourceTree = "<group>"; };
 		C9831D0A240000510062A9A0 /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
 		C9831D0D240001D20062A9A0 /* LoginRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRemote.swift; sourceTree = "<group>"; };
-		C9831D0F240026670062A9A0 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		C9831D0F240026670062A9A0 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C9831D11240026890062A9A0 /* LoginRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouting.swift; sourceTree = "<group>"; };
 		C9831D13240027A30062A9A0 /* RoutingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAssembly.swift; sourceTree = "<group>"; };
 		C9B281A623ED482F00554CA6 /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "gRPCCertificates-Cpp.bundle"; path = "Carthage/Build/iOS/gRPC-C++.framework/Resources/gRPCCertificates-Cpp.bundle"; sourceTree = "<group>"; };
@@ -892,7 +896,7 @@
 				C92B6DD023F1412B0090E1D9 /* Typealias */,
 				C92B6DC123F13B930090E1D9 /* Protocol */,
 				C92B6DBE23F13B6A0090E1D9 /* Value */,
-				C9CAA50623F65ED7004B9BDD /* Routing */,
+				C9CAA50623F65ED7004B9BDD /* Router */,
 				C9CAA50823F65EE2004B9BDD /* View */,
 				C9CAA50723F65EDB004B9BDD /* Screen */,
 			);
@@ -983,12 +987,14 @@
 			path = CommonViewModel;
 			sourceTree = "<group>";
 		};
-		C9CAA50623F65ED7004B9BDD /* Routing */ = {
+		C9CAA50623F65ED7004B9BDD /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				C9831D0F240026670062A9A0 /* Routing.swift */,
+				C9831D0F240026670062A9A0 /* Router.swift */,
+				C94D709D240797210085F717 /* Route.swift */,
+				C915FBDB24079ECE00A3BEF2 /* Routing.swift */,
 			);
-			path = Routing;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		C9CAA50723F65EDB004B9BDD /* Screen */ = {
@@ -1385,9 +1391,10 @@
 				C9831CF323FFC4680062A9A0 /* ViewModelAssembly.swift in Sources */,
 				C9CB50DE23FA93090001BD1D /* IBDesignableSegmentedControl.swift in Sources */,
 				C90A45ED23F66CE0000E3B1B /* UINib+Util.swift in Sources */,
-				C9831D10240026670062A9A0 /* Routing.swift in Sources */,
+				C9831D10240026670062A9A0 /* Router.swift in Sources */,
 				C9218717240535B10099C950 /* BundleKeys.swift in Sources */,
 				C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */,
+				C94D709E240797210085F717 /* Route.swift in Sources */,
 				C9D72F2023F59B24003EFC38 /* PlaceHolderTextView.swift in Sources */,
 				C92BA3B5240526E900F28BA3 /* LoginLocal.swift in Sources */,
 				C92BA3A72405121900F28BA3 /* MemoryCache.swift in Sources */,
@@ -1411,6 +1418,7 @@
 				C9519A25240640EC0029A2BF /* AppDelegateLocal.swift in Sources */,
 				C90A45EF23F66ED2000E3B1B /* Comparable+Util.swift in Sources */,
 				C90A45F323F66F3E000E3B1B /* Numbers+Util.swift in Sources */,
+				C915FBDC24079ECE00A3BEF2 /* Routing.swift in Sources */,
 				C9CB50D223FA92CA0001BD1D /* IBDesignableCollectionViewCell.swift in Sources */,
 				C90A45E923F668AB000E3B1B /* LaunchViewController.swift in Sources */,
 				C92B6DC323F13BAB0090E1D9 /* DisplayableErrorProtocol.swift in Sources */,

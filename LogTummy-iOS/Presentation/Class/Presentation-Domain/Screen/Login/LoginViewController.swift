@@ -8,7 +8,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var LoginTopImageView: CornerRoundableImageView!
     @IBOutlet weak var LoginButton: CornerRoundableButton!
     
-    var routing: LoginRoutingProtocol? { didSet { routing?.viewController = self } }
+    var routing: LoginRoutingProtocol?
     var viewModel: LoginViewModelProtocol?
     private let disposeBag: DisposeBag = DisposeBag()
     
@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
             .drive(onNext: { [weak self] _ in
                 guard let this = self else { return }
                 this.viewModel?.oAuthLogin(presentingForm: this)
-                this.routing?.fuga()
+                this.routing?.fuga(vc: self!)
             })
         .disposed(by: disposeBag)
     }

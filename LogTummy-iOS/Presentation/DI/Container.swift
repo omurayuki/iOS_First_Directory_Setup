@@ -13,3 +13,7 @@ extension Container {
         ViewControllerAssembly()
     ])
 }
+
+var resolver: Resolver {
+    return Container.shared
+}
