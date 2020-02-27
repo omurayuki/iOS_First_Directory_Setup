@@ -20,7 +20,16 @@ class MobileAuthTest: XCTestCase {
     func testWhetherUserKeyCanBeAcquired() {
         let userKey = "12345"
         mobileAuth?.setUserKey(key: userKey)
-        let acquiredUserKey = mobileAuth?.getUserKey() ?? ""
+        var acquiredUserKey = mobileAuth?.getUserKey() ?? ""
         XCTAssert(acquiredUserKey == userKey)
+        
+        let exp = expectation(description: "userKey removed.")
+        mobileAuth?.removeUserKey()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+            acquiredUserKey = self?.mobileAuth?.getUserKey() ?? ""
+            XCTAssert(acquiredUserKey.isEmpty)
+            exp.fulfill()
+        }
+        waitForExpectations(timeout: 2.5, handler: nil)
     }
 }
