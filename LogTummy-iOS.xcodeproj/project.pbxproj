@@ -19,6 +19,7 @@
 		C910126723FD9B6D0008D35C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910126623FD9B6D0008D35C /* LoginViewModel.swift */; };
 		C910126E23FD9B7D0008D35C /* LoginUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910126D23FD9B7D0008D35C /* LoginUsecase.swift */; };
 		C915FBDC24079ECE00A3BEF2 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C915FBDB24079ECE00A3BEF2 /* Routing.swift */; };
+		C915FBEA2407B0BE00A3BEF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C915FBE92407B0BE00A3BEF2 /* ViewController.swift */; };
 		C9218717240535B10099C950 /* BundleKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9218716240535B00099C950 /* BundleKeys.swift */; };
 		C925796423ED32FD00308154 /* GoogleService-debug-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */; };
 		C92B6DAA23F10F1E0090E1D9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DA923F10F1E0090E1D9 /* Logger.swift */; };
@@ -274,6 +275,7 @@
 		C910126623FD9B6D0008D35C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C910126D23FD9B7D0008D35C /* LoginUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUsecase.swift; sourceTree = "<group>"; };
 		C915FBDB24079ECE00A3BEF2 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		C915FBE92407B0BE00A3BEF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9218716240535B00099C950 /* BundleKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleKeys.swift; sourceTree = "<group>"; };
 		C925795323ED2B4F00308154 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		C925795423ED2B5800308154 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -471,6 +473,14 @@
 				C9D72EFE23F594EA003EFC38 /* Reactive+Util.swift */,
 			);
 			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		C915FBE82407B09D00A3BEF2 /* Convenience */ = {
+			isa = PBXGroup;
+			children = (
+				C915FBE92407B0BE00A3BEF2 /* ViewController.swift */,
+			);
+			path = Convenience;
 			sourceTree = "<group>";
 		};
 		C921870A240535A00099C950 /* Keys */ = {
@@ -880,6 +890,7 @@
 			isa = PBXGroup;
 			children = (
 				C9CAA50D23F661D3004B9BDD /* AppConfigurator.swift */,
+				C915FBE82407B09D00A3BEF2 /* Convenience */,
 				C9519A26240641CD0029A2BF /* AppDelegate */,
 				C9B281BA23ED565D00554CA6 /* Presentation-Domain */,
 				C9B281BB23ED567000554CA6 /* Utility */,
@@ -1377,6 +1388,7 @@
 				C9BC4D18240409480054790A /* SwifterGeneral.swift in Sources */,
 				C92B6DAA23F10F1E0090E1D9 /* Logger.swift in Sources */,
 				C910126723FD9B6D0008D35C /* LoginViewModel.swift in Sources */,
+				C915FBEA2407B0BE00A3BEF2 /* ViewController.swift in Sources */,
 				C96687B723EA8F390011DDD3 /* LoginViewController.swift in Sources */,
 				C9D72F0B23F59691003EFC38 /* Observable+Util.swift in Sources */,
 				C9D72EFB23F593CD003EFC38 /* CountService.swift in Sources */,

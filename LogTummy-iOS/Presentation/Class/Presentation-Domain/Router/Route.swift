@@ -12,12 +12,11 @@ enum Route {
         
         switch self {
         case .login:
-            viewController = resolver.resolve(LoginViewController.self)!
-            #warning("assosiated valueとして遷移時に値を渡す場合があるから、frみたいにLegacyUIKitのresourceのextensionとしてresourceクラスでinitializaをまとめる")
+            viewController = Resources.ViewControllers.App.Login()
         case .calendar:
-            viewController = resolver.resolve(CalendarViewController.self)!
+            viewController = Resources.ViewControllers.App.calendar()
         case .timeline:
-            viewController = resolver.resolve(TimelineViewController.self)!
+            viewController = Resources.ViewControllers.App.timeline()
         }
         
         return viewController
