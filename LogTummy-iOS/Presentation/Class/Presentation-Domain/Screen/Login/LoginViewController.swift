@@ -44,8 +44,8 @@ class LoginViewController: UIViewController {
 extension LoginViewController: SFSafariViewControllerDelegate { }
 
 extension LoginViewController: ErrorNotifying { }
-// 遷移 DIリファクタ swinject内部実装パクってプロジェクトから削除する予定 DI fatalerrorをどうにか
 // テスト // Observableで成功/失敗時に値がそれぞれ取れるかも
+// tabbar
 // UI調整
 // ボタンエフェクト処理
 // credential情報のコミットを修正/API Key隠蔽処理
