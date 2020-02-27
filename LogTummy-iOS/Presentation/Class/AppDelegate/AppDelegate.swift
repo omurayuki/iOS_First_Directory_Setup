@@ -46,7 +46,7 @@ extension AppDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.makeKeyAndVisible()
         self.window = window
-        let vc = Container.shared.resolve(LoginViewController.self)
+        let vc = Container.shared.resolve(TimelineViewController.self)
         window.rootViewController = vc
     }
 }
