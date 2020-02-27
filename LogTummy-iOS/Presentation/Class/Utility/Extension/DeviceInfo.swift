@@ -3,8 +3,6 @@ import RxSwift
 import RxRelay
 import Reachability
 
-#warning("テスト実施")
-
 protocol DeviceInfoProtocol {
     
     var screenBounds: CGRect { get }

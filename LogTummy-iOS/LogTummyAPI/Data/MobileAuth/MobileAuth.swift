@@ -3,7 +3,7 @@ import KeychainAccess
 
 class MobileAuth {
     
-    var keychain: Keychain {
+    private var keychain: Keychain {
         guard
             let identifier = Bundle.main.object(forInfoDictionaryKey: Config.bundleKeys.bundleIdentifier) as? String
         else { return Keychain(service: String.blank) }
