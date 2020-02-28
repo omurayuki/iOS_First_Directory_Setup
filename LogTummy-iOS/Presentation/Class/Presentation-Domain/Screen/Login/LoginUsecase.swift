@@ -2,7 +2,9 @@ import RxSwift
 import RxCocoa
 import UIKit
 
-protocol LoginUsecaseProtocol: ErrorUsecaseProtocol {
+typealias UsecaseProtocol = ErrorUsecaseProtocol & CompleteUsecaseProtocol
+
+protocol LoginUsecaseProtocol: UsecaseProtocol {
     
     func oAuthLogin(presentingForm: UIViewController?)
     func getTWUserBusinessModel() -> Observable<TWUserBusinessModel?>
@@ -15,6 +17,7 @@ final class LoginUsecase: LoginUsecaseProtocol {
     private var twuserBusinessModel: BehaviorRelay<TWUserBusinessModel?> = BehaviorRelay(value: nil)
     
     private let errorSubject: BehaviorSubject<Error?> = BehaviorSubject(value: nil)
+    private let completeSubject: BehaviorSubject<Bool?> = BehaviorSubject(value: nil)
     private let disposeBag: DisposeBag = DisposeBag()
     
     init(loginDataManager: LoginDataManagerProtocol) {
@@ -26,9 +29,11 @@ final class LoginUsecase: LoginUsecaseProtocol {
             .subscribe(onSuccess: { [weak self] entity in
                 let businessModel = TWUserBusinessModel(verifier: entity.verifier, screenName: entity.screenName, userId: entity.userId)
                 self?.twuserBusinessModel.accept(businessModel)
+                self?.completeSubject.onNext(true)
             }) { error in
                 let mappedError = self.mapSwifterError(error: error)
                 self.errorSubject.onNext(mappedError)
+                self.completeSubject.onNext(false)
             }.disposed(by: disposeBag)
     }
     
@@ -41,5 +46,9 @@ extension LoginUsecase {
     
     var error: Observable<Error?> {
         return errorSubject.asObservable()
+    }
+    
+    var complete: Observable<Bool?> {
+        return completeSubject.asObserver()
     }
 }

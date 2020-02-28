@@ -25,8 +25,6 @@ class LoginViewController: UIViewController {
             .drive(onNext: { [weak self] _ in
                 guard let this = self else { return }
                 this.viewModel?.oAuthLogin(presentingForm: this)
-//                this.routing?.fuga(vc: self!)
-                
             })
         .disposed(by: disposeBag)
     }
@@ -38,6 +36,15 @@ class LoginViewController: UIViewController {
             .drive(onNext: { [weak self] error in
                 guard let error = error as? AppError else { return }
                 self?.showErrorMessage(error)
+            }).disposed(by: disposeBag)
+        
+        viewModel?.complete
+            .subscribe(onNext: { [weak self] completable in
+                guard let this = self else { return }
+                guard let completable = completable else { return }
+                if completable {
+                    this.routing?.showMainContents(vc: self!)
+                }
             }).disposed(by: disposeBag)
     }
 }

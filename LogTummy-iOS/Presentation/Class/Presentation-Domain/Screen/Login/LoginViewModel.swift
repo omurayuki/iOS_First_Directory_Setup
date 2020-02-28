@@ -3,7 +3,9 @@ import RxSwift
 import RxCocoa
 import UIKit
 
-protocol LoginViewModelProtocol: ErrorViewModelProtocol {
+typealias ViewModelProtocol = ErrorViewModelProtocol & CompleteViewModelProtocol
+
+protocol LoginViewModelProtocol: ViewModelProtocol {
     
     func oAuthLogin(presentingForm: UIViewController?)
     func getTWUserBusinessModel() -> Observable<TWUserBusinessModel?>
@@ -14,6 +16,7 @@ final class LoginViewModel: LoginViewModelProtocol {
     private let usecase: LoginUsecaseProtocol
     
     private let errorSubject: BehaviorSubject<Error?> = BehaviorSubject(value: nil)
+    private let completeSubject: BehaviorSubject<Bool?> = BehaviorSubject(value: nil)
     private let disposeBag: DisposeBag = DisposeBag()
 
     init(usecase: LoginUsecaseProtocol) {
@@ -25,6 +28,10 @@ final class LoginViewModel: LoginViewModelProtocol {
         
         usecase.error
             .bind(to: errorSubject)
+            .disposed(by: disposeBag)
+        
+        usecase.complete
+            .bind(to: completeSubject)
             .disposed(by: disposeBag)
     }
     
@@ -41,5 +48,9 @@ extension LoginViewModel {
     
     var error: Observable<Error?> {
         return errorSubject.asObservable()
+    }
+    
+    var complete: Observable<Bool?> {
+        return completeSubject.asObserver()
     }
 }

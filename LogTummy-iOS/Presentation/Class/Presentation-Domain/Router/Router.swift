@@ -17,6 +17,7 @@ final class Router: RouterProtocol {
     
     func present(_ route: Route, from: UIViewController, presentationStyle: UIModalPresentationStyle?, animated: Bool, completion: (() -> Void)?) {
         let destinationVC = route.viewController()
+        destinationVC.modalPresentationStyle = presentationStyle ?? .none
         from.present(destinationVC, animated: animated, completion: completion)
     }
     

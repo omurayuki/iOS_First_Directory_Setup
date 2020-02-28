@@ -9,8 +9,4 @@ class RootTabBarController: UITabBarController {
         super.loadView()
         routing?.setupViewControllers(from: self)
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }

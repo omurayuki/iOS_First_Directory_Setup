@@ -158,6 +158,8 @@
 		C9FCC7882409033600A4474F /* RootTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FCC7872409033600A4474F /* RootTabBarController.storyboard */; };
 		C9FCC78B240912FE00A4474F /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCC78A240912FE00A4474F /* TabModel.swift */; };
 		C9FCC78D2409132800A4474F /* RootTabBarRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCC78C2409132800A4474F /* RootTabBarRouting.swift */; };
+		C9FCC78F24093B2B00A4474F /* CompleteViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCC78E24093B2B00A4474F /* CompleteViewModelProtocol.swift */; };
+		C9FCC79124093BA700A4474F /* CompleteUsecaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCC79024093BA700A4474F /* CompleteUsecaseProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -420,6 +422,8 @@
 		C9FCC7872409033600A4474F /* RootTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootTabBarController.storyboard; sourceTree = "<group>"; };
 		C9FCC78A240912FE00A4474F /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 		C9FCC78C2409132800A4474F /* RootTabBarRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarRouting.swift; sourceTree = "<group>"; };
+		C9FCC78E24093B2B00A4474F /* CompleteViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteViewModelProtocol.swift; sourceTree = "<group>"; };
+		C9FCC79024093BA700A4474F /* CompleteUsecaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteUsecaseProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1023,6 +1027,7 @@
 			isa = PBXGroup;
 			children = (
 				C9BC4D1B240411840054790A /* ErrorUsecaseProtocol.swift */,
+				C9FCC79024093BA700A4474F /* CompleteUsecaseProtocol.swift */,
 			);
 			path = CommonUsecase;
 			sourceTree = "<group>";
@@ -1031,6 +1036,7 @@
 			isa = PBXGroup;
 			children = (
 				C9BC4D192404115B0054790A /* ErrorViewModelProtocol.swift */,
+				C9FCC78E24093B2B00A4474F /* CompleteViewModelProtocol.swift */,
 			);
 			path = CommonViewModel;
 			sourceTree = "<group>";
@@ -1485,6 +1491,7 @@
 				C92B6DB323F115AB0090E1D9 /* AnalyticsDataStructures.swift in Sources */,
 				C92B6DC023F13B7A0090E1D9 /* AppError.swift in Sources */,
 				C9D72F0D23F596CF003EFC38 /* UIAlertController+Util.swift in Sources */,
+				C9FCC79124093BA700A4474F /* CompleteUsecaseProtocol.swift in Sources */,
 				C92BA3B1240521F300F28BA3 /* Config.swift in Sources */,
 				C9519A23240640DB0029A2BF /* AppDelegateDataManager.swift in Sources */,
 				C9519A25240640EC0029A2BF /* AppDelegateLocal.swift in Sources */,
@@ -1512,6 +1519,7 @@
 				C9D72F2223F59B56003EFC38 /* VerticalStackView.swift in Sources */,
 				C9D72F1723F599B2003EFC38 /* UIStackView+Util.swift in Sources */,
 				C9519A3D240652BB0029A2BF /* TimelineViewController.swift in Sources */,
+				C9FCC78F24093B2B00A4474F /* CompleteViewModelProtocol.swift in Sources */,
 				C92B6DC923F13E440090E1D9 /* AppStrings.swift in Sources */,
 				C9D72EF323F5932D003EFC38 /* KeyboardNotifler.swift in Sources */,
 				C9CB50D623FA92E70001BD1D /* IBDesignableTextField.swift in Sources */,

@@ -37,7 +37,7 @@ extension AppDelegate {
             .subscribe(onNext: { [weak self] isExistTWUserKey in
                 isExistTWUserKey ?
                     self?.drive(to: .rootTab) :
-                    self?.drive(to: .rootTab)
+                    self?.drive(to: .login)
             })
             .disposed(by: disposeBag)
     }

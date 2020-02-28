@@ -2,12 +2,12 @@ import UIKit
 
 protocol LoginRoutingProtocol: Routing {
     
-    func fuga(vc: UIViewController)
+    func showMainContents(vc: UIViewController)
 }
 
 final class LoginRouting: LoginRoutingProtocol {
     
-    func fuga(vc: UIViewController) {
-        router.present(.calendar, from: vc, presentationStyle: nil, animated: true, completion: nil)
+    func showMainContents(vc: UIViewController) {
+        router.present(.rootTab, from: vc, presentationStyle: .fullScreen, animated: true, completion: nil)
     }
 }
