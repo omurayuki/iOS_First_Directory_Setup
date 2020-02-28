@@ -155,6 +155,8 @@
 		C9D72F2023F59B24003EFC38 /* PlaceHolderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72F1F23F59B24003EFC38 /* PlaceHolderTextView.swift */; };
 		C9D72F2223F59B56003EFC38 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72F2123F59B55003EFC38 /* VerticalStackView.swift */; };
 		C9D72F2423F59B76003EFC38 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72F2323F59B76003EFC38 /* PaddingTextField.swift */; };
+		C9FCC7862409032800A4474F /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCC7852409032800A4474F /* RootTabBarController.swift */; };
+		C9FCC7882409033600A4474F /* RootTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FCC7872409033600A4474F /* RootTabBarController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -414,6 +416,8 @@
 		C9D72F1F23F59B24003EFC38 /* PlaceHolderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderTextView.swift; sourceTree = "<group>"; };
 		C9D72F2123F59B55003EFC38 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 		C9D72F2323F59B76003EFC38 /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
+		C9FCC7852409032800A4474F /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		C9FCC7872409033600A4474F /* RootTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootTabBarController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1042,6 +1046,7 @@
 		C9CAA50723F65EDB004B9BDD /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				C9FCC7792409031200A4474F /* Tab */,
 				C9CAA50A23F660B9004B9BDD /* Launch */,
 				C9CAA50923F660A2004B9BDD /* Login */,
 				C9519A29240651D30029A2BF /* Calendar */,
@@ -1151,6 +1156,15 @@
 				C9D72F2323F59B76003EFC38 /* PaddingTextField.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		C9FCC7792409031200A4474F /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				C9FCC7872409033600A4474F /* RootTabBarController.storyboard */,
+				C9FCC7852409032800A4474F /* RootTabBarController.swift */,
+			);
+			path = Tab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1337,6 +1351,7 @@
 				C9519A38240651F20029A2BF /* CalendarViewController.storyboard in Resources */,
 				C925796423ED32FD00308154 /* GoogleService-debug-Info.plist in Resources */,
 				C96687BA23EA8F390011DDD3 /* LoginViewController.storyboard in Resources */,
+				C9FCC7882409033600A4474F /* RootTabBarController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1425,6 +1440,7 @@
 				C9D72EFB23F593CD003EFC38 /* CountService.swift in Sources */,
 				C9D72F1D23F59ACA003EFC38 /* UNMutableNotification+Util.swift in Sources */,
 				C92B6DC723F13DDA0090E1D9 /* Strings.swift in Sources */,
+				C9FCC7862409032800A4474F /* RootTabBarController.swift in Sources */,
 				C92BA3A42404F4A600F28BA3 /* Resources.swift in Sources */,
 				C9CB50E223FA93DE0001BD1D /* Sizes.swift in Sources */,
 				C9CAA50C23F661B3004B9BDD /* AppDelagateUsecase.swift in Sources */,

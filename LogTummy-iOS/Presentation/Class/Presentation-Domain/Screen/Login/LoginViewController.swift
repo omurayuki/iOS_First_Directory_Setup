@@ -26,6 +26,7 @@ class LoginViewController: UIViewController {
                 guard let this = self else { return }
                 this.viewModel?.oAuthLogin(presentingForm: this)
 //                this.routing?.fuga(vc: self!)
+                
             })
         .disposed(by: disposeBag)
     }

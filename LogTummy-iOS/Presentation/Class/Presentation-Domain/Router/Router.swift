@@ -28,7 +28,7 @@ final class Router: RouterProtocol {
     }
     
     func initialWindow(_ route: Route, window: UIWindow) {
-        let vc = route.viewController()
+        let vc = resolver.resolve(RootTabBarController.self)
         window.rootViewController = vc
     }
 }

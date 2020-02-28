@@ -11,6 +11,11 @@ final class ViewControllerAssembly: Assembly {
             return vc
         }
         
+        container.register(RootTabBarController.self) { _ in
+            let vc = SwinjectStoryboard.create(vc: RootTabBarController.self)
+            return vc
+        }
+        
         container.register(CalendarViewController.self) { _ in
             let vc = SwinjectStoryboard.create(vc: CalendarViewController.self)
             return vc
