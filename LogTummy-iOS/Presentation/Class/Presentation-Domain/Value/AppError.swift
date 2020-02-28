@@ -1,6 +1,10 @@
 import Foundation
 import UIKit
 
+enum ErrorType {
+    case offline
+}
+
 final public class AppError: DisplayableErrorProtocol {
     
     private typealias ErrorStrings = StringResources.Application.Error
@@ -16,9 +20,13 @@ final public class AppError: DisplayableErrorProtocol {
     private(set) var message: String = String.blank
     private(set) var title: String = String.blank
     private(set) var resolution: (() -> Void)?
+    private(set) var errorType: ErrorType? = nil
     
-    init(error: Error, resolutionType: ResolutionType = .none, resolution: VoidBlock? = nil) {
-        
+    init(error: Error,
+         resolutionType: ResolutionType = .none,
+         resolution: VoidBlock? = nil,
+         errorType: ErrorType? = nil)
+    {
         if let displayableError = error as? DisplayableErrorProtocol {
             self.title = displayableError.title
             self.message = displayableError.message
@@ -29,13 +37,20 @@ final public class AppError: DisplayableErrorProtocol {
         
         self.resolution = resolution
         self.resolutionType = resolutionType
+        self.errorType = errorType
     }
     
-    init(title: String, message: String, resolutionType: ResolutionType = .none, resolution: VoidBlock? = nil) {
+    init(title: String,
+         message: String,
+         resolutionType: ResolutionType = .none,
+         resolution: VoidBlock? = nil,
+         errorType: ErrorType? = nil)
+    {
         self.title = title
         self.message = message
         self.resolution = resolution
         self.resolutionType = resolutionType
+        self.errorType = errorType
     }
     
     private init() { }
@@ -123,7 +138,8 @@ extension AppError {
         return AppError(title: ErrorStrings.standardErrorTitle,
                         message: ErrorStrings.noNetworkConnection,
                         resolutionType: resolutionType,
-                        resolution: resolution)
+                        resolution: resolution,
+                        errorType: .offline)
     }
     
     static func blockingOfflineErrorWithRetry(resolution: VoidBlock?) -> AppError {
@@ -131,7 +147,8 @@ extension AppError {
         return AppError(title: ErrorStrings.standardErrorTitle,
                         message: ErrorStrings.noNetworkConnection,
                         resolutionType: .forceRetry,
-                        resolution: resolution)
+                        resolution: resolution,
+                        errorType: .offline)
     }
 }
 
