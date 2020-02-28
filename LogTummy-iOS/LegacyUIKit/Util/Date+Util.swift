@@ -44,15 +44,17 @@ extension Date {
 
 extension Date {
     
+    typealias Time = StringResources.Application.Time
+    
     func offsetFrom() -> String {
-        if yearsFrom() > 0       { return "\(yearsFrom())年前" }
-        if monthsFrom() > 0      { return "\(monthsFrom())ヶ月前" }
-        if weeksFrom() > 0       { return "\(weeksFrom())週間前" }
-        if daysFrom() > 0        { return "\(daysFrom())日前" }
-        if hoursFrom() > 0       { return "\(hoursFrom())時間前" }
-        if minutesFrom() > 0     { return "\(minutesFrom())分前" }
-        if secondsFrom() > 0     { return "\(secondsFrom())秒前" }
-        return "現在"
+        if yearsFrom() > 0       { return "\(yearsFrom())\(Time.timeYearAgo)" }
+        if monthsFrom() > 0      { return "\(monthsFrom())\(Time.timeMonthAgo)" }
+        if weeksFrom() > 0       { return "\(weeksFrom())\(Time.timeWeekAgo)" }
+        if daysFrom() > 0        { return "\(daysFrom())\(Time.timeDayAgo)" }
+        if hoursFrom() > 0       { return "\(hoursFrom())\(Time.timeHourAgo)" }
+        if minutesFrom() > 0     { return "\(minutesFrom())\(Time.timeMinutesAgo)" }
+        if secondsFrom() > 0     { return "\(secondsFrom())\(Time.timeSecondAgo)" }
+        return Time.timeCurrent
     }
     
     func yearsFrom() -> Int {
@@ -90,5 +92,3 @@ extension Date {
         return formatter.string(from: self)
     }
 }
-
-#warning("ローカライズ")

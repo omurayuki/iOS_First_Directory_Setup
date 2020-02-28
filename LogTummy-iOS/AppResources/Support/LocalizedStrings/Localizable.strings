@@ -7,3 +7,12 @@
 "title_login" = "ログイン";
 "title_calendar" = "カレンダー";
 "title_timeline" = "タイムライン";
+"title_write_memo" = "メモを記入";
+"time_year_ago" = "年前";
+"time_month_ago" = "ヶ月前";
+"time_week_ago" = "週間前";
+"time_day_ago" = "日前";
+"time_hour_ago" = "時間前";
+"time_minutes_ago" = "分前";
+"time_second_ago" = "秒前";
+"time_current" = "現在";

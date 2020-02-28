@@ -4,7 +4,7 @@ import UIKit
     // MARK: Properties
     
     /// プレースホルダー
-    var placeHolder: String = "メモを記入" {
+    var placeHolder: String = StringResources.Application.Title.titleWriteMemo {
         didSet {
             self.placeHolderLabel.text = self.placeHolder
             self.placeHolderLabel.sizeToFit()
@@ -70,4 +70,3 @@ import UIKit
         changeVisiblePlaceHolder()
     }
 }
-#warning("ローカライズ")

@@ -154,7 +154,6 @@
 		C9D72F1D23F59ACA003EFC38 /* UNMutableNotification+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72F1C23F59ACA003EFC38 /* UNMutableNotification+Util.swift */; };
 		C9D72F2023F59B24003EFC38 /* PlaceHolderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72F1F23F59B24003EFC38 /* PlaceHolderTextView.swift */; };
 		C9D72F2223F59B56003EFC38 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72F2123F59B55003EFC38 /* VerticalStackView.swift */; };
-		C9D72F2423F59B76003EFC38 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72F2323F59B76003EFC38 /* PaddingTextField.swift */; };
 		C9FCC7862409032800A4474F /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCC7852409032800A4474F /* RootTabBarController.swift */; };
 		C9FCC7882409033600A4474F /* RootTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FCC7872409033600A4474F /* RootTabBarController.storyboard */; };
 		C9FCC78B240912FE00A4474F /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCC78A240912FE00A4474F /* TabModel.swift */; };
@@ -417,7 +416,6 @@
 		C9D72F1C23F59ACA003EFC38 /* UNMutableNotification+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UNMutableNotification+Util.swift"; sourceTree = "<group>"; };
 		C9D72F1F23F59B24003EFC38 /* PlaceHolderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderTextView.swift; sourceTree = "<group>"; };
 		C9D72F2123F59B55003EFC38 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
-		C9D72F2323F59B76003EFC38 /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
 		C9FCC7852409032800A4474F /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		C9FCC7872409033600A4474F /* RootTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootTabBarController.storyboard; sourceTree = "<group>"; };
 		C9FCC78A240912FE00A4474F /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
@@ -1157,7 +1155,6 @@
 			children = (
 				C9D72F2123F59B55003EFC38 /* VerticalStackView.swift */,
 				C9D72F1F23F59B24003EFC38 /* PlaceHolderTextView.swift */,
-				C9D72F2323F59B76003EFC38 /* PaddingTextField.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -1529,7 +1526,6 @@
 				C9CB50D423FA92DB0001BD1D /* IBDesignableLabel.swift in Sources */,
 				C93BB66523FCFCA2007F14A2 /* DeviceInfo.swift in Sources */,
 				C910126E23FD9B7D0008D35C /* LoginUsecase.swift in Sources */,
-				C9D72F2423F59B76003EFC38 /* PaddingTextField.swift in Sources */,
 				C9CB50ED23FA9C870001BD1D /* CornerRoundableButton.swift in Sources */,
 				C9BC4D1A2404115B0054790A /* ErrorViewModelProtocol.swift in Sources */,
 				C9831CFB23FFE4860062A9A0 /* ResourcesSupport.swift in Sources */,
