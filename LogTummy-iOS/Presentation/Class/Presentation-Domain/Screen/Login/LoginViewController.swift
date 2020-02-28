@@ -44,7 +44,6 @@ class LoginViewController: UIViewController {
 extension LoginViewController: SFSafariViewControllerDelegate { }
 
 extension LoginViewController: ErrorNotifying { }
-// テスト // Observableで成功/失敗時に値がそれぞれ取れるかも
 // tabbar
 // UI調整
 // ボタンエフェクト処理

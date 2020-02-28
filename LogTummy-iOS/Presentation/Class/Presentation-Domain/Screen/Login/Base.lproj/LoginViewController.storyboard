@@ -16,11 +16,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNV-Dh-eJL" customClass="CornerRoundableButton" customModule="LogTummy_iOS" customModuleProvider="target">
-                                <rect key="frame" x="107" y="644" width="200" height="50"/>
+                                <rect key="frame" x="107" y="750" width="200" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Kky-NM-eJS"/>
-                                    <constraint firstAttribute="height" constant="50" id="kn3-jf-e5y"/>
+                                    <constraint firstAttribute="height" constant="50" id="kXv-T2-rc3"/>
+                                    <constraint firstAttribute="width" constant="200" id="sdO-kG-SEh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Twitterログイン"/>
@@ -31,11 +31,11 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dZn-O0-806" customClass="CornerRoundableImageView" customModule="LogTummy_iOS" customModuleProvider="target">
-                                <rect key="frame" x="57" y="194" width="300" height="300"/>
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="EcI-RK-Zqs"/>
-                                    <constraint firstAttribute="width" constant="300" id="hkN-bv-meD"/>
+                                    <constraint firstAttribute="height" constant="300" id="NDc-ce-LcZ"/>
+                                    <constraint firstAttribute="width" constant="300" id="uOe-ld-q7D"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -46,10 +46,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="JNV-Dh-eJL" firstAttribute="top" secondItem="dZn-O0-806" secondAttribute="bottom" constant="150" id="103-qy-vzX"/>
-                            <constraint firstItem="dZn-O0-806" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4sH-F2-ZGU"/>
-                            <constraint firstItem="JNV-Dh-eJL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LsP-TA-sAu"/>
-                            <constraint firstItem="dZn-O0-806" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="hQm-1f-JHD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JNV-Dh-eJL" secondAttribute="bottom" multiplier="1:1.05" constant="100" id="KLk-Wu-rMd"/>
+                            <constraint firstItem="dZn-O0-806" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kGV-QN-47A"/>
+                            <constraint firstItem="dZn-O0-806" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sZK-Ag-MFk"/>
+                            <constraint firstItem="JNV-Dh-eJL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zhg-Dp-r9T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
