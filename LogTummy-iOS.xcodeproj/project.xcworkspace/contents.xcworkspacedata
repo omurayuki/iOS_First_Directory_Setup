@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/omurayuuki/LogTummy/LogTummy-iOS/LogTummy-iOS.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
