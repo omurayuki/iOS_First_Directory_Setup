@@ -6,5 +6,9 @@ final class RoutingAssembly: Assembly {
         container.register(LoginRoutingProtocol.self) { _ in
             return LoginRouting()
         }
+        
+        container.register(RootTabBarRoutingProtocol.self) { _ in
+            return RootTabBarRouting()
+        }
     }
 }

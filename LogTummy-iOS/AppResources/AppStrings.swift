@@ -17,5 +17,11 @@ extension StringResources {
         struct General {
             static var okButtonTitle: String { return Internal.localizable.ok_button_title() }
         }
+        
+        struct Title {
+            static var titleLogin: String { return Internal.localizable.title_login() }
+            static var titleCalendar: String { return Internal.localizable.title_calendar() }
+            static var titleTimeline: String { return Internal.localizable.title_timeline() }
+        }
     }
 }

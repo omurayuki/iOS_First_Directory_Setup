@@ -4,3 +4,6 @@
 "ok_button_title" = "OK";
 "retry_action" = "リトライ";
 "text_no_network_connection" = "ネットワーク接続がありません。環境の良いところで再度お試しください。";
+"title_login" = "ログイン";
+"title_calendar" = "カレンダー";
+"title_timeline" = "タイムライン";

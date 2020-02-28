@@ -14,9 +14,13 @@ extension Resources {
 
         struct AppControllers {
             
-//            func RootTabBar() -> RootTabBarController {
-//                .createInstance()
-//            }
+            func RootTabBar() -> RootTabBarController {
+                guard let vc = resolver.resolve(RootTabBarController.self) else {
+                    Logger.error("can't instantiate \(RootTabBarController.self)")
+                    fatalError()
+                }
+                return vc
+            }
             
             func Login() -> LoginViewController {
                 guard let vc = resolver.resolve(LoginViewController.self) else {

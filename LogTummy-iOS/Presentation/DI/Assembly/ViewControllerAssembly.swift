@@ -11,8 +11,9 @@ final class ViewControllerAssembly: Assembly {
             return vc
         }
         
-        container.register(RootTabBarController.self) { _ in
+        container.register(RootTabBarController.self) { r in
             let vc = SwinjectStoryboard.create(vc: RootTabBarController.self)
+            vc.routing = r.resolve(RootTabBarRoutingProtocol.self)
             return vc
         }
         

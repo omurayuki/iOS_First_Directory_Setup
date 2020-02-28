@@ -36,8 +36,8 @@ extension AppDelegate {
         usecase.getIsExistTWUserToken()
             .subscribe(onNext: { [weak self] isExistTWUserKey in
                 isExistTWUserKey ?
-                    self?.drive(to: .calendar) :
-                    self?.drive(to: .login)
+                    self?.drive(to: .rootTab) :
+                    self?.drive(to: .rootTab)
             })
             .disposed(by: disposeBag)
     }
