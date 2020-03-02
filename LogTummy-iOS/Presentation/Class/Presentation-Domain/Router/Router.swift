@@ -38,7 +38,9 @@ final class Router: RouterProtocol {
             }
             .enumerated()
             .map { idx, tab -> UIViewController in
-                let tabBarItem = UITabBarItem(title: tab.title, image: tab.icon, selectedImage: nil)
+                let tabBarItem = UITabBarItem(title: tab.title,
+                                              image: tab.icon,
+                                              selectedImage: nil)
                 guard let vc = tab.instance else { return UIViewController() }
                 vc.tabBarItem = tabBarItem
                 return vc

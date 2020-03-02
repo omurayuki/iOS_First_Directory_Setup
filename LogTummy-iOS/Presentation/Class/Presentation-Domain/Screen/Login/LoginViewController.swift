@@ -52,7 +52,5 @@ class LoginViewController: UIViewController {
 extension LoginViewController: SFSafariViewControllerDelegate { }
 
 extension LoginViewController: ErrorNotifying { }
-// tabbar
-// UI調整
 // ボタンエフェクト処理
 // credential情報のコミットを修正/API Key隠蔽処理

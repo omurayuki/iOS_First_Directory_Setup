@@ -2,9 +2,9 @@ import RxSwift
 import RxCocoa
 import UIKit
 
-typealias UsecaseProtocol = ErrorUsecaseProtocol & CompleteUsecaseProtocol
+typealias ErrorAndCompleteLoginUsecaseProtocol = ErrorUsecaseProtocol & CompleteUsecaseProtocol
 
-protocol LoginUsecaseProtocol: UsecaseProtocol {
+protocol LoginUsecaseProtocol: ErrorAndCompleteLoginUsecaseProtocol {
     
     func oAuthLogin(presentingForm: UIViewController?)
     func getTWUserBusinessModel() -> Observable<TWUserBusinessModel?>

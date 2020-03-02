@@ -11,9 +11,8 @@ final class CalendarViewController: UIViewController {
                               consumerSecret: SwifterGeneral.TWITTER_CONSUMER_SECRET.description,
                               oauthToken: MobileAuth().getUserKey()!,
                               oauthTokenSecret: MobileAuth().getUserSecret()!)
-        swifter.searchTweet(using: "今日の積み上げ", success: { (j1, j2) in
-            print(j1)
-            print(j2)
+        swifter.getTimeline(for: UserTag.id(MobileAuth().getUserId()!), count: 50, success: { (json) in
+            print(json)
         }) { error in
             error.localizedDescription
         }
