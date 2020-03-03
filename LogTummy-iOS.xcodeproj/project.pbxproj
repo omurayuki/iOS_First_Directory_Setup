@@ -56,10 +56,12 @@
 		C92BA3B5240526E900F28BA3 /* LoginLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3B4240526E900F28BA3 /* LoginLocal.swift */; };
 		C93BB66523FCFCA2007F14A2 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */; };
 		C94D709E240797210085F717 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D709D240797210085F717 /* Route.swift */; };
+		C94F07EE240E146E002BA143 /* DynamicHeightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F07ED240E146E002BA143 /* DynamicHeightCollectionView.swift */; };
+		C94F07FB240E148E002BA143 /* CollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F07FA240E148E002BA143 /* CollectionViewFlowLayout.swift */; };
 		C9519A23240640DB0029A2BF /* AppDelegateDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9519A22240640DB0029A2BF /* AppDelegateDataManager.swift */; };
 		C9519A25240640EC0029A2BF /* AppDelegateLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9519A24240640EC0029A2BF /* AppDelegateLocal.swift */; };
-		C9519A36240651E40029A2BF /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9519A35240651E40029A2BF /* CalendarViewController.swift */; };
-		C9519A38240651F20029A2BF /* CalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9519A37240651F20029A2BF /* CalendarViewController.storyboard */; };
+		C9519A36240651E40029A2BF /* TweetLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9519A35240651E40029A2BF /* TweetLogViewController.swift */; };
+		C9519A38240651F20029A2BF /* TweetLogViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9519A37240651F20029A2BF /* TweetLogViewController.storyboard */; };
 		C9519A3B240652B00029A2BF /* TimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9519A3A240652B00029A2BF /* TimelineViewController.storyboard */; };
 		C9519A3D240652BB0029A2BF /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9519A3C240652BB0029A2BF /* TimelineViewController.swift */; };
 		C96687B323EA8F390011DDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96687B223EA8F390011DDD3 /* AppDelegate.swift */; };
@@ -101,6 +103,9 @@
 		C9831D10240026670062A9A0 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D0F240026670062A9A0 /* Router.swift */; };
 		C9831D12240026890062A9A0 /* LoginRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D11240026890062A9A0 /* LoginRouting.swift */; };
 		C9831D14240027A30062A9A0 /* RoutingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D13240027A30062A9A0 /* RoutingAssembly.swift */; };
+		C9A98117240D048900CBC42A /* TweetLogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A98116240D048900CBC42A /* TweetLogCollectionViewCell.swift */; };
+		C9A98119240D08B200CBC42A /* CornerRoundableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A98118240D08B200CBC42A /* CornerRoundableCollectionViewCell.swift */; };
+		C9A98129240D252E00CBC42A /* TweetLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A98128240D252E00CBC42A /* TweetLogTableViewCell.swift */; };
 		C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9B281B523ED549600554CA6 /* GoogleService-Info.plist */; };
 		C9BC4D0A240404AC0054790A /* TWUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC4D09240404AC0054790A /* TWUserEntity.swift */; };
 		C9BC4D18240409480054790A /* SwifterGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC4D17240409480054790A /* SwifterGeneral.swift */; };
@@ -323,10 +328,12 @@
 		C92BA3B4240526E900F28BA3 /* LoginLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLocal.swift; sourceTree = "<group>"; };
 		C93BB66423FCFCA2007F14A2 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		C94D709D240797210085F717 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		C94F07ED240E146E002BA143 /* DynamicHeightCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightCollectionView.swift; sourceTree = "<group>"; };
+		C94F07FA240E148E002BA143 /* CollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		C9519A22240640DB0029A2BF /* AppDelegateDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateDataManager.swift; sourceTree = "<group>"; };
 		C9519A24240640EC0029A2BF /* AppDelegateLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateLocal.swift; sourceTree = "<group>"; };
-		C9519A35240651E40029A2BF /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		C9519A37240651F20029A2BF /* CalendarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalendarViewController.storyboard; sourceTree = "<group>"; };
+		C9519A35240651E40029A2BF /* TweetLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLogViewController.swift; sourceTree = "<group>"; };
+		C9519A37240651F20029A2BF /* TweetLogViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TweetLogViewController.storyboard; sourceTree = "<group>"; };
 		C9519A3A240652B00029A2BF /* TimelineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimelineViewController.storyboard; sourceTree = "<group>"; };
 		C9519A3C240652BB0029A2BF /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		C96687AF23EA8F390011DDD3 /* LogTummy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LogTummy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -363,6 +370,9 @@
 		C9831D0F240026670062A9A0 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C9831D11240026890062A9A0 /* LoginRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouting.swift; sourceTree = "<group>"; };
 		C9831D13240027A30062A9A0 /* RoutingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAssembly.swift; sourceTree = "<group>"; };
+		C9A98116240D048900CBC42A /* TweetLogCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLogCollectionViewCell.swift; sourceTree = "<group>"; };
+		C9A98118240D08B200CBC42A /* CornerRoundableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRoundableCollectionViewCell.swift; sourceTree = "<group>"; };
+		C9A98128240D252E00CBC42A /* TweetLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLogTableViewCell.swift; sourceTree = "<group>"; };
 		C9B281A623ED482F00554CA6 /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "gRPCCertificates-Cpp.bundle"; path = "Carthage/Build/iOS/gRPC-C++.framework/Resources/gRPCCertificates-Cpp.bundle"; sourceTree = "<group>"; };
 		C9B281B523ED549600554CA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9BC4D09240404AC0054790A /* TWUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWUserEntity.swift; sourceTree = "<group>"; };
@@ -672,13 +682,13 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		C9519A29240651D30029A2BF /* Calendar */ = {
+		C9519A29240651D30029A2BF /* Log */ = {
 			isa = PBXGroup;
 			children = (
-				C9519A37240651F20029A2BF /* CalendarViewController.storyboard */,
-				C9519A35240651E40029A2BF /* CalendarViewController.swift */,
+				C9519A37240651F20029A2BF /* TweetLogViewController.storyboard */,
+				C9519A35240651E40029A2BF /* TweetLogViewController.swift */,
 			);
-			path = Calendar;
+			path = Log;
 			sourceTree = "<group>";
 		};
 		C9519A392406529F0029A2BF /* Timeline */ = {
@@ -822,6 +832,15 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		C9A9811C240D24EB00CBC42A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C9A98116240D048900CBC42A /* TweetLogCollectionViewCell.swift */,
+				C9A98128240D252E00CBC42A /* TweetLogTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C9B281AB23ED518400554CA6 /* LogTummyAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -949,6 +968,7 @@
 				C92B6DC123F13B930090E1D9 /* Protocol */,
 				C92B6DBE23F13B6A0090E1D9 /* Value */,
 				C9CAA50623F65ED7004B9BDD /* Router */,
+				C9A9811C240D24EB00CBC42A /* Cell */,
 				C9CAA50823F65EE2004B9BDD /* View */,
 				C9CAA50723F65EDB004B9BDD /* Screen */,
 			);
@@ -1057,7 +1077,7 @@
 				C9FCC7792409031200A4474F /* Tab */,
 				C9CAA50A23F660B9004B9BDD /* Launch */,
 				C9CAA50923F660A2004B9BDD /* Login */,
-				C9519A29240651D30029A2BF /* Calendar */,
+				C9519A29240651D30029A2BF /* Log */,
 				C9519A392406529F0029A2BF /* Timeline */,
 			);
 			path = Screen;
@@ -1066,6 +1086,8 @@
 		C9CAA50823F65EE2004B9BDD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C94F07ED240E146E002BA143 /* DynamicHeightCollectionView.swift */,
+				C94F07FA240E148E002BA143 /* CollectionViewFlowLayout.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1119,6 +1141,7 @@
 				C9CB50E823FA9B620001BD1D /* HignlightableButton.swift */,
 				C9CB50EC23FA9C870001BD1D /* CornerRoundableButton.swift */,
 				C9CB50EE23FA9D180001BD1D /* CornerRoundableImageView.swift */,
+				C9A98118240D08B200CBC42A /* CornerRoundableCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1365,7 +1388,7 @@
 				C9519A3B240652B00029A2BF /* TimelineViewController.storyboard in Resources */,
 				C92B6DCD23F13F490090E1D9 /* Localizable.strings in Resources */,
 				C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */,
-				C9519A38240651F20029A2BF /* CalendarViewController.storyboard in Resources */,
+				C9519A38240651F20029A2BF /* TweetLogViewController.storyboard in Resources */,
 				C925796423ED32FD00308154 /* GoogleService-debug-Info.plist in Resources */,
 				C96687BA23EA8F390011DDD3 /* LoginViewController.storyboard in Resources */,
 				C9FCC7882409033600A4474F /* RootTabBarController.storyboard in Resources */,
@@ -1448,6 +1471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9CB50E023FA93180001BD1D /* IBDesignableScrollView.swift in Sources */,
+				C94F07EE240E146E002BA143 /* DynamicHeightCollectionView.swift in Sources */,
 				C9BC4D18240409480054790A /* SwifterGeneral.swift in Sources */,
 				C92B6DAA23F10F1E0090E1D9 /* Logger.swift in Sources */,
 				C910126723FD9B6D0008D35C /* LoginViewModel.swift in Sources */,
@@ -1474,6 +1498,7 @@
 				C94D709E240797210085F717 /* Route.swift in Sources */,
 				C9D72F2023F59B24003EFC38 /* PlaceHolderTextView.swift in Sources */,
 				C92BA3B5240526E900F28BA3 /* LoginLocal.swift in Sources */,
+				C9A98117240D048900CBC42A /* TweetLogCollectionViewCell.swift in Sources */,
 				C92BA3A72405121900F28BA3 /* MemoryCache.swift in Sources */,
 				C9D72F1323F59959003EFC38 /* UIPageController+Util.swift in Sources */,
 				C92B6DCF23F140710090E1D9 /* Strings+Util.swift in Sources */,
@@ -1500,9 +1525,11 @@
 				C915FBDC24079ECE00A3BEF2 /* Routing.swift in Sources */,
 				C9CB50D223FA92CA0001BD1D /* IBDesignableCollectionViewCell.swift in Sources */,
 				C90A45E923F668AB000E3B1B /* LaunchViewController.swift in Sources */,
+				C9A98119240D08B200CBC42A /* CornerRoundableCollectionViewCell.swift in Sources */,
 				C92B6DC323F13BAB0090E1D9 /* DisplayableErrorProtocol.swift in Sources */,
 				C9831CF123FFC45D0062A9A0 /* ViewControllerAssembly.swift in Sources */,
 				C9D72F0523F595E3003EFC38 /* Date+Util.swift in Sources */,
+				C9A98129240D252E00CBC42A /* TweetLogTableViewCell.swift in Sources */,
 				C9D72F0923F59662003EFC38 /* NSLayoutAnchor+Util.swift in Sources */,
 				C9D72F0323F59587003EFC38 /* Array+Util.swift in Sources */,
 				C92B6DB723F117B30090E1D9 /* AnalyticsInfo.swift in Sources */,
@@ -1510,12 +1537,13 @@
 				C9BC4D1C240411840054790A /* ErrorUsecaseProtocol.swift in Sources */,
 				C9D72F1123F59879003EFC38 /* UIImage+Util.swift in Sources */,
 				C9831D12240026890062A9A0 /* LoginRouting.swift in Sources */,
-				C9519A36240651E40029A2BF /* CalendarViewController.swift in Sources */,
+				C9519A36240651E40029A2BF /* TweetLogViewController.swift in Sources */,
 				C9BC4D1F2404136A0054790A /* TWUserBusinessModel.swift in Sources */,
 				C9D72F0123F59559003EFC38 /* Animation+Util.swift in Sources */,
 				C9D72EFF23F594EA003EFC38 /* Reactive+Util.swift in Sources */,
 				C9CB50E923FA9B620001BD1D /* HignlightableButton.swift in Sources */,
 				C9CB50DA23FA92F60001BD1D /* IBDesignableTableViewCell.swift in Sources */,
+				C94F07FB240E148E002BA143 /* CollectionViewFlowLayout.swift in Sources */,
 				C9D72F2223F59B56003EFC38 /* VerticalStackView.swift in Sources */,
 				C9D72F1723F599B2003EFC38 /* UIStackView+Util.swift in Sources */,
 				C9519A3D240652BB0029A2BF /* TimelineViewController.swift in Sources */,

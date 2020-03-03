@@ -17,8 +17,8 @@ final class ViewControllerAssembly: Assembly {
             return vc
         }
         
-        container.register(CalendarViewController.self) { _ in
-            let vc = SwinjectStoryboard.create(vc: CalendarViewController.self)
+        container.register(TweetLogViewController.self) { _ in
+            let vc = SwinjectStoryboard.create(vc: TweetLogViewController.self)
             return vc
         }
         

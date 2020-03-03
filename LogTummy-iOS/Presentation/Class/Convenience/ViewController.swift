@@ -30,9 +30,9 @@ extension Resources {
                 return vc
             }
             
-            func calendar() -> CalendarViewController {
-                guard let vc = resolver.resolve(CalendarViewController.self) else {
-                    Logger.error("can't instantiate \(CalendarViewController.self)")
+            func tweetLog() -> TweetLogViewController {
+                guard let vc = resolver.resolve(TweetLogViewController.self) else {
+                    Logger.error("can't instantiate \(TweetLogViewController.self)")
                     fatalError()
                 }
                 return vc

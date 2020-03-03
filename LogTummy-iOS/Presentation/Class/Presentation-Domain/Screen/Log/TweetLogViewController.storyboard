@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tweet Log View Controller-->
+        <scene sceneID="lMO-zg-vlQ">
+            <objects>
+                <viewController storyboardIdentifier="TweetLogViewController" id="ghZ-Ci-WiQ" customClass="TweetLogViewController" customModule="LogTummy_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p7a-1R-bJl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kvM-hY-3cw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TweetLogTableViewCell" rowHeight="200" id="WkB-FK-WiB" customClass="TweetLogTableViewCell" customModule="LogTummy_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WkB-FK-WiB" id="DQx-D6-hJ5">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6Zp-Ws-YQf" customClass="DynamicHeightCollectionView" customModule="LogTummy_iOS" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZTo-v0-XLS" customClass="CollectionViewFlowLayout" customModule="LogTummy_iOS" customModuleProvider="target">
+                                                        <size key="itemSize" width="159" height="42"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TweetLogCollectionViewCell" id="vFz-bk-zM0" customClass="TweetLogCollectionViewCell" customModule="LogTummy_iOS" customModuleProvider="target">
+                                                            <rect key="frame" x="10" y="10" width="159" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="159" height="42"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGX-CL-PEk">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="159" height="42"/>
+                                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </view>
+                                                            <constraints>
+                                                                <constraint firstItem="PGX-CL-PEk" firstAttribute="leading" secondItem="vFz-bk-zM0" secondAttribute="leading" id="3SS-Qm-iJY"/>
+                                                                <constraint firstItem="PGX-CL-PEk" firstAttribute="top" secondItem="vFz-bk-zM0" secondAttribute="top" id="QU3-uk-8uG"/>
+                                                                <constraint firstAttribute="trailing" secondItem="PGX-CL-PEk" secondAttribute="trailing" id="Um8-W7-Oip"/>
+                                                                <constraint firstAttribute="bottom" secondItem="PGX-CL-PEk" secondAttribute="bottom" id="y26-Tj-6Cc"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="textLabel" destination="PGX-CL-PEk" id="9QP-5t-hkA"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="6Zp-Ws-YQf" secondAttribute="trailing" id="FBM-iF-TSg"/>
+                                                <constraint firstItem="6Zp-Ws-YQf" firstAttribute="leading" secondItem="DQx-D6-hJ5" secondAttribute="leading" id="HdJ-cw-XiQ"/>
+                                                <constraint firstItem="6Zp-Ws-YQf" firstAttribute="top" secondItem="DQx-D6-hJ5" secondAttribute="top" id="bxT-mk-hYw"/>
+                                                <constraint firstAttribute="bottom" secondItem="6Zp-Ws-YQf" secondAttribute="bottom" id="puA-dG-6Qt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="6Zp-Ws-YQf" id="hvf-qQ-cS2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kvM-hY-3cw" firstAttribute="top" secondItem="9l6-Jw-Oma" secondAttribute="top" id="2A3-oh-RkS"/>
+                            <constraint firstItem="kvM-hY-3cw" firstAttribute="leading" secondItem="9l6-Jw-Oma" secondAttribute="leading" id="4ux-1P-SWl"/>
+                            <constraint firstItem="9l6-Jw-Oma" firstAttribute="bottom" secondItem="kvM-hY-3cw" secondAttribute="bottom" id="ANg-rg-Wvg"/>
+                            <constraint firstItem="9l6-Jw-Oma" firstAttribute="trailing" secondItem="kvM-hY-3cw" secondAttribute="trailing" id="FsU-Kr-ABf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9l6-Jw-Oma"/>
+                    </view>
+                    <connections>
+                        <outlet property="tweetLogTableView" destination="kvM-hY-3cw" id="0iM-fn-zB6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="syn-VW-VCa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.565217391304358" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+</document>

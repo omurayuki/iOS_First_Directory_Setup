@@ -24,7 +24,7 @@ enum Route {
         case .rootTab:
             viewController = Resources.ViewControllers.App.RootTabBar()
         case .calendar:
-            viewController = Resources.ViewControllers.App.calendar()
+            viewController = Resources.ViewControllers.App.tweetLog()
         case .timeline:
             viewController = Resources.ViewControllers.App.timeline()
         }
