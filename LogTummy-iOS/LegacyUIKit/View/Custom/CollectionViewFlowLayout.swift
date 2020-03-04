@@ -23,17 +23,16 @@ class CollectionViewFlowLayout: UICollectionViewFlowLayout {
                 } else {
                     currentLayoutAttributes.frame.origin.x = leftEdgeInset
                 }
-                // print(currentLayoutAttributes.frame)
+                Logger.info("currentLayoutAttribute.frame = \(currentLayoutAttributes.frame)")
             }
-            //print("Main For Loop End")
+            Logger.info("Main For Loop End")
         }
-        // self.shiftCellsToCenter()
         return cellAttributesArray
     }
     
     func shiftCellsToCenter() {
         if (tempCellAttributesArray.count == 0) {return}
-        let lastCellLayoutAttributes = self.tempCellAttributesArray[self.tempCellAttributesArray.count-1]
+        let lastCellLayoutAttributes = self.tempCellAttributesArray[self.tempCellAttributesArray.count - 1]
         let lastCellMaxX: CGFloat = lastCellLayoutAttributes.frame.maxX
         let collectionViewSectionWidth = self.collectionViewContentSize.width - leftEdgeInset
         let xAxisDifference = collectionViewSectionWidth - lastCellMaxX

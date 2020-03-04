@@ -140,6 +140,12 @@
 		C9CB50EF23FA9D190001BD1D /* CornerRoundableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50EE23FA9D180001BD1D /* CornerRoundableImageView.swift */; };
 		C9D3256E240F83C300D4D3C6 /* TweetLogSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D3256D240F83C300D4D3C6 /* TweetLogSectionView.swift */; };
 		C9D32570240F83D500D4D3C6 /* TweetLogSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9D3256F240F83D500D4D3C6 /* TweetLogSectionView.xib */; };
+		C9D32572240F900E00D4D3C6 /* TweetLogRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D32571240F900E00D4D3C6 /* TweetLogRouting.swift */; };
+		C9D32574240F901500D4D3C6 /* TweetLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D32573240F901500D4D3C6 /* TweetLogViewModel.swift */; };
+		C9D32576240F903500D4D3C6 /* TweetLogUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D32575240F903500D4D3C6 /* TweetLogUsecase.swift */; };
+		C9D3257B240F92AA00D4D3C6 /* TweetLogDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D3257A240F92AA00D4D3C6 /* TweetLogDataManager.swift */; };
+		C9D3257D240F92B300D4D3C6 /* TweetLogRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D3257C240F92B300D4D3C6 /* TweetLogRemote.swift */; };
+		C9D3257F240F92C800D4D3C6 /* TweetLogLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D3257E240F92C800D4D3C6 /* TweetLogLocal.swift */; };
 		C9D72EF323F5932D003EFC38 /* KeyboardNotifler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72EF223F5932D003EFC38 /* KeyboardNotifler.swift */; };
 		C9D72EFB23F593CD003EFC38 /* CountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72EFA23F593CD003EFC38 /* CountService.swift */; };
 		C9D72EFD23F59495003EFC38 /* Optional+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72EFC23F59495003EFC38 /* Optional+Util.swift */; };
@@ -410,6 +416,12 @@
 		C9CB50EE23FA9D180001BD1D /* CornerRoundableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRoundableImageView.swift; sourceTree = "<group>"; };
 		C9D3256D240F83C300D4D3C6 /* TweetLogSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLogSectionView.swift; sourceTree = "<group>"; };
 		C9D3256F240F83D500D4D3C6 /* TweetLogSectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetLogSectionView.xib; sourceTree = "<group>"; };
+		C9D32571240F900E00D4D3C6 /* TweetLogRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLogRouting.swift; sourceTree = "<group>"; };
+		C9D32573240F901500D4D3C6 /* TweetLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLogViewModel.swift; sourceTree = "<group>"; };
+		C9D32575240F903500D4D3C6 /* TweetLogUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLogUsecase.swift; sourceTree = "<group>"; };
+		C9D3257A240F92AA00D4D3C6 /* TweetLogDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLogDataManager.swift; sourceTree = "<group>"; };
+		C9D3257C240F92B300D4D3C6 /* TweetLogRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLogRemote.swift; sourceTree = "<group>"; };
+		C9D3257E240F92C800D4D3C6 /* TweetLogLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLogLocal.swift; sourceTree = "<group>"; };
 		C9D5BAB0240E7739000E77B8 /* SwifteriOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwifteriOS.framework; path = Carthage/Build/iOS/SwifteriOS.framework; sourceTree = "<group>"; };
 		C9D72EF223F5932D003EFC38 /* KeyboardNotifler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotifler.swift; sourceTree = "<group>"; };
 		C9D72EFA23F593CD003EFC38 /* CountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountService.swift; sourceTree = "<group>"; };
@@ -688,8 +700,12 @@
 		C9519A29240651D30029A2BF /* TweetLog */ = {
 			isa = PBXGroup;
 			children = (
+				C9D32577240F903A00D4D3C6 /* BusinessModel */,
 				C9519A37240651F20029A2BF /* TweetLogViewController.storyboard */,
 				C9519A35240651E40029A2BF /* TweetLogViewController.swift */,
+				C9D32571240F900E00D4D3C6 /* TweetLogRouting.swift */,
+				C9D32573240F901500D4D3C6 /* TweetLogViewModel.swift */,
+				C9D32575240F903500D4D3C6 /* TweetLogUsecase.swift */,
 			);
 			path = TweetLog;
 			sourceTree = "<group>";
@@ -872,6 +888,7 @@
 				C92BA3A52405120400F28BA3 /* Cache */,
 				C9519A16240640B00029A2BF /* AppDelegate */,
 				C9831D09240000340062A9A0 /* Login */,
+				C9D32578240F928B00D4D3C6 /* TweetLog */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -1171,6 +1188,31 @@
 				C9CB50DF23FA93180001BD1D /* IBDesignableScrollView.swift */,
 			);
 			path = IBDesignable;
+			sourceTree = "<group>";
+		};
+		C9D32577240F903A00D4D3C6 /* BusinessModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessModel;
+			sourceTree = "<group>";
+		};
+		C9D32578240F928B00D4D3C6 /* TweetLog */ = {
+			isa = PBXGroup;
+			children = (
+				C9D32579240F929900D4D3C6 /* Entity */,
+				C9D3257A240F92AA00D4D3C6 /* TweetLogDataManager.swift */,
+				C9D3257C240F92B300D4D3C6 /* TweetLogRemote.swift */,
+				C9D3257E240F92C800D4D3C6 /* TweetLogLocal.swift */,
+			);
+			path = TweetLog;
+			sourceTree = "<group>";
+		};
+		C9D32579240F929900D4D3C6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		C9D72EF923F593C0003EFC38 /* Service */ = {
@@ -1493,11 +1535,13 @@
 				C92BA3A42404F4A600F28BA3 /* Resources.swift in Sources */,
 				C9CB50E223FA93DE0001BD1D /* Sizes.swift in Sources */,
 				C9CAA50C23F661B3004B9BDD /* AppDelagateUsecase.swift in Sources */,
+				C9D3257B240F92AA00D4D3C6 /* TweetLogDataManager.swift in Sources */,
 				C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */,
 				C9D72F0723F59629003EFC38 /* DateFormatter+Util.swift in Sources */,
 				C9831CF923FFC4AB0062A9A0 /* DataManagerAssembly.swift in Sources */,
 				C9831CF323FFC4680062A9A0 /* ViewModelAssembly.swift in Sources */,
 				C9CB50DE23FA93090001BD1D /* IBDesignableSegmentedControl.swift in Sources */,
+				C9D3257D240F92B300D4D3C6 /* TweetLogRemote.swift in Sources */,
 				C90A45ED23F66CE0000E3B1B /* UINib+Util.swift in Sources */,
 				C9831D10240026670062A9A0 /* Router.swift in Sources */,
 				C9218717240535B10099C950 /* BundleKeys.swift in Sources */,
@@ -1510,6 +1554,7 @@
 				C9D72F1323F59959003EFC38 /* UIPageController+Util.swift in Sources */,
 				C92B6DCF23F140710090E1D9 /* Strings+Util.swift in Sources */,
 				C9FCC78D2409132800A4474F /* RootTabBarRouting.swift in Sources */,
+				C9D32574240F901500D4D3C6 /* TweetLogViewModel.swift in Sources */,
 				C9831CE323FFC4470062A9A0 /* Container.swift in Sources */,
 				C92B6DBB23F1282A0090E1D9 /* ErrorNotifying.swift in Sources */,
 				C90A45F523F66F7E000E3B1B /* NumberFormatter+Util.swift in Sources */,
@@ -1520,6 +1565,7 @@
 				C9CB50E723FA97890001BD1D /* IBDesignableImageView.swift in Sources */,
 				C9831D0B240000510062A9A0 /* LoginDataManager.swift in Sources */,
 				C9CB50D823FA92EE0001BD1D /* IBDesignableButton.swift in Sources */,
+				C9D32576240F903500D4D3C6 /* TweetLogUsecase.swift in Sources */,
 				C92B6DB323F115AB0090E1D9 /* AnalyticsDataStructures.swift in Sources */,
 				C92B6DC023F13B7A0090E1D9 /* AppError.swift in Sources */,
 				C9D72F0D23F596CF003EFC38 /* UIAlertController+Util.swift in Sources */,
@@ -1540,10 +1586,12 @@
 				C9D72F0923F59662003EFC38 /* NSLayoutAnchor+Util.swift in Sources */,
 				C9D72F0323F59587003EFC38 /* Array+Util.swift in Sources */,
 				C92B6DB723F117B30090E1D9 /* AnalyticsInfo.swift in Sources */,
+				C9D3257F240F92C800D4D3C6 /* TweetLogLocal.swift in Sources */,
 				C9CAA50E23F661D3004B9BDD /* AppConfigurator.swift in Sources */,
 				C9BC4D1C240411840054790A /* ErrorUsecaseProtocol.swift in Sources */,
 				C9D72F1123F59879003EFC38 /* UIImage+Util.swift in Sources */,
 				C9831D12240026890062A9A0 /* LoginRouting.swift in Sources */,
+				C9D32572240F900E00D4D3C6 /* TweetLogRouting.swift in Sources */,
 				C9519A36240651E40029A2BF /* TweetLogViewController.swift in Sources */,
 				C9BC4D1F2404136A0054790A /* TWUserBusinessModel.swift in Sources */,
 				C9D72F0123F59559003EFC38 /* Animation+Util.swift in Sources */,

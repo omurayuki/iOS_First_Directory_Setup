@@ -10,5 +10,9 @@ final class RoutingAssembly: Assembly {
         container.register(RootTabBarRoutingProtocol.self) { _ in
             return RootTabBarRouting()
         }
+        
+        container.register(TweetLogRoutingProtocol.self) { _ in
+            return TweetLogRouting()
+        }
     }
 }

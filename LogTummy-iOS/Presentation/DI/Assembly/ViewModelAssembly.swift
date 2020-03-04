@@ -7,5 +7,10 @@ final class ViewModelAssembly: Assembly {
             let usecase = container.resolve(LoginUsecaseProtocol.self)!
             return LoginViewModel(usecase: usecase)
         }
+        
+        container.register(TweetLogViewModelProtocol.self) { _ in
+            let usecase = container.resolve(TweetLogUsecaseProtocol.self)!
+            return TweetLogViewModel(usecase: usecase)
+        }
     }
 }

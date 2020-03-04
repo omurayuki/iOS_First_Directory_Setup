@@ -9,8 +9,8 @@ protocol LoginDataManagerProtocol {
 
 final class LoginDataManager: LoginDataManagerProtocol {
     
-    private let remote: LoginRemote = LoginRemote()
-    private let local: LoginLocal = LoginLocal()
+    private let remote: LoginRemoteProtocol = LoginRemote()
+    private let local: LoginLocalProtocol = LoginLocal()
     
     func oAuthLogin(presentingForm: UIViewController?) -> Single<TWUserEntity> {
         return remote.oAuthLogin(presentingForm: presentingForm)

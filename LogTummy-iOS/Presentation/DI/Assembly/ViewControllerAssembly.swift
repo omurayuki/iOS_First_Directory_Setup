@@ -17,8 +17,10 @@ final class ViewControllerAssembly: Assembly {
             return vc
         }
         
-        container.register(TweetLogViewController.self) { _ in
+        container.register(TweetLogViewController.self) { r in
             let vc = SwinjectStoryboard.create(vc: TweetLogViewController.self)
+            vc.viewModel = r.resolve(TweetLogViewModelProtocol.self)
+            vc.routing = r.resolve(TweetLogRoutingProtocol.self)
             return vc
         }
         

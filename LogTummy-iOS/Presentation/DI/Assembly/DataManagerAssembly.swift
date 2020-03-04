@@ -6,5 +6,9 @@ final class DataManagerAssembly: Assembly {
         container.register(LoginDataManagerProtocol.self) { _ in
             LoginDataManager()
         }
+        
+        container.register(TweetLogDataManagerProtocol.self) { _ in
+            TweetLogDataManager()
+        }
     }
 }

@@ -7,5 +7,10 @@ final class UsecaseAssembly: Assembly {
             let loginDataManager = container.resolve(LoginDataManagerProtocol.self)!
             return LoginUsecase(loginDataManager: loginDataManager)
         }
+        
+        container.register(TweetLogUsecaseProtocol.self) { _ in
+            let tweetLogDataManager = container.resolve(TweetLogDataManagerProtocol.self)!
+            return TweetLogUsecase(tweetLogDataManager: tweetLogDataManager)
+        }
     }
 }

@@ -6,6 +6,10 @@ final class TweetLogViewController: UIViewController {
     
     @IBOutlet weak var tweetLogTableView: UITableView!
     
+    var routing: TweetLogRoutingProtocol?
+    var viewModel: TweetLogViewModelProtocol?
+    private let disposeBag: DisposeBag = DisposeBag()
+    
     var arr = [true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true]
     
     override func viewDidLoad() {
@@ -46,8 +50,12 @@ extension TweetLogViewController: UITableViewDataSource, UITableViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
-        if (offsetY <= 100 && offsetY >= 0) {
+        if (offsetY <= 80 && offsetY >= 0) {
             scrollView.contentInset = UIEdgeInsets(top: -offsetY, left: 0, bottom: 0, right: 0)
         }
     }
 }
+
+// inject
+// datasource
+// constant
