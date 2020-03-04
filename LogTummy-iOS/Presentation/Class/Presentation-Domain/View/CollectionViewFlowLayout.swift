@@ -10,7 +10,7 @@ class CollectionViewFlowLayout: UICollectionViewFlowLayout {
             for i in 1..<(cellAttributesArray!.count) {
                 let prevLayoutAttributes: UICollectionViewLayoutAttributes = cellAttributesArray![i - 1]
                 let currentLayoutAttributes: UICollectionViewLayoutAttributes = cellAttributesArray![i]
-                let maximumSpacing: CGFloat = 8
+                let maximumSpacing: CGFloat = 10
                 let prevCellMaxX: CGFloat = prevLayoutAttributes.frame.maxX
                 //UIEdgeInset 30 from left
                 let collectionViewSectionWidth = self.collectionViewContentSize.width - leftEdgeInset

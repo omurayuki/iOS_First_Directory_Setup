@@ -45,7 +45,7 @@ extension Route: VisibleTitle {
         case .rootTab:
             title = String.blank
         case .calendar:
-            title = Title.titleCalendar
+            title = Title.titleLog
         case .timeline:
             title = Title.titleTimeline
         }

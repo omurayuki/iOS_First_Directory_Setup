@@ -20,7 +20,7 @@ extension StringResources {
         
         struct Title {
             static var titleLogin: String { return Internal.localizable.title_login() }
-            static var titleCalendar: String { return Internal.localizable.title_calendar() }
+            static var titleLog: String { return Internal.localizable.title_log() }
             static var titleTimeline: String { return Internal.localizable.title_timeline() }
             static var titleWriteMemo: String { return Internal.localizable.title_write_memo() }
         }
