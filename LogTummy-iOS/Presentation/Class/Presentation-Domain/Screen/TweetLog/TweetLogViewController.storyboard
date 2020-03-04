@@ -27,7 +27,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6Zp-Ws-YQf" customClass="DynamicHeightCollectionView" customModule="LogTummy_iOS" customModuleProvider="target">
-                                                    <rect key="frame" x="40" y="40" width="334" height="140"/>
+                                                    <rect key="frame" x="40" y="30" width="334" height="150"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZTo-v0-XLS" customClass="CollectionViewFlowLayout" customModule="LogTummy_iOS" customModuleProvider="target">
                                                         <size key="itemSize" width="56" height="39"/>
@@ -73,7 +73,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="6Zp-Ws-YQf" secondAttribute="trailing" constant="40" id="FBM-iF-TSg"/>
                                                 <constraint firstItem="6Zp-Ws-YQf" firstAttribute="leading" secondItem="DQx-D6-hJ5" secondAttribute="leading" constant="40" id="HdJ-cw-XiQ"/>
-                                                <constraint firstItem="6Zp-Ws-YQf" firstAttribute="top" secondItem="DQx-D6-hJ5" secondAttribute="top" constant="40" id="bxT-mk-hYw"/>
+                                                <constraint firstItem="6Zp-Ws-YQf" firstAttribute="top" secondItem="DQx-D6-hJ5" secondAttribute="top" constant="30" id="bxT-mk-hYw"/>
                                                 <constraint firstAttribute="bottom" secondItem="6Zp-Ws-YQf" secondAttribute="bottom" constant="20" id="puA-dG-6Qt"/>
                                             </constraints>
                                         </tableViewCellContentView>

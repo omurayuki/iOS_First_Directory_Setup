@@ -138,6 +138,8 @@
 		C9CB50EB23FA9BA40001BD1D /* UIColor+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50EA23FA9BA40001BD1D /* UIColor+Util.swift */; };
 		C9CB50ED23FA9C870001BD1D /* CornerRoundableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50EC23FA9C870001BD1D /* CornerRoundableButton.swift */; };
 		C9CB50EF23FA9D190001BD1D /* CornerRoundableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB50EE23FA9D180001BD1D /* CornerRoundableImageView.swift */; };
+		C9D3256E240F83C300D4D3C6 /* TweetLogSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D3256D240F83C300D4D3C6 /* TweetLogSectionView.swift */; };
+		C9D32570240F83D500D4D3C6 /* TweetLogSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9D3256F240F83D500D4D3C6 /* TweetLogSectionView.xib */; };
 		C9D72EF323F5932D003EFC38 /* KeyboardNotifler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72EF223F5932D003EFC38 /* KeyboardNotifler.swift */; };
 		C9D72EFB23F593CD003EFC38 /* CountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72EFA23F593CD003EFC38 /* CountService.swift */; };
 		C9D72EFD23F59495003EFC38 /* Optional+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D72EFC23F59495003EFC38 /* Optional+Util.swift */; };
@@ -406,6 +408,8 @@
 		C9CB50EA23FA9BA40001BD1D /* UIColor+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Util.swift"; sourceTree = "<group>"; };
 		C9CB50EC23FA9C870001BD1D /* CornerRoundableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRoundableButton.swift; sourceTree = "<group>"; };
 		C9CB50EE23FA9D180001BD1D /* CornerRoundableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRoundableImageView.swift; sourceTree = "<group>"; };
+		C9D3256D240F83C300D4D3C6 /* TweetLogSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLogSectionView.swift; sourceTree = "<group>"; };
+		C9D3256F240F83D500D4D3C6 /* TweetLogSectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetLogSectionView.xib; sourceTree = "<group>"; };
 		C9D5BAB0240E7739000E77B8 /* SwifteriOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwifteriOS.framework; path = Carthage/Build/iOS/SwifteriOS.framework; sourceTree = "<group>"; };
 		C9D72EF223F5932D003EFC38 /* KeyboardNotifler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotifler.swift; sourceTree = "<group>"; };
 		C9D72EFA23F593CD003EFC38 /* CountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountService.swift; sourceTree = "<group>"; };
@@ -1085,6 +1089,8 @@
 		C9CAA50823F65EE2004B9BDD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C9D3256F240F83D500D4D3C6 /* TweetLogSectionView.xib */,
+				C9D3256D240F83C300D4D3C6 /* TweetLogSectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1383,6 +1389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C96687BF23EA8F3B0011DDD3 /* LaunchViewController.storyboard in Resources */,
+				C9D32570240F83D500D4D3C6 /* TweetLogSectionView.xib in Resources */,
 				C96687BC23EA8F3B0011DDD3 /* Assets.xcassets in Resources */,
 				C9519A3B240652B00029A2BF /* TimelineViewController.storyboard in Resources */,
 				C92B6DCD23F13F490090E1D9 /* Localizable.strings in Resources */,
@@ -1528,6 +1535,7 @@
 				C92B6DC323F13BAB0090E1D9 /* DisplayableErrorProtocol.swift in Sources */,
 				C9831CF123FFC45D0062A9A0 /* ViewControllerAssembly.swift in Sources */,
 				C9D72F0523F595E3003EFC38 /* Date+Util.swift in Sources */,
+				C9D3256E240F83C300D4D3C6 /* TweetLogSectionView.swift in Sources */,
 				C9A98129240D252E00CBC42A /* TweetLogTableViewCell.swift in Sources */,
 				C9D72F0923F59662003EFC38 /* NSLayoutAnchor+Util.swift in Sources */,
 				C9D72F0323F59587003EFC38 /* Array+Util.swift in Sources */,
