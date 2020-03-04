@@ -979,7 +979,6 @@
 			isa = PBXGroup;
 			children = (
 				C9BC4D16240409390054790A /* Log */,
-				C9D72F1E23F59B11003EFC38 /* Custom */,
 				C9D72EF923F593C0003EFC38 /* Service */,
 				C92B6DAD23F114DF0090E1D9 /* Analytics */,
 				C92B6DB823F127FD0090E1D9 /* ProtocolExtension */,
@@ -1086,8 +1085,6 @@
 		C9CAA50823F65EE2004B9BDD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C94F07ED240E146E002BA143 /* DynamicHeightCollectionView.swift */,
-				C94F07FA240E148E002BA143 /* CollectionViewFlowLayout.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1137,6 +1134,7 @@
 		C9CB50CA23FA92970001BD1D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C9D72F1E23F59B11003EFC38 /* Custom */,
 				C9CB50F023FA9E900001BD1D /* IBDesignable */,
 				C9CB50E823FA9B620001BD1D /* HignlightableButton.swift */,
 				C9CB50EC23FA9C870001BD1D /* CornerRoundableButton.swift */,
@@ -1181,6 +1179,8 @@
 		C9D72F1E23F59B11003EFC38 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				C94F07ED240E146E002BA143 /* DynamicHeightCollectionView.swift */,
+				C94F07FA240E148E002BA143 /* CollectionViewFlowLayout.swift */,
 				C9D72F2123F59B55003EFC38 /* VerticalStackView.swift */,
 				C9D72F1F23F59B24003EFC38 /* PlaceHolderTextView.swift */,
 			);
