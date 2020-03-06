@@ -106,6 +106,7 @@
 		C9A98117240D048900CBC42A /* TweetLogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A98116240D048900CBC42A /* TweetLogCollectionViewCell.swift */; };
 		C9A98129240D252E00CBC42A /* TweetLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A98128240D252E00CBC42A /* TweetLogTableViewCell.swift */; };
 		C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9B281B523ED549600554CA6 /* GoogleService-Info.plist */; };
+		C9B7057C241216BD0012C9D2 /* TweetLogTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B7057B241216BD0012C9D2 /* TweetLogTableViewDataSource.swift */; };
 		C9BC4D0A240404AC0054790A /* TWUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC4D09240404AC0054790A /* TWUserEntity.swift */; };
 		C9BC4D18240409480054790A /* SwifterGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC4D17240409480054790A /* SwifterGeneral.swift */; };
 		C9BC4D1A2404115B0054790A /* ErrorViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC4D192404115B0054790A /* ErrorViewModelProtocol.swift */; };
@@ -381,6 +382,7 @@
 		C9A98128240D252E00CBC42A /* TweetLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLogTableViewCell.swift; sourceTree = "<group>"; };
 		C9B281A623ED482F00554CA6 /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "gRPCCertificates-Cpp.bundle"; path = "Carthage/Build/iOS/gRPC-C++.framework/Resources/gRPCCertificates-Cpp.bundle"; sourceTree = "<group>"; };
 		C9B281B523ED549600554CA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C9B7057B241216BD0012C9D2 /* TweetLogTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLogTableViewDataSource.swift; sourceTree = "<group>"; };
 		C9BC4D09240404AC0054790A /* TWUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWUserEntity.swift; sourceTree = "<group>"; };
 		C9BC4D17240409480054790A /* SwifterGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterGeneral.swift; sourceTree = "<group>"; };
 		C9BC4D192404115B0054790A /* ErrorViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -703,6 +705,7 @@
 				C9D32577240F903A00D4D3C6 /* BusinessModel */,
 				C9519A37240651F20029A2BF /* TweetLogViewController.storyboard */,
 				C9519A35240651E40029A2BF /* TweetLogViewController.swift */,
+				C9B7057B241216BD0012C9D2 /* TweetLogTableViewDataSource.swift */,
 				C9D32571240F900E00D4D3C6 /* TweetLogRouting.swift */,
 				C9D32573240F901500D4D3C6 /* TweetLogViewModel.swift */,
 				C9D32575240F903500D4D3C6 /* TweetLogUsecase.swift */,
@@ -1528,6 +1531,7 @@
 				C96687B723EA8F390011DDD3 /* LoginViewController.swift in Sources */,
 				C9D72F0B23F59691003EFC38 /* Observable+Util.swift in Sources */,
 				C9D72EFB23F593CD003EFC38 /* CountService.swift in Sources */,
+				C9B7057C241216BD0012C9D2 /* TweetLogTableViewDataSource.swift in Sources */,
 				C9D72F1D23F59ACA003EFC38 /* UNMutableNotification+Util.swift in Sources */,
 				C9FCC78B240912FE00A4474F /* TabModel.swift in Sources */,
 				C92B6DC723F13DDA0090E1D9 /* Strings.swift in Sources */,

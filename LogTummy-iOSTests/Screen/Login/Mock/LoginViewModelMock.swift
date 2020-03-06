@@ -5,6 +5,7 @@ import RxSwift
 class LoginUsecaseMock: LoginUsecaseProtocol {
     
     private let errorSubject: BehaviorSubject<Error?> = BehaviorSubject(value: nil)
+    private let completeSubject: BehaviorSubject<Bool?> = BehaviorSubject(value: nil)
     
     func oAuthLogin(presentingForm: UIViewController?) { }
     
@@ -18,6 +19,10 @@ class LoginUsecaseMock: LoginUsecaseProtocol {
     }
     
     var error: Observable<Error?> {
-        return errorSubject.asObserver()
+        return errorSubject.asObservable()
+    }
+    
+    var complete: Observable<Bool?> {
+        return completeSubject.asObservable()
     }
 }

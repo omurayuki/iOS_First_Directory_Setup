@@ -51,6 +51,6 @@ extension LoginViewModel {
     }
     
     var complete: Observable<Bool?> {
-        return completeSubject.asObserver()
+        return completeSubject.asObservable()
     }
 }
