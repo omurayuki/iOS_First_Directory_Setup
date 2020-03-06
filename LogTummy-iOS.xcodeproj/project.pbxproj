@@ -107,6 +107,8 @@
 		C9A98129240D252E00CBC42A /* TweetLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A98128240D252E00CBC42A /* TweetLogTableViewCell.swift */; };
 		C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9B281B523ED549600554CA6 /* GoogleService-Info.plist */; };
 		C9B7057C241216BD0012C9D2 /* TweetLogTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B7057B241216BD0012C9D2 /* TweetLogTableViewDataSource.swift */; };
+		C9B7057E24122FBC0012C9D2 /* TWAccountBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B7057D24122FBC0012C9D2 /* TWAccountBusinessModel.swift */; };
+		C9B7058024122FD00012C9D2 /* TweetLogBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B7057F24122FD00012C9D2 /* TweetLogBusinessModel.swift */; };
 		C9BC4D0A240404AC0054790A /* TWUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC4D09240404AC0054790A /* TWUserEntity.swift */; };
 		C9BC4D18240409480054790A /* SwifterGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC4D17240409480054790A /* SwifterGeneral.swift */; };
 		C9BC4D1A2404115B0054790A /* ErrorViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC4D192404115B0054790A /* ErrorViewModelProtocol.swift */; };
@@ -383,6 +385,8 @@
 		C9B281A623ED482F00554CA6 /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "gRPCCertificates-Cpp.bundle"; path = "Carthage/Build/iOS/gRPC-C++.framework/Resources/gRPCCertificates-Cpp.bundle"; sourceTree = "<group>"; };
 		C9B281B523ED549600554CA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9B7057B241216BD0012C9D2 /* TweetLogTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLogTableViewDataSource.swift; sourceTree = "<group>"; };
+		C9B7057D24122FBC0012C9D2 /* TWAccountBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWAccountBusinessModel.swift; sourceTree = "<group>"; };
+		C9B7057F24122FD00012C9D2 /* TweetLogBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLogBusinessModel.swift; sourceTree = "<group>"; };
 		C9BC4D09240404AC0054790A /* TWUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWUserEntity.swift; sourceTree = "<group>"; };
 		C9BC4D17240409480054790A /* SwifterGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterGeneral.swift; sourceTree = "<group>"; };
 		C9BC4D192404115B0054790A /* ErrorViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -1196,6 +1200,8 @@
 		C9D32577240F903A00D4D3C6 /* BusinessModel */ = {
 			isa = PBXGroup;
 			children = (
+				C9B7057D24122FBC0012C9D2 /* TWAccountBusinessModel.swift */,
+				C9B7057F24122FD00012C9D2 /* TweetLogBusinessModel.swift */,
 			);
 			path = BusinessModel;
 			sourceTree = "<group>";
@@ -1544,6 +1550,7 @@
 				C9D72F0723F59629003EFC38 /* DateFormatter+Util.swift in Sources */,
 				C9831CF923FFC4AB0062A9A0 /* DataManagerAssembly.swift in Sources */,
 				C9831CF323FFC4680062A9A0 /* ViewModelAssembly.swift in Sources */,
+				C9B7058024122FD00012C9D2 /* TweetLogBusinessModel.swift in Sources */,
 				C9CB50DE23FA93090001BD1D /* IBDesignableSegmentedControl.swift in Sources */,
 				C9D3257D240F92B300D4D3C6 /* TweetLogRemote.swift in Sources */,
 				C90A45ED23F66CE0000E3B1B /* UINib+Util.swift in Sources */,
@@ -1602,6 +1609,7 @@
 				C9D72EFF23F594EA003EFC38 /* Reactive+Util.swift in Sources */,
 				C9CB50E923FA9B620001BD1D /* HignlightableButton.swift in Sources */,
 				C9CB50DA23FA92F60001BD1D /* IBDesignableTableViewCell.swift in Sources */,
+				C9B7057E24122FBC0012C9D2 /* TWAccountBusinessModel.swift in Sources */,
 				C94F07FB240E148E002BA143 /* CollectionViewFlowLayout.swift in Sources */,
 				C9D72F2223F59B56003EFC38 /* VerticalStackView.swift in Sources */,
 				C9D72F1723F599B2003EFC38 /* UIStackView+Util.swift in Sources */,

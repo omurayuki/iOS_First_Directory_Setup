@@ -18,6 +18,7 @@ final class LoginUsecase: LoginUsecaseProtocol {
     
     private let errorSubject: BehaviorSubject<Error?> = BehaviorSubject(value: nil)
     private let completeSubject: BehaviorSubject<Bool?> = BehaviorSubject(value: nil)
+    
     private let disposeBag: DisposeBag = DisposeBag()
     
     init(loginDataManager: LoginDataManagerProtocol) {

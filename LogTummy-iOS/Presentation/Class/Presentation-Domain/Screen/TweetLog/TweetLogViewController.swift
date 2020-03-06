@@ -9,13 +9,27 @@ final class TweetLogViewController: UIViewController {
     var routing: TweetLogRoutingProtocol?
     var viewModel: TweetLogViewModelProtocol?
     private let disposeBag: DisposeBag = DisposeBag()
-    
-    private let dataSource = TweetLogTableViewDataSource()
+    private lazy var dataSource: TweetLogTableViewDataSource = {
+        guard let vm = self.viewModel else {
+            Logger.error("can't instantiate TweetLogViewModel")
+            fatalError()
+        }
+        return TweetLogTableViewDataSource(viewModel: vm)
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         syncReload()
+        getTweetLogCellData()
+    }
+}
+
+extension TweetLogViewController {
+    
+    private func getTweetLogCellData() {
+        viewModel?.getTWAccountData()
+        viewModel?.getTweetLogData()
     }
     
     private func setupViews() {

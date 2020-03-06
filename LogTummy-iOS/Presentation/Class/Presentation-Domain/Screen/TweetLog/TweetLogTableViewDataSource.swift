@@ -8,7 +8,12 @@ final class TweetLogTableViewDataSource: NSObject {
         static let headerHeight: CGFloat = 80
         static let scrollHeight: CGFloat = 100
     }
-    var arr = [true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true, true, false, false, true, true]
+    
+    private let viewModel: TweetLogViewModelProtocol
+    
+    init(viewModel: TweetLogViewModelProtocol) {
+        self.viewModel = viewModel
+    }
 }
 
 extension TweetLogTableViewDataSource: UITableViewDataSource {
@@ -24,7 +29,7 @@ extension TweetLogTableViewDataSource: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TweetLogTableViewCell.className, for: indexPath) as? TweetLogTableViewCell
         else { return UITableViewCell() }
-        cell.configure(arr)
+//        cell.configure(viewModel.getTweetLogCellData())
         return cell
     }
     
