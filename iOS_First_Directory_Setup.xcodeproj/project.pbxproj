@@ -69,7 +69,7 @@
 		C9831D12240026890062A9A0 /* LoginRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D11240026890062A9A0 /* LoginRouting.swift */; };
 		C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9B281B523ED549600554CA6 /* GoogleService-Info.plist */; };
 		C9BC4D0A240404AC0054790A /* TWUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC4D09240404AC0054790A /* TWUserEntity.swift */; };
-		C9BC4D1F2404136A0054790A /* TWUserBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC4D1E2404136A0054790A /* TWUserBusinessModel.swift */; };
+		C9BC4D1F2404136A0054790A /* LoginViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC4D1E2404136A0054790A /* LoginViewData.swift */; };
 		C9C8CBA223F4126A00EA07EE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */; };
 		C9C8CBD123F4214F00EA07EE /* Calendar+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8CBD023F4214F00EA07EE /* Calendar+Util.swift */; };
 		C9CAA50C23F661B3004B9BDD /* AppDelagateUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAA50B23F661B3004B9BDD /* AppDelagateUsecase.swift */; };
@@ -199,7 +199,7 @@
 		C9831D11240026890062A9A0 /* LoginRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouting.swift; sourceTree = "<group>"; };
 		C9B281B523ED549600554CA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9BC4D09240404AC0054790A /* TWUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWUserEntity.swift; sourceTree = "<group>"; };
-		C9BC4D1E2404136A0054790A /* TWUserBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWUserBusinessModel.swift; sourceTree = "<group>"; };
+		C9BC4D1E2404136A0054790A /* LoginViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewData.swift; sourceTree = "<group>"; };
 		C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		C9C8CBD023F4214F00EA07EE /* Calendar+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Util.swift"; sourceTree = "<group>"; };
 		C9CAA50B23F661B3004B9BDD /* AppDelagateUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelagateUsecase.swift; sourceTree = "<group>"; };
@@ -691,7 +691,7 @@
 		C9BC4D1D2404135B0054790A /* BusinessModel */ = {
 			isa = PBXGroup;
 			children = (
-				C9BC4D1E2404136A0054790A /* TWUserBusinessModel.swift */,
+				C9BC4D1E2404136A0054790A /* LoginViewData.swift */,
 			);
 			path = BusinessModel;
 			sourceTree = "<group>";
@@ -1029,7 +1029,7 @@
 				C9CAA50E23F661D3004B9BDD /* AppConfigurator.swift in Sources */,
 				C9D72F1123F59879003EFC38 /* UIImage+Util.swift in Sources */,
 				C9831D12240026890062A9A0 /* LoginRouting.swift in Sources */,
-				C9BC4D1F2404136A0054790A /* TWUserBusinessModel.swift in Sources */,
+				C9BC4D1F2404136A0054790A /* LoginViewData.swift in Sources */,
 				C9D72F0123F59559003EFC38 /* Animation+Util.swift in Sources */,
 				C9CB50E923FA9B620001BD1D /* HignlightableButton.swift in Sources */,
 				C9CB50DA23FA92F60001BD1D /* IBDesignableTableViewCell.swift in Sources */,

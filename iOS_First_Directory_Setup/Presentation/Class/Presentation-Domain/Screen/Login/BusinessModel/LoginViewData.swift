@@ -1,6 +1,6 @@
 import Foundation
 
-struct TWUserBusinessModel {
+struct LoginViewData {
     
     let verifier: String?
     let screenName: String?
