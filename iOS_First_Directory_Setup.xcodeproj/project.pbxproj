@@ -462,6 +462,7 @@
 		C96687B123EA8F390011DDD3 /* iOS_First_Directory_Setup */ = {
 			isa = PBXGroup;
 			children = (
+				C991F53424A22C75001B8B50 /* AppConfig */,
 				C92B6DC423F13DB50090E1D9 /* LegacyUIKit */,
 				C9B281AF23ED52D800554CA6 /* AppResources */,
 				C9B281AB23ED518400554CA6 /* LogTummyAPI */,
@@ -509,6 +510,14 @@
 			children = (
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		C991F53424A22C75001B8B50 /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				C9CAA50D23F661D3004B9BDD /* AppConfigurator.swift */,
+			);
+			path = AppConfig;
 			sourceTree = "<group>";
 		};
 		C9B281AB23ED518400554CA6 /* LogTummyAPI */ = {
@@ -609,7 +618,6 @@
 		C9B281B923ED565600554CA6 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				C9CAA50D23F661D3004B9BDD /* AppConfigurator.swift */,
 				C915FBE82407B09D00A3BEF2 /* Convenience */,
 				C9519A26240641CD0029A2BF /* AppDelegate */,
 				C9B281BA23ED565D00554CA6 /* Presentation-Domain */,
