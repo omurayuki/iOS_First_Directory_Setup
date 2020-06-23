@@ -1,11 +1,11 @@
 import UIKit
 
-protocol LoginRoutingProtocol: Routing {
+protocol EntranceRoutingProtocol: Routing {
     
     func fuga(vc: UIViewController)
 }
 
-final class LoginRouting: LoginRoutingProtocol {
+final class LoginRouting: EntranceRoutingProtocol {
     
     func fuga(vc: UIViewController) { }
 }

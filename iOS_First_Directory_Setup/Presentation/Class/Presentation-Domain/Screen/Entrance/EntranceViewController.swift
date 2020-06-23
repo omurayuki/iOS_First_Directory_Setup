@@ -1,12 +1,12 @@
 import UIKit
 
-class LoginViewController: UIViewController {
+class EntranceViewController: UIViewController {
     
     @IBOutlet weak var LoginTopImageView: CornerRoundableImageView!
     @IBOutlet weak var LoginButton: CornerRoundableButton!
     
-    var routing: LoginRoutingProtocol?
-    var viewModel: LoginViewModelProtocol?
+    var routing: EntranceRoutingProtocol?
+    var viewModel: EntranceViewModelProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()

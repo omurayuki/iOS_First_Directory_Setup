@@ -1,6 +1,6 @@
 import Foundation
 
-struct LoginViewData {
+struct EntranceViewData {
     
     let verifier: String?
     let screenName: String?
