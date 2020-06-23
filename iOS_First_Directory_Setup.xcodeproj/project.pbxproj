@@ -33,7 +33,6 @@
 		C92B6DC023F13B7A0090E1D9 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DBF23F13B7A0090E1D9 /* AppError.swift */; };
 		C92B6DC323F13BAB0090E1D9 /* DisplayableErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DC223F13BAB0090E1D9 /* DisplayableErrorProtocol.swift */; };
 		C92B6DC723F13DDA0090E1D9 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DC623F13DDA0090E1D9 /* Strings.swift */; };
-		C92B6DC923F13E440090E1D9 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DC823F13E440090E1D9 /* AppStrings.swift */; };
 		C92B6DCD23F13F490090E1D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C92B6DCC23F13F490090E1D9 /* Localizable.strings */; };
 		C92B6DCF23F140710090E1D9 /* Strings+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DCE23F140710090E1D9 /* Strings+Util.swift */; };
 		C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DD123F141380090E1D9 /* VoidBlock.swift */; };
@@ -67,6 +66,7 @@
 		C9831D0E240001D20062A9A0 /* EntranceRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D0D240001D20062A9A0 /* EntranceRemote.swift */; };
 		C9831D10240026670062A9A0 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D0F240026670062A9A0 /* Router.swift */; };
 		C9831D12240026890062A9A0 /* EntranceRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9831D11240026890062A9A0 /* EntranceRouting.swift */; };
+		C991F53C24A22E82001B8B50 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991F53B24A22E82001B8B50 /* Images.swift */; };
 		C9B281B623ED549600554CA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9B281B523ED549600554CA6 /* GoogleService-Info.plist */; };
 		C9BC4D1F2404136A0054790A /* EntranceViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC4D1E2404136A0054790A /* EntranceViewData.swift */; };
 		C9C8CBA223F4126A00EA07EE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */; };
@@ -162,7 +162,6 @@
 		C92B6DBF23F13B7A0090E1D9 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		C92B6DC223F13BAB0090E1D9 /* DisplayableErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayableErrorProtocol.swift; sourceTree = "<group>"; };
 		C92B6DC623F13DDA0090E1D9 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		C92B6DC823F13E440090E1D9 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		C92B6DCC23F13F490090E1D9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C92B6DCE23F140710090E1D9 /* Strings+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Util.swift"; sourceTree = "<group>"; };
 		C92B6DD123F141380090E1D9 /* VoidBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidBlock.swift; sourceTree = "<group>"; };
@@ -196,6 +195,7 @@
 		C9831D0D240001D20062A9A0 /* EntranceRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceRemote.swift; sourceTree = "<group>"; };
 		C9831D0F240026670062A9A0 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C9831D11240026890062A9A0 /* EntranceRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceRouting.swift; sourceTree = "<group>"; };
+		C991F53B24A22E82001B8B50 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		C9B281B523ED549600554CA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9BC4D1E2404136A0054790A /* EntranceViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceViewData.swift; sourceTree = "<group>"; };
 		C9C8CBA023F4126500EA07EE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -390,9 +390,6 @@
 			isa = PBXGroup;
 			children = (
 				C9CB50E323FA95690001BD1D /* Support */,
-				C92B6DC623F13DDA0090E1D9 /* Strings.swift */,
-				C9CB50E123FA93DE0001BD1D /* Sizes.swift */,
-				C92BA3A32404F4A600F28BA3 /* Resources.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -463,8 +460,8 @@
 			isa = PBXGroup;
 			children = (
 				C991F53424A22C75001B8B50 /* AppConfig */,
-				C92B6DC423F13DB50090E1D9 /* LegacyUIKit */,
 				C9B281AF23ED52D800554CA6 /* AppResources */,
+				C92B6DC423F13DB50090E1D9 /* LegacyUIKit */,
 				C9B281AB23ED518400554CA6 /* LogTummyAPI */,
 				C9B281B723ED564B00554CA6 /* Presentation */,
 			);
@@ -520,6 +517,54 @@
 			path = AppConfig;
 			sourceTree = "<group>";
 		};
+		C991F53624A22CC7001B8B50 /* InfoPlist */ = {
+			isa = PBXGroup;
+			children = (
+				C96687C023EA8F3B0011DDD3 /* Info.plist */,
+				C9B281B523ED549600554CA6 /* GoogleService-Info.plist */,
+				C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */,
+			);
+			path = InfoPlist;
+			sourceTree = "<group>";
+		};
+		C991F53724A22CFC001B8B50 /* LocalizedStrings */ = {
+			isa = PBXGroup;
+			children = (
+				C92B6DCC23F13F490090E1D9 /* Localizable.strings */,
+			);
+			path = LocalizedStrings;
+			sourceTree = "<group>";
+		};
+		C991F53824A22D49001B8B50 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C96687BB23EA8F3B0011DDD3 /* Assets.xcassets */,
+				C991F53624A22CC7001B8B50 /* InfoPlist */,
+				C991F53724A22CFC001B8B50 /* LocalizedStrings */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		C991F53924A22D6F001B8B50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C991F53A24A22D7A001B8B50 /* Support */,
+				C92B6DC623F13DDA0090E1D9 /* Strings.swift */,
+				C9CB50E123FA93DE0001BD1D /* Sizes.swift */,
+				C991F53B24A22E82001B8B50 /* Images.swift */,
+				C92BA3A32404F4A600F28BA3 /* Resources.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C991F53A24A22D7A001B8B50 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C9831CFA23FFE4860062A9A0 /* ResourcesSupport.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		C9B281AB23ED518400554CA6 /* LogTummyAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -561,47 +606,11 @@
 		C9B281AF23ED52D800554CA6 /* AppResources */ = {
 			isa = PBXGroup;
 			children = (
-				C96687BB23EA8F3B0011DDD3 /* Assets.xcassets */,
+				C991F53824A22D49001B8B50 /* Support */,
 				C9B281C023ED57B600554CA6 /* R */,
-				C9B281B023ED52FC00554CA6 /* Support */,
-				C92B6DC823F13E440090E1D9 /* AppStrings.swift */,
+				C991F53924A22D6F001B8B50 /* Resources */,
 			);
 			path = AppResources;
-			sourceTree = "<group>";
-		};
-		C9B281B023ED52FC00554CA6 /* Support */ = {
-			isa = PBXGroup;
-			children = (
-				C9B281B123ED530200554CA6 /* InfoPlist */,
-				C9B281B223ED534D00554CA6 /* LocalizedStrings */,
-				C9B281B323ED535C00554CA6 /* Fonts */,
-			);
-			path = Support;
-			sourceTree = "<group>";
-		};
-		C9B281B123ED530200554CA6 /* InfoPlist */ = {
-			isa = PBXGroup;
-			children = (
-				C96687C023EA8F3B0011DDD3 /* Info.plist */,
-				C9B281B523ED549600554CA6 /* GoogleService-Info.plist */,
-				C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */,
-			);
-			path = InfoPlist;
-			sourceTree = "<group>";
-		};
-		C9B281B223ED534D00554CA6 /* LocalizedStrings */ = {
-			isa = PBXGroup;
-			children = (
-				C92B6DCC23F13F490090E1D9 /* Localizable.strings */,
-			);
-			path = LocalizedStrings;
-			sourceTree = "<group>";
-		};
-		C9B281B323ED535C00554CA6 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		C9B281B723ED564B00554CA6 /* Presentation */ = {
@@ -797,7 +806,6 @@
 		C9CB50E323FA95690001BD1D /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				C9831CFA23FFE4860062A9A0 /* ResourcesSupport.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -1017,6 +1025,7 @@
 				C9CB50D823FA92EE0001BD1D /* IBDesignableButton.swift in Sources */,
 				C92B6DB323F115AB0090E1D9 /* AnalyticsDataStructures.swift in Sources */,
 				C92B6DC023F13B7A0090E1D9 /* AppError.swift in Sources */,
+				C991F53C24A22E82001B8B50 /* Images.swift in Sources */,
 				C9D72F0D23F596CF003EFC38 /* UIAlertController+Util.swift in Sources */,
 				C92BA3B1240521F300F28BA3 /* Config.swift in Sources */,
 				C9519A23240640DB0029A2BF /* AppDelegateDataManager.swift in Sources */,
@@ -1040,7 +1049,6 @@
 				C9CB50DA23FA92F60001BD1D /* IBDesignableTableViewCell.swift in Sources */,
 				C9D72F2223F59B56003EFC38 /* VerticalStackView.swift in Sources */,
 				C9D72F1723F599B2003EFC38 /* UIStackView+Util.swift in Sources */,
-				C92B6DC923F13E440090E1D9 /* AppStrings.swift in Sources */,
 				C9D72EF323F5932D003EFC38 /* KeyboardNotifler.swift in Sources */,
 				C9CB50D623FA92E70001BD1D /* IBDesignableTextField.swift in Sources */,
 				C9D72F1523F59982003EFC38 /* UISearchBar+Util.swift in Sources */,
@@ -1249,7 +1257,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.yuki.LogTummy-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.yuki.iOSFirstDirectorySetup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1274,7 +1282,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.yuki.LogTummy-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.yuki.iOSFirstDirectorySetup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

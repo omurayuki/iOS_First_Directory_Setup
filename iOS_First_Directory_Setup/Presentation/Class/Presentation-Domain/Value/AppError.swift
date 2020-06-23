@@ -7,8 +7,8 @@ enum ErrorType {
 
 final public class AppError: DisplayableErrorProtocol {
     
-    private typealias ErrorStrings = StringResources.Application.Error
-    private typealias GeneralStrings = StringResources.Application.General
+    private typealias ErrorStrings = Resources.Strings.Error
+    private typealias GeneralStrings = Resources.Strings.General
     
     enum ResolutionType {
         case none

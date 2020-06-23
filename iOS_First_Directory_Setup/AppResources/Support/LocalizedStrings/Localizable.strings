@@ -1,3 +1,17 @@
+// App
+ 
+// General
+"yes" = "はい";
+"no" = "いいえ";
+"ok" = "OK";
+"cancel" = "キャンセル";
+"attension" = "注意";
+"success" = "成功";
+
+
+// エラー
+"error_title" = "エラー";
+"error_message_network" = "ネットワーク接続に失敗しました";
 "text_error" = "システムエラー";
 "text_app_error_general" = "エラーが発生しました。再度実行してください。";
 "text_app_error_occurred_with_code" = "システムエラー(%@)";
