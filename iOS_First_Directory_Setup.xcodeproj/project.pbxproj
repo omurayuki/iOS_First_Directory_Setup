@@ -470,6 +470,51 @@
 			path = Error;
 			sourceTree = "<group>";
 		};
+		C95FC60A24A31C5300F3790F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C95FC60B24A31C7D00F3790F /* Config */,
+				C95FC60D24A31CDE00F3790F /* Error */,
+				C95FC60C24A31CBB00F3790F /* Service */,
+				C9B281AD23ED521E00554CA6 /* API */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C95FC60B24A31C7D00F3790F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C92BA3B0240521F300F28BA3 /* Config.swift */,
+				C921870A240535A00099C950 /* Keys */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C95FC60C24A31CBB00F3790F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C92BA3AD240518AD00F28BA3 /* MobileAuth */,
+				C92BA3A52405120400F28BA3 /* Cache */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C95FC60D24A31CDE00F3790F /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				C95FC60E24A31CF100F3790F /* Value */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		C95FC60E24A31CF100F3790F /* Value */ = {
+			isa = PBXGroup;
+			children = (
+				C92B6DD323F151030090E1D9 /* APIError.swift */,
+			);
+			path = Value;
+			sourceTree = "<group>";
+		};
 		C96687A623EA8F390011DDD3 = {
 			isa = PBXGroup;
 			children = (
@@ -495,7 +540,7 @@
 				C991F53424A22C75001B8B50 /* AppConfig */,
 				C9B281AF23ED52D800554CA6 /* AppResources */,
 				C9B281B723ED564B00554CA6 /* Presentation */,
-				C9B281AB23ED518400554CA6 /* LogTummyAPI */,
+				C95FC60A24A31C5300F3790F /* Data */,
 			);
 			path = iOS_First_Directory_Setup;
 			sourceTree = "<group>";
@@ -598,42 +643,13 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		C9B281AB23ED518400554CA6 /* LogTummyAPI */ = {
+		C9B281AD23ED521E00554CA6 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				C92BA3B0240521F300F28BA3 /* Config.swift */,
-				C921870A240535A00099C950 /* Keys */,
-				C9B281AC23ED521A00554CA6 /* API */,
-				C9B281AD23ED521E00554CA6 /* Data */,
-				C9B281AE23ED522400554CA6 /* Protocol */,
-			);
-			path = LogTummyAPI;
-			sourceTree = "<group>";
-		};
-		C9B281AC23ED521A00554CA6 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				C92B6DD323F151030090E1D9 /* APIError.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		C9B281AD23ED521E00554CA6 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				C92BA3AD240518AD00F28BA3 /* MobileAuth */,
-				C92BA3A52405120400F28BA3 /* Cache */,
 				C9519A16240640B00029A2BF /* AppDelegate */,
 				C9831D09240000340062A9A0 /* Login */,
 			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		C9B281AE23ED522400554CA6 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocol;
+			path = API;
 			sourceTree = "<group>";
 		};
 		C9B281AF23ED52D800554CA6 /* AppResources */ = {
