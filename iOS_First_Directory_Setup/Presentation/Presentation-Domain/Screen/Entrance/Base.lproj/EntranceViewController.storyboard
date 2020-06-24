@@ -15,21 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNV-Dh-eJL" customClass="CornerRoundableButton" customModule="iOS_First_Directory_Setup" customModuleProvider="target">
-                                <rect key="frame" x="107" y="750" width="200" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="kXv-T2-rc3"/>
-                                    <constraint firstAttribute="width" constant="200" id="sdO-kG-SEh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="ログイン"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dZn-O0-806" customClass="CornerRoundableImageView" customModule="iOS_First_Directory_Setup" customModuleProvider="target">
                                 <rect key="frame" x="57" y="298" width="300" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -46,16 +31,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JNV-Dh-eJL" secondAttribute="bottom" multiplier="1:1.05" constant="100" id="KLk-Wu-rMd"/>
                             <constraint firstItem="dZn-O0-806" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kGV-QN-47A"/>
                             <constraint firstItem="dZn-O0-806" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sZK-Ag-MFk"/>
-                            <constraint firstItem="JNV-Dh-eJL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zhg-Dp-r9T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="LoginButton" destination="JNV-Dh-eJL" id="lP1-pQ-g8v"/>
-                        <outlet property="LoginTopImageView" destination="dZn-O0-806" id="5EC-tC-o1T"/>
+                        <outlet property="EntranceImageView" destination="dZn-O0-806" id="SEg-hO-2Hh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -5,7 +5,7 @@ protocol EntranceRoutingProtocol: Routing {
     func fuga(vc: UIViewController)
 }
 
-final class LoginRouting: EntranceRoutingProtocol {
+final class EntranceRouting: EntranceRoutingProtocol {
     
     func fuga(vc: UIViewController) { }
 }

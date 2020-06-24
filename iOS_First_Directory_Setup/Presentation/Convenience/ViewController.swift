@@ -14,9 +14,11 @@ extension Resources {
 
         struct AppControllers {
             
-//            func Login() -> LoginViewController {
-//                return
-//            }
+            func entrance() -> EntranceViewController {
+                let vc = EntranceViewController()
+                vc.routing = EntranceRouting()
+                return vc
+            }
         }
     }
 }

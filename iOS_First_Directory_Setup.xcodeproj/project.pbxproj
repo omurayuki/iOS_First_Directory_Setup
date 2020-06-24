@@ -35,7 +35,6 @@
 		C92B6DC723F13DDA0090E1D9 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DC623F13DDA0090E1D9 /* Strings.swift */; };
 		C92B6DCD23F13F490090E1D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C92B6DCC23F13F490090E1D9 /* Localizable.strings */; };
 		C92B6DCF23F140710090E1D9 /* Strings+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DCE23F140710090E1D9 /* Strings+Util.swift */; };
-		C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DD123F141380090E1D9 /* VoidBlock.swift */; };
 		C92B6DD423F151040090E1D9 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B6DD323F151030090E1D9 /* APIError.swift */; };
 		C92BA3A42404F4A600F28BA3 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3A32404F4A600F28BA3 /* Resources.swift */; };
 		C92BA3A72405121900F28BA3 /* MemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BA3A62405121900F28BA3 /* MemoryCache.swift */; };
@@ -164,7 +163,6 @@
 		C92B6DC623F13DDA0090E1D9 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		C92B6DCC23F13F490090E1D9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C92B6DCE23F140710090E1D9 /* Strings+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Util.swift"; sourceTree = "<group>"; };
-		C92B6DD123F141380090E1D9 /* VoidBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidBlock.swift; sourceTree = "<group>"; };
 		C92B6DD323F151030090E1D9 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		C92BA3A32404F4A600F28BA3 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		C92BA3A62405121900F28BA3 /* MemoryCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCache.swift; sourceTree = "<group>"; };
@@ -263,10 +261,11 @@
 		C90A45E623F6674C000E3B1B /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				C9D72F1C23F59ACA003EFC38 /* UNMutableNotification+Util.swift */,
+				C9C8CBD023F4214F00EA07EE /* Calendar+Util.swift */,
 				C92B6DCE23F140710090E1D9 /* Strings+Util.swift */,
 				C9D72F0423F595E3003EFC38 /* Date+Util.swift */,
 				C90A45F023F66F24000E3B1B /* Int+Util.swift */,
-				C92B6DC523F13DCC0090E1D9 /* Resources */,
 				C90A45F223F66F3E000E3B1B /* Numbers+Util.swift */,
 				C9D72F0623F59629003EFC38 /* DateFormatter+Util.swift */,
 				C90A45F423F66F7E000E3B1B /* NumberFormatter+Util.swift */,
@@ -283,14 +282,6 @@
 				C92B6DAB23F113880090E1D9 /* Rx+Util.swift */,
 			);
 			path = ThirdParty;
-			sourceTree = "<group>";
-		};
-		C915FBE82407B09D00A3BEF2 /* Convenience */ = {
-			isa = PBXGroup;
-			children = (
-				C915FBE92407B0BE00A3BEF2 /* ViewController.swift */,
-			);
-			path = Convenience;
 			sourceTree = "<group>";
 		};
 		C915FBF32407C7FD00A3BEF2 /* Extension */ = {
@@ -376,30 +367,13 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		C92B6DC423F13DB50090E1D9 /* LegacyUIKit */ = {
+		C92B6DC423F13DB50090E1D9 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
 				C9CB50CA23FA92970001BD1D /* View */,
 				C9CAA50F23F66687004B9BDD /* Extensions */,
-				C90A45E623F6674C000E3B1B /* Util */,
 			);
-			path = LegacyUIKit;
-			sourceTree = "<group>";
-		};
-		C92B6DC523F13DCC0090E1D9 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C9CB50E323FA95690001BD1D /* Support */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		C92B6DD023F1412B0090E1D9 /* Typealias */ = {
-			isa = PBXGroup;
-			children = (
-				C92B6DD123F141380090E1D9 /* VoidBlock.swift */,
-			);
-			path = Typealias;
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		C92BA3A52405120400F28BA3 /* Cache */ = {
@@ -428,13 +402,72 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		C9519A26240641CD0029A2BF /* AppDelegate */ = {
+		C95FC60324A2F59100F3790F /* ViewData */ = {
+			isa = PBXGroup;
+			children = (
+				C9BC4D1E2404136A0054790A /* EntranceViewData.swift */,
+			);
+			path = ViewData;
+			sourceTree = "<group>";
+		};
+		C95FC60424A2F59900F3790F /* Convenience */ = {
+			isa = PBXGroup;
+			children = (
+				C915FBE92407B0BE00A3BEF2 /* ViewController.swift */,
+			);
+			path = Convenience;
+			sourceTree = "<group>";
+		};
+		C95FC60524A2F5A500F3790F /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
 				C96687B223EA8F390011DDD3 /* AppDelegate.swift */,
 				C9CAA50B23F661B3004B9BDD /* AppDelagateUsecase.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C95FC60624A2F5AE00F3790F /* Presentation-Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C95FC60824A2F66400F3790F /* Router */,
+				C9CAA50723F65EDB004B9BDD /* Screen */,
+			);
+			path = "Presentation-Domain";
+			sourceTree = "<group>";
+		};
+		C95FC60724A2F5D200F3790F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C92B6DC423F13DB50090E1D9 /* UIKit */,
+				C90A45E623F6674C000E3B1B /* Util */,
+				C9BC4D16240409390054790A /* Log */,
+				C9D72F1E23F59B11003EFC38 /* Custom */,
+				C9D72EF923F593C0003EFC38 /* Service */,
+				C92B6DAD23F114DF0090E1D9 /* Analytics */,
+				C92B6DB823F127FD0090E1D9 /* ProtocolExtension */,
+				C92B6DB923F128080090E1D9 /* Extension */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C95FC60824A2F66400F3790F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C9831D0F240026670062A9A0 /* Router.swift */,
+				C94D709D240797210085F717 /* Route.swift */,
+				C915FBDB24079ECE00A3BEF2 /* Routing.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C95FC60924A2F7BF00F3790F /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				C92B6DC123F13B930090E1D9 /* Protocol */,
+				C92B6DBE23F13B6A0090E1D9 /* Value */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		C96687A623EA8F390011DDD3 = {
@@ -461,9 +494,8 @@
 			children = (
 				C991F53424A22C75001B8B50 /* AppConfig */,
 				C9B281AF23ED52D800554CA6 /* AppResources */,
-				C92B6DC423F13DB50090E1D9 /* LegacyUIKit */,
-				C9B281AB23ED518400554CA6 /* LogTummyAPI */,
 				C9B281B723ED564B00554CA6 /* Presentation */,
+				C9B281AB23ED518400554CA6 /* LogTummyAPI */,
 			);
 			path = iOS_First_Directory_Setup;
 			sourceTree = "<group>";
@@ -517,14 +549,14 @@
 			path = AppConfig;
 			sourceTree = "<group>";
 		};
-		C991F53624A22CC7001B8B50 /* InfoPlist */ = {
+		C991F53624A22CC7001B8B50 /* InfoPlists */ = {
 			isa = PBXGroup;
 			children = (
 				C96687C023EA8F3B0011DDD3 /* Info.plist */,
 				C9B281B523ED549600554CA6 /* GoogleService-Info.plist */,
 				C925796323ED32FD00308154 /* GoogleService-debug-Info.plist */,
 			);
-			path = InfoPlist;
+			path = InfoPlists;
 			sourceTree = "<group>";
 		};
 		C991F53724A22CFC001B8B50 /* LocalizedStrings */ = {
@@ -539,7 +571,8 @@
 			isa = PBXGroup;
 			children = (
 				C96687BB23EA8F3B0011DDD3 /* Assets.xcassets */,
-				C991F53624A22CC7001B8B50 /* InfoPlist */,
+				C9B281BF23ED574700554CA6 /* Entitlements */,
+				C991F53624A22CC7001B8B50 /* InfoPlists */,
 				C991F53724A22CFC001B8B50 /* LocalizedStrings */,
 			);
 			path = Support;
@@ -616,74 +649,22 @@
 		C9B281B723ED564B00554CA6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				C9B281BF23ED574700554CA6 /* Entitlements */,
-				C9B281BE23ED571D00554CA6 /* Services */,
-				C9B281B923ED565600554CA6 /* Class */,
-				C9B281BD23ED568600554CA6 /* Files */,
+				C95FC60924A2F7BF00F3790F /* Error */,
+				C95FC60324A2F59100F3790F /* ViewData */,
+				C95FC60424A2F59900F3790F /* Convenience */,
+				C95FC60524A2F5A500F3790F /* AppDelegate */,
+				C95FC60624A2F5AE00F3790F /* Presentation-Domain */,
+				C95FC60724A2F5D200F3790F /* Utility */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		C9B281B923ED565600554CA6 /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				C915FBE82407B09D00A3BEF2 /* Convenience */,
-				C9519A26240641CD0029A2BF /* AppDelegate */,
-				C9B281BA23ED565D00554CA6 /* Presentation-Domain */,
-				C9B281BB23ED567000554CA6 /* Utility */,
-			);
-			path = Class;
-			sourceTree = "<group>";
-		};
-		C9B281BA23ED565D00554CA6 /* Presentation-Domain */ = {
-			isa = PBXGroup;
-			children = (
-				C9CAA50523F65ECA004B9BDD /* CommonViewModel */,
-				C9CAA50423F65EAD004B9BDD /* CommonUsecase */,
-				C92B6DD023F1412B0090E1D9 /* Typealias */,
-				C92B6DC123F13B930090E1D9 /* Protocol */,
-				C92B6DBE23F13B6A0090E1D9 /* Value */,
-				C9CAA50623F65ED7004B9BDD /* Router */,
-				C9CAA50823F65EE2004B9BDD /* View */,
-				C9CAA50723F65EDB004B9BDD /* Screen */,
-			);
-			path = "Presentation-Domain";
-			sourceTree = "<group>";
-		};
-		C9B281BB23ED567000554CA6 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				C9BC4D16240409390054790A /* Log */,
-				C9D72F1E23F59B11003EFC38 /* Custom */,
-				C9D72EF923F593C0003EFC38 /* Service */,
-				C92B6DAD23F114DF0090E1D9 /* Analytics */,
-				C92B6DB823F127FD0090E1D9 /* ProtocolExtension */,
-				C92B6DB923F128080090E1D9 /* Extension */,
-				C9D72F1C23F59ACA003EFC38 /* UNMutableNotification+Util.swift */,
-				C9C8CBD023F4214F00EA07EE /* Calendar+Util.swift */,
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
-		C9B281BD23ED568600554CA6 /* Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Files;
-			sourceTree = "<group>";
-		};
-		C9B281BE23ED571D00554CA6 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		C9B281BF23ED574700554CA6 /* Entitlements */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Entitlements;
+			name = Entitlements;
+			path = ../../Presentation/Entitlements;
 			sourceTree = "<group>";
 		};
 		C9B281C023ED57B600554CA6 /* R */ = {
@@ -702,38 +683,6 @@
 			path = Log;
 			sourceTree = "<group>";
 		};
-		C9BC4D1D2404135B0054790A /* BusinessModel */ = {
-			isa = PBXGroup;
-			children = (
-				C9BC4D1E2404136A0054790A /* EntranceViewData.swift */,
-			);
-			path = BusinessModel;
-			sourceTree = "<group>";
-		};
-		C9CAA50423F65EAD004B9BDD /* CommonUsecase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CommonUsecase;
-			sourceTree = "<group>";
-		};
-		C9CAA50523F65ECA004B9BDD /* CommonViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CommonViewModel;
-			sourceTree = "<group>";
-		};
-		C9CAA50623F65ED7004B9BDD /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				C9831D0F240026670062A9A0 /* Router.swift */,
-				C94D709D240797210085F717 /* Route.swift */,
-				C915FBDB24079ECE00A3BEF2 /* Routing.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		C9CAA50723F65EDB004B9BDD /* Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -743,17 +692,9 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
-		C9CAA50823F65EE2004B9BDD /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		C9CAA50923F660A2004B9BDD /* Entrance */ = {
 			isa = PBXGroup;
 			children = (
-				C9BC4D1D2404135B0054790A /* BusinessModel */,
 				C96687B823EA8F390011DDD3 /* EntranceViewController.storyboard */,
 				C96687B623EA8F390011DDD3 /* EntranceViewController.swift */,
 				C9831D11240026890062A9A0 /* EntranceRouting.swift */,
@@ -801,13 +742,6 @@
 				C9CB50EE23FA9D180001BD1D /* CornerRoundableImageView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		C9CB50E323FA95690001BD1D /* Support */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Support;
 			sourceTree = "<group>";
 		};
 		C9CB50F023FA9E900001BD1D /* IBDesignable */ = {
@@ -1005,7 +939,6 @@
 				C92BA3A42404F4A600F28BA3 /* Resources.swift in Sources */,
 				C9CB50E223FA93DE0001BD1D /* Sizes.swift in Sources */,
 				C9CAA50C23F661B3004B9BDD /* AppDelagateUsecase.swift in Sources */,
-				C92B6DD223F141380090E1D9 /* VoidBlock.swift in Sources */,
 				C9D72F0723F59629003EFC38 /* DateFormatter+Util.swift in Sources */,
 				C9CB50DE23FA93090001BD1D /* IBDesignableSegmentedControl.swift in Sources */,
 				C90A45ED23F66CE0000E3B1B /* UINib+Util.swift in Sources */,
@@ -1251,7 +1184,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = iOS_First_Directory_Setup/AppResources/Support/InfoPlist/Info.plist;
+				INFOPLIST_FILE = iOS_First_Directory_Setup/AppResources/Support/InfoPlists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1276,7 +1209,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = iOS_First_Directory_Setup/AppResources/Support/InfoPlist/Info.plist;
+				INFOPLIST_FILE = iOS_First_Directory_Setup/AppResources/Support/InfoPlists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

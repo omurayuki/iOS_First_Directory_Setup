@@ -2,8 +2,7 @@ import UIKit
 
 class EntranceViewController: UIViewController {
     
-    @IBOutlet weak var LoginTopImageView: CornerRoundableImageView!
-    @IBOutlet weak var LoginButton: CornerRoundableButton!
+    @IBOutlet weak var EntranceImageView: CornerRoundableImageView!
     
     var routing: EntranceRoutingProtocol?
     var viewModel: EntranceViewModelProtocol?

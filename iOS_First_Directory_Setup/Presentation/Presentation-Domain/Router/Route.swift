@@ -2,15 +2,15 @@ import UIKit
 
 enum Route {
     
-    case login
+    case entrance
     
     func viewController() -> UIViewController {
         
         let viewController: UIViewController
         
         switch self {
-        case .login:
-//            viewController = Resources.ViewControllers.App.Login()
+        case .entrance:
+            viewController = Resources.ViewControllers.App.entrance()
             break
         }
         

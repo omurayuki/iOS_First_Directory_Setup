@@ -24,7 +24,7 @@ final public class AppError: DisplayableErrorProtocol {
     
     init(error: Error,
          resolutionType: ResolutionType = .none,
-         resolution: VoidBlock? = nil,
+         resolution: (() -> Void)? = nil,
          errorType: ErrorType? = nil)
     {
         if let displayableError = error as? DisplayableErrorProtocol {
@@ -43,7 +43,7 @@ final public class AppError: DisplayableErrorProtocol {
     init(title: String,
          message: String,
          resolutionType: ResolutionType = .none,
-         resolution: VoidBlock? = nil,
+         resolution: (() -> Void)? = nil,
          errorType: ErrorType? = nil)
     {
         self.title = title
@@ -87,7 +87,7 @@ extension AppError {
             specific need to do otherwise...
      */
     
-    static func standardError(resolvedBy resolutionType: ResolutionType = .none, retryable: Bool = false, localizedRetryMessage: String = String.blank, errorCode: String = String.blank, resolution: VoidBlock? = nil) -> AppError {
+    static func standardError(resolvedBy resolutionType: ResolutionType = .none, retryable: Bool = false, localizedRetryMessage: String = String.blank, errorCode: String = String.blank, resolution: (() -> Void)? = nil) -> AppError {
 
         let retryMessageOrEmpty = (retryable && !localizedRetryMessage.isEmpty) ? String(format: " %@", localizedRetryMessage) : String.blank
         let standardMessage = errorCode.isEmpty ? ErrorStrings.standardErrorMessage : ErrorStrings.standardErrorMessageWithFormat(errorCode)
@@ -105,7 +105,7 @@ extension AppError {
         return appError
     }
     
-    static func standardErrorWithRetry(resolution: VoidBlock?, localizedRetryMessage: String = String.blank) -> AppError {
+    static func standardErrorWithRetry(resolution: (() -> Void)?, localizedRetryMessage: String = String.blank) -> AppError {
 
         return standardError(resolvedBy: .retry,
                              retryable: true,
@@ -113,7 +113,7 @@ extension AppError {
                              resolution: resolution)
     }
     
-    static func blockingErrorWithRetry(resolution: VoidBlock?, localizedRetryMessage: String = String.blank) -> AppError {
+    static func blockingErrorWithRetry(resolution: (() -> Void)?, localizedRetryMessage: String = String.blank) -> AppError {
         
         return standardError(resolvedBy: .forceRetry,
                              retryable: true,
@@ -133,7 +133,7 @@ extension AppError {
         return standardError
     }
 
-    static func offlineError(resolution: VoidBlock?) -> AppError {
+    static func offlineError(resolution: (() -> Void)?) -> AppError {
         let resolutionType: ResolutionType = resolution != nil ? .retry : .none
         return AppError(title: ErrorStrings.standardErrorTitle,
                         message: ErrorStrings.noNetworkConnection,
@@ -142,7 +142,7 @@ extension AppError {
                         errorType: .offline)
     }
     
-    static func blockingOfflineErrorWithRetry(resolution: VoidBlock?) -> AppError {
+    static func blockingOfflineErrorWithRetry(resolution: (() -> Void)?) -> AppError {
         
         return AppError(title: ErrorStrings.standardErrorTitle,
                         message: ErrorStrings.noNetworkConnection,
