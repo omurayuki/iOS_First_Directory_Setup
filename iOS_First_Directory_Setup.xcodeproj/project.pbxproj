@@ -568,7 +568,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C9831D09240000340062A9A0 /* Login */ = {
+		C9831D09240000340062A9A0 /* Entrance */ = {
 			isa = PBXGroup;
 			children = (
 				C9831D0C240001AE0062A9A0 /* Entity */,
@@ -576,7 +576,7 @@
 				C9831D0D240001D20062A9A0 /* EntranceRemote.swift */,
 				C92BA3B4240526E900F28BA3 /* EntranceLocal.swift */,
 			);
-			path = Login;
+			path = Entrance;
 			sourceTree = "<group>";
 		};
 		C9831D0C240001AE0062A9A0 /* Entity */ = {
@@ -647,7 +647,7 @@
 			isa = PBXGroup;
 			children = (
 				C9519A16240640B00029A2BF /* AppDelegate */,
-				C9831D09240000340062A9A0 /* Login */,
+				C9831D09240000340062A9A0 /* Entrance */,
 			);
 			path = API;
 			sourceTree = "<group>";
